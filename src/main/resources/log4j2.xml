@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--status的含义为是否记录log4j2本身的event信息，默认是OFF -->
+<Configuration status="OFF">
+	<Properties>
+		<!--自定义一些常量，之后使用${变量名}引用 -->
+		<Property name="logFilePath">logs</Property>
+		<Property name="logFileName">testLog</Property>
+	</Properties>
+	<Appenders>
+		<!--很直白，Console指定了结果输出到控制台 -->
+		<Console name="ConsolePrint" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy.MM.dd HH:mm:ss z} %t %-5level %class{36} %L %M - %msg%xEx%n" />
+		</Console>
+		<Routing name="thread">
+			<Routes pattern="$${ctx:ThreadName}">
+				<Route>
+					<RollingFile name="RollingFile-${ctx:ThreadName}_error"
+						fileName="${logFilePath}/${ctx:ThreadName}_error.log"
+						filePattern="${logFilePath}/${ctx:ThreadName}-%d{HH-mm-ss}_error.log"
+						append="false">
+						<ThresholdFilter level="ERROR" onMatch="ACCEPT"
+							onMismatch="DENY" />
+						<PatternLayout
+							pattern="%d{yyyy.MM.dd HH:mm:ss z} %t %-5level %class{36} %L %M - %msg%xEx%n" />
+						<Policies>
+							<SizeBasedTriggeringPolicy size="100M" />
+						</Policies>
+						<DefaultRolloverStrategy max="100" />
+					</RollingFile>
+					<RollingFile name="RollingFile-${ctx:ThreadName}"
+						fileName="${logFilePath}/${ctx:ThreadName}.log"
+						filePattern="${logFilePath}/${ctx:ThreadName}-%d{HH-mm-ss}.log"
+						append="false">
+						<PatternLayout
+							pattern="%d{yyyy.MM.dd HH:mm:ss z} %t %-5level %class{36} %L %M - %msg%xEx%n" />
+						<Policies>
+							<SizeBasedTriggeringPolicy size="100M" />
+						</Policies>
+						<DefaultRolloverStrategy max="100" />
+					</RollingFile>
+				</Route>
+			</Routes>
+		</Routing>
+	</Appenders>
+	<Loggers>
+		<!--Logger用于定义log的level以及所采用的appender，如果无需自定义，可以使用root解决，root标签是log的默认输出形式 -->
+		<!-- 级别顺序（低到高）：TRACE < DEBUG < INFO < WARN < ERROR < FATAL -->
+		<Root level="DEBUG" includeLocation="true">
+			<!--AppenderRef中的ref值必须是在前面定义的appenders -->
+			<AppenderRef ref="ConsolePrint" />
+			<AppenderRef ref="thread" />
+		</Root>
+	</Loggers>
+</Configuration>

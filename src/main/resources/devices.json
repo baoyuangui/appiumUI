@@ -1,0 +1,30 @@
+{
+	"oppo": 
+		{
+			"brand": "oppo",
+			"os": "android",
+			"os_ver": "5.1",
+			"udid": "6b00d640",
+			"ip": "192.168.20.24",
+			"apmsrv_ip": "127.0.0.1",
+			"apmsrv_port": "4700",
+			"bp": "4701",
+			"app_path": "",
+			"app_pack": "com.loulifang.house",
+			"app_activ": "com.loulifang.house.activities.TMainActivity"
+		},
+	"vivo":{
+			"brand": "vivo",
+			"os": "android",
+			"os_ver": "5.1",
+			"udid": "",
+			"ip": "192.168.20.60",
+			"apmsrv_ip": "127.0.0.1",
+			"apmsrv_port": "4710",
+			"app_path": "",
+			"bp": "4711",
+			"app_pack": "com.loulifang.house",
+			"app_activ": "com.loulifang.house.activities.TMainActivity"
+		}
+
+}

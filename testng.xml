@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests" >
+
+	<test name="vivo_x9_Test">
+<!-- 	设备id及对应的server端口 -->
+	<parameter name="udid" value="192.168.20.24:5555" />
+	<parameter name="serverURL" value="127.0.0.1:4710" />
+	<classes>
+	<class name="gby.testng.testcase.InitDriverCase" />
+	<class name="gby.testng.testcase.OpenHousePageCase" />
+	</classes>
+	</test>
+
+	<!-- <test name="xiaomi_5s_Test"> -->
+	<!-- 设备id及对应的server端口 -->
+	<!-- <parameter name="udid" value="192.168.20.176:5555" /> -->
+	<!-- <parameter name="serverURL" value="127.0.0.1:4720" /> -->
+	<!-- <classes> -->
+	<!-- <class name="gby.testng.testcase.InitDriverCase" /> -->
+	<!-- <class name="gby.testng.testcase.LoginCase"/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+
+	<!-- !!!!!!!!!!!!!!!!!金立手机,192.168.20.128:5555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+	<!-- <test name="jingli_Test"> -->
+	<!-- 设备id及对应的server端口 -->
+	<!-- <parameter name="udid" value="7POFC6HI5HPF5L6T" /> -->
+	<!-- <parameter name="serverURL" value="127.0.0.1:4730" /> -->
+	<!-- <classes> -->
+	<!-- <class name="gby.testng.testcase.InitDriverCase" /> -->
+	<!-- <class name="gby.testng.testcase.OpenHousePageCase" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- !!!!!!!!!!!!!!!!!我是一条分割线!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+	<!-- <test name="oppo_r9_Test"> -->
+	<!-- <parameter name="udid" value="192.168.20.60:5555" /> -->
+	<!-- <parameter name="serverURL" value="127.0.0.1:4492" /> -->
+	<!-- <classes> -->
+	<!-- <class name="gby.testng.testcase.InitAppStart" /> -->
+	<!-- <class name="gby.testng.testcase.OpenHousePageCase" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<test name="mytest">
+		<!-- 设备id及对应的server端口 -->
+		<classes>
+			<class name="test.testng.parralel.MethodP" />
+			<class name="test.testng.parralel.NewTest" />
+		</classes>
+	</test>
+	<test name="mytest2">
+		<classes>
+			<class name="test.testng.parralel.MethodP" />
+			<class name="test.testng.parralel.NewTest" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
