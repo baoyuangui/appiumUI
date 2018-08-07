@@ -19,11 +19,13 @@ public class CommandPromptUtil {
     public String runCommandThruProcess(String command)
             throws InterruptedException, IOException {
         BufferedReader br = getBufferedReader(command);
+        
         String line;
         String allLine = "";
         while ((line = br.readLine()) != null) {
             allLine = allLine + "" + line + "\n";
         }
+        LoggerUtil.debug("命令结果：" + allLine );
         return allLine;
     }
 
@@ -36,6 +38,7 @@ public class CommandPromptUtil {
 //        		allLine.add(line.replaceAll("[\\[\\](){}]","_").split("_")[1]);
         	allLine.add(line);
         }
+        LoggerUtil.debug("命令结果：" + allLine );
         return allLine;
     }
 
@@ -56,6 +59,7 @@ public class CommandPromptUtil {
         final Process process = builder.start();
         InputStream is = process.getInputStream();
         InputStreamReader isr = new InputStreamReader(is);
+        LoggerUtil.debug("执行命令：" + commands.toString());
         return new BufferedReader(isr);
     }
 

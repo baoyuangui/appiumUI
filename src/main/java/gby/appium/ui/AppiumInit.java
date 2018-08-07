@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +18,7 @@ public class AppiumInit {
 		 Logger  logger = LoggerFactory.getLogger(AppiumInit.class);
 		
 		// TODO Auto-generated method stub
-		AndroidDriver<AndroidElement> driver;
+		AndroidDriver<WebElement> driver;
 		DesiredCapabilities cap = new DesiredCapabilities();
 
 		// 设置启动参数
@@ -30,9 +31,10 @@ public class AppiumInit {
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
 
 		//初始化AndroidDriver
-		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4492/wd/hub"),cap);
+		driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4492/wd/hub"),cap);
 		logger.debug("AndroidDriver初始化完成，打开app成功");
 		driver.findElement(By.id("com.loulifang.house:id/llItem")).click();
+		
 		logger.debug("llItem列表点击成功");
 	}
 
