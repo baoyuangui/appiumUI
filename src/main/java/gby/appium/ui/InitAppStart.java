@@ -18,7 +18,7 @@ public class InitAppStart {
 	Logger logger;
 	AndroidDriver<AndroidElement> driver;
 
-public AndroidDriver<AndroidElement> initDriver(String udid, String serverURL) throws MalformedURLException {
+public AndroidDriver<AndroidElement> initDriver(Device device) throws MalformedURLException {
 		logger = LoggerFactory.getLogger(AppiumInit.class);
 
 
@@ -28,15 +28,15 @@ public AndroidDriver<AndroidElement> initDriver(String udid, String serverURL) t
 
 		// 设置启动参数
 		cap.setCapability("automationName", "Appium");
-		cap.setCapability("platformName", "Android");
-		cap.setCapability("platformName", "5.1");
-		cap.setCapability("deviceName", udid);
-		cap.setCapability("udid", udid);
+		cap.setCapability("platformName", device.getOs());
+		cap.setCapability("platform Version", device.getOs_ver());
+		cap.setCapability("deviceName", device.getName());
+		cap.setCapability("udid", device.getIp());
 		cap.setCapability("appPackage", "com.loulifang.house");
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
 
 		// 初始化AndroidDriver
-		driver = new AndroidDriver<AndroidElement>(new URL("http://" + serverURL + "/wd/hub"), cap);
+		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1 "/wd/hub"), cap);
 		logger.info("AndroidDriver初始化完成，打开app成功");
 		return driver;
 	}

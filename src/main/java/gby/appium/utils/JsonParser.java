@@ -21,7 +21,10 @@ public class JsonParser {
     private String filePath;
 
     public JsonParser(String filePath) {
-        this.filePath = System.getProperty("user.dir")+filePath;
+//    	if(filePath.contains(System.getProperty("user.dir"))){
+//    		this.filePath = filePath;
+//    	}
+        this.filePath = System.getProperty("user.dir") + filePath;
     }
     public JsonParser() {
     }
@@ -58,7 +61,7 @@ public class JsonParser {
             out.println();
             fw.close();
             out.close();
-            LoggerUtil.error("保存json完成，保存路径： " + filePath);
+            LoggerUtil.debug("保存json完成，保存路径： " + filePath);
             return true;
         } catch (IOException e) {
         	LoggerUtil.error("保存json出错：" + e.getMessage());

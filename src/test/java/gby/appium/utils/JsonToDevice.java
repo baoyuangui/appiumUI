@@ -5,7 +5,7 @@ import java.util.Map;
 
 import gby.appium.ui.Device;
 
-public class jsonToDevice {
+public class JsonToDevice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

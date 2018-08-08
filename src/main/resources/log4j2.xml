@@ -10,7 +10,7 @@
 		<!--很直白，Console指定了结果输出到控制台 -->
 		<Console name="ConsolePrint" target="SYSTEM_OUT">
 			<PatternLayout
-				pattern="%d{yyyy.MM.dd HH:mm:ss z} %t %-5level %class{36} %L %M - %msg%xEx%n" />
+				pattern="%d [%t] %-5p [%c] - %m%n" />
 		</Console>
 		<Routing name="thread">
 			<Routes pattern="$${ctx:ThreadName}">

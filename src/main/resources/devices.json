@@ -1,23 +1,22 @@
 {
-	"oppo": 
-		{
-			"name": "oppo",
-			"os": "android",
-			"os_ver": "5.1",
-			"udid": "6b00d640",
-			"ip": "192.168.20.24",
-			"screen_size": "1080_1920",
-			"apmsrv_port": "4700",
-			"bp": "4701"
-		},
-	"vivo":{
-			"name": "vivo",
-			"os": "android",
-			"os_ver": "5.1",
-			"udid": "",
-			"ip": "192.168.20.60",
-			"screen_size": "1080_1920",
-			"apmsrv_port": "4710",
-			"bp": "4711"
-		}
+	"OPPOR9tm": {
+		"apmsrv_port": "4710",
+		"os_ver": "5.1",
+		"screenSize": " 1080_1920",
+		"os": "android",
+		"ip": "192.168.20.60",
+		"apmsrv_bp": "4711",
+		"name": "OPPOR9tm",
+		"udid": "MFQ8FMJZJVPNRGZH"
+	},
+	"LenovoK32c36": {
+		"apmsrv_port": "4720",
+		"os_ver": "5.1.1",
+		"screenSize": " 1080_1920",
+		"os": "android",
+		"ip": "192.168.20.217",
+		"apmsrv_bp": "4721",
+		"name": "LenovoK32c36",
+		"udid": "c8b2c8cf"
+	}
 }

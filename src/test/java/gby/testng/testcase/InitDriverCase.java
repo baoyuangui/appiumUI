@@ -21,12 +21,11 @@ public class InitDriverCase {
 	InitAppStart sClass ;
 	public static AndroidDriver<AndroidElement> driver;
 	
-	@Parameters({ "udid", "serverURL" })
+	@Parameters({ "deviceName"})
 	@Test
-	public void f(String udid, String serverURL) throws MalformedURLException {
-		Thread.currentThread().setName(udid);
-		logger.debug("udid: " + udid);
-		logger.debug("serverURL: " + serverURL);
+	public void f(String deviceName) throws MalformedURLException {
+		Thread.currentThread().setName(deviceName);
+		logger.debug("deviceName: " + deviceName);
 		sClass = new InitAppStart();
 		driver = sClass.initDriver(udid, serverURL);
 		

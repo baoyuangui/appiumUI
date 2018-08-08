@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class putMap {
+public class PutMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
