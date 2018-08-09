@@ -27,7 +27,7 @@ public class InitDriverCase {
 		Thread.currentThread().setName(deviceName);
 		logger.debug("deviceName: " + deviceName);
 		sClass = new InitAppStart();
-		driver = sClass.initDriver(udid, serverURL);
+//		driver = sClass.initDriver(udid, serverURL);
 		
 
 

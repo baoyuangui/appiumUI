@@ -36,7 +36,7 @@ public AndroidDriver<AndroidElement> initDriver(Device device) throws MalformedU
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
 
 		// 初始化AndroidDriver
-		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1 "/wd/hub"), cap);
+//		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1 "/wd/hub"), cap);
 		logger.info("AndroidDriver初始化完成，打开app成功");
 		return driver;
 	}
