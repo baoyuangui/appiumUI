@@ -2,33 +2,37 @@ package gby.appium.ui;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.support.spring.JSONPResponseBodyAdvice;
 
 import gby.appium.utils.CommandPromptUtil;
 import gby.appium.utils.JsonParser;
+import gby.appium.utils.LoggerUtil;
 
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class AndroidManager {
+import org.apache.commons.lang3.ObjectUtils.Null;
+
+public class DevicesManager {
 
 	public CommandPromptUtil cmd;
-	public JSONObject adbDevices;
+
 //	public String path;
 	public JsonParser jParser;
 
 //    private static Map<String, Process> processUDIDs = new HashMap<>();
 //    private ArrayList<Process> prcsList = null;
 //    Process process;
-	public AndroidManager() {
+	public DevicesManager() {
 		cmd = new CommandPromptUtil();
-		adbDevices = new JSONObject();
+//		adbDevices = new JSONObject();
 		jParser = new JsonParser("/src/main/resources/devices.json");
 	}
 
-	public AndroidManager(String jsonfilePath) {
+	public DevicesManager(String jsonfilePath) {
 		cmd = new CommandPromptUtil();
-		adbDevices = new JSONObject();
+//		adbDevices = new JSONObject();
 		jParser = new JsonParser(jsonfilePath);
 	}
 
@@ -45,7 +49,7 @@ public class AndroidManager {
 
 	public JSONObject getDeviceInfo(String udid) {
 		
-		JSONObject adbDevice =  jParser.getObjectFromJSON();
+		JSONObject adbDevice = new JSONObject();
 		String model = cmd.runCommandThruProcess("adb -s " + udid + " shell getprop ro.product.model")
 				.replaceAll("\\s+", "");
 		String brand = cmd.runCommandThruProcess("adb -s " + udid + " shell getprop ro.product.brand")
@@ -55,15 +59,13 @@ public class AndroidManager {
 
 		String deviceName = model.contains(brand) ? model : brand + "_" + model;
 		
-		int apmsrv_port =4000; 
+		//根据设备名称字符值计算对应appium server的端口
+		int apmsrv_port = 4000; 
 		for(char c : deviceName.toCharArray()) {
 			apmsrv_port = apmsrv_port+ c;
 		}
 		int apmsrv_bp = apmsrv_port + 1 ; 
-		/*
-		 * String apiLevel = cmd.runCommandThruProcess("adb -s " + deviceID +
-		 * " shell getprop ro.build.version.sdk") .replaceAll("\n", "");
-		 */
+
 		String getScreenResolution = cmd.runCommandThruProcess("adb -s " + udid + " shell wm size").split(":")[1]
 				.replace("\n", "").replace("x", "_");
 
@@ -76,10 +78,9 @@ public class AndroidManager {
 		adbDevice.put("os", "android");
 		adbDevice.put("ip", ip);
 		adbDevice.put("apmsrv_port", apmsrv_port);
-		adbDevice.put("bstPort", apmsrv_bp);
-		
-		this.adbDevices.put(deviceName, adbDevice);
-		return adbDevices;
+		adbDevice.put("apmsrv_bp", apmsrv_bp);
+
+		return adbDevice;
 	}
 
 	public Map<String, Device> fromJsonfileGetDevices() {
@@ -97,13 +98,28 @@ public class AndroidManager {
 
 	}
 
-	public  void saveDeviceInfo(JSONObject devices) {
-//		JsonParser jParser = new JsonParser(path);
-		JSONObject oldMap = jParser.getObjectFromJSON();
-		devices.putAll(oldMap);
-
-		String devStr = devices.toString();
-		jParser.writeFile(devStr);
+	public  void flashDeviceInfo() {
+		
+		List<String> adbUdids = cmd.adbDevices();
+		JSONObject adbDevices = new JSONObject();
+		JSONObject adbDevice = null;
+		
+		//根据udid列表循环获取设备信息json，插入devicesjson中。
+		if(adbUdids.size() != 0) {
+			for (String udid : adbUdids) {
+				adbDevice = getDeviceInfo(udid);
+				adbDevices.put(adbDevice.getString("name"), adbDevice);
+				LoggerUtil.debug("更新设备信息："+adbDevice.getString("name"));
+			}
+			
+			//将新json信息覆盖至老的设备信息json中,并保存至json文件中
+			JSONObject oldJson = jParser.getObjectFromJSON();	
+			oldJson.putAll(adbDevices);
+			String devStr = oldJson.toString();		
+			jParser.writeFile(devStr);
+		}else {
+			LoggerUtil.debug("没有插入电脑的设备");
+		}
 
 	}
 

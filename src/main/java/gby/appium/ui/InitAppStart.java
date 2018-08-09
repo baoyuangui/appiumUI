@@ -10,35 +10,50 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import gby.appium.ui.AppiumInit;
+import gby.appium.utils.DevicesConnect;
+import gby.appium.utils.LoggerUtil;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
+import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 public class InitAppStart {
 
-	Logger logger;
-	AndroidDriver<AndroidElement> driver;
+	public AndroidDriver<AndroidElement> driver;
+	public DevicesConnect dc;
 
-public AndroidDriver<AndroidElement> initDriver(Device device) throws MalformedURLException {
-		logger = LoggerFactory.getLogger(AppiumInit.class);
+public  InitAppStart(String deviceName) throws MalformedURLException {
+		
+		dc = new DevicesConnect(deviceName);
+		dc.adbConnect();
+		int port = Integer.parseInt(dc.device.getApmsrv_port());
+        AppiumServiceBuilder builder =
+                new AppiumServiceBuilder().withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+                        .withIPAddress("127.0.0.1")  
+                        .usingPort(port);
 
-
+        AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+        service.start();
 		// TODO Auto-generated method stub
 
 		DesiredCapabilities cap = new DesiredCapabilities();
 
 		// 设置启动参数
 		cap.setCapability("automationName", "Appium");
-		cap.setCapability("platformName", device.getOs());
-		cap.setCapability("platform Version", device.getOs_ver());
-		cap.setCapability("deviceName", device.getName());
-		cap.setCapability("udid", device.getIp());
+		cap.setCapability("platformName", dc.device.getOs());
+		cap.setCapability("platform Version", dc.device.getOs_ver());
+		cap.setCapability("deviceName", dc.device.getName());
+		cap.setCapability("udid", dc.device.getIp()+":5555");
 		cap.setCapability("appPackage", "com.loulifang.house");
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
-
+		cap.setCapability("unicodeKeyboard", "True");
+		cap.setCapability("resetKeyboard", "True");	
+		
 		// 初始化AndroidDriver
-//		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1 "/wd/hub"), cap);
-		logger.info("AndroidDriver初始化完成，打开app成功");
-		return driver;
+		String url = "http://127.0.0.1:"+port+"/wd/hub";
+		driver = new AndroidDriver<AndroidElement>(new URL(url), cap);
+		LoggerUtil.info("AndroidDriver初始化完成，打开app成功");
 	}
 
 }

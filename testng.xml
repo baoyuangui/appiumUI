@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" parallel="tests" >
+<suite name="Suite" parallel="tests">
 
 	<test name="OPPOR9tm">
-<!-- 	设备id及对应的server端口 -->
-	<parameter name="deviceName" value="OPPOR9tm" />
-	<classes>
-	<class name="gby.testng.testcase.InitDriverCase" />
-	<class name="gby.testng.testcase.OpenHousePageCase" />
-	</classes>
+<!-- 		设备id及对应的server端口 -->
+		<parameter name="deviceName" value="LenovoK32c36" />
+		<classes>
+			<class name="gby.testng.testcase.InitDriverCase" />
+			<class name="gby.testng.testcase.OpenHousePageCase" />
+		</classes>
 	</test>
 
-	<!-- <test name="xiaomi_5s_Test"> -->
-	<!-- 设备id及对应的server端口 -->
-	<!-- <parameter name="udid" value="192.168.20.176:5555" /> -->
-	<!-- <parameter name="serverURL" value="127.0.0.1:4720" /> -->
-	<!-- <classes> -->
-	<!-- <class name="gby.testng.testcase.InitDriverCase" /> -->
-	<!-- <class name="gby.testng.testcase.LoginCase"/> -->
-	<!-- </classes> -->
-	<!-- </test> -->
+	<test name="LenovoK32c36">
+<!-- 		设备id及对应的server端口 -->
+		<parameter name="deviceName" value="GiONEE_GN5001S" />
+		<classes>
+			<class name="gby.testng.testcase.InitDriverCase" />
+			<class name="gby.testng.testcase.LoginCase" />
+		</classes>
+	</test>
 
 
 	<!-- !!!!!!!!!!!!!!!!!金立手机,192.168.20.128:5555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -45,18 +44,23 @@
 	<!-- </classes> -->
 	<!-- </test> -->
 
-	<test name="mytest">
+<!-- 	<test name="mytest"> -->
 		<!-- 设备id及对应的server端口 -->
-		<classes>
-			<class name="test.testng.parralel.MethodP" />
-			<class name="test.testng.parralel.NewTest" />
-		</classes>
-	</test>
-	<test name="mytest2">
-		<classes>
-			<class name="test.testng.parralel.MethodP" />
-			<class name="test.testng.parralel.NewTest" />
-		</classes>
-	</test>
+<!-- 		<classes> -->
+<!-- 			<class name="test.testng.parralel.MethodP" /> -->
+<!-- 			<class name="test.testng.parralel.NewTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="mytest2"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="test.testng.parralel.MethodP" /> -->
+<!-- 			<class name="test.testng.parralel.NewTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.uiframe.testng.TestNGListener" />
+<!-- 		<listener class-name="com.uiframe.testng.RetryListener" /> -->
 
+	</listeners>
 </suite> <!-- Suite -->

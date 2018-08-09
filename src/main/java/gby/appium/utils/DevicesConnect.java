@@ -1,56 +1,83 @@
 package gby.appium.utils;
 
+import java.io.IOException;
 import java.util.List;
 
-import gby.appium.ui.AndroidManager;
+import gby.appium.ui.DevicesManager;
+import net.bytebuddy.implementation.bind.annotation.Super;
 import gby.appium.ui.Device;
 
-public class DevicesConnect extends AndroidManager{
+public class DevicesConnect extends DevicesManager {
 
-	public Device device ;
-	
-	public DevicesConnect() {
+	public Device device;
+
+	public DevicesConnect(String deviceName) {
 		super();
+		device = fromJsonfileGetDevices().get(deviceName);
+		
 	}
-	
-	public DevicesConnect(String path) {
+
+	public DevicesConnect(String path, String deviceName) {
 		super(path);
+		device = fromJsonfileGetDevices().get(deviceName);
 	}
-	
-	public Device adbConnect(String deviceName) {
-		
-		if (fromJsonfileGetDevices().get(deviceName) == null) {
-			List<String> adbUdids = cmd.adbDevices();
-			for (String udid : adbUdids) {
-				getDeviceInfo(udid);
+
+	public void adbConnect() {
+
+		// 先判断json文件中是否存在该设备，不存在则从电脑中刷新设备信息
+		if (device == null) {
+			flashDeviceInfo();
+
+			try {
+				cmd.runCommandThruProcess("adb -s " + device.getUdid() + " tcpip 5555");
+				Thread.sleep(1000);
+				cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
+			} catch (NullPointerException  | InterruptedException e) {
+				// TODO: handle exception
+				LoggerUtil.error("无法连接设备，确认设备名称无误，尝试usb连接电脑再运行一次：" + e.getMessage());
 			}
-			saveDeviceInfo(adbDevices);
+
+		} else {
+
+			// json中存在设备，尝试连接
+			String ipConStr = cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
+
+			// 连接不成功,可能ip改变，刷新设备信息，再次连接
+			if (ipConStr.contains("cannot")) {
+				flashDeviceInfo();
+				try {
+					device = fromJsonfileGetDevices().get(device.getName());
+					cmd.runCommandThruProcess("adb -s " + device.getUdid() + " tcpip 5555");
+
+					Thread.sleep(1000);
+				} catch (NullPointerException | InterruptedException e) {
+					// TODO Auto-generated catch block
+					LoggerUtil.error("无法连接设备，请尝试usb连接电脑再运行一次：" + e.getMessage());
+				}
+
+				String str = cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
+
+				// 刷新ip后依旧无法连接，提示报错
+				if (str.contains("cannot"))
+					LoggerUtil.error("无法连接设备：" + device.getName() + ",首次使用或设备重启后，请开启调试模式并连接电脑再试");
+			}
 		}
-		
+	}
+
+	public void setUpAppiumServer() {
+
 		try {
-			device = fromJsonfileGetDevices().get(deviceName);
-			cmd.runCommandThruProcess("adb -s " + device.getUdid() + " tcpip 5555");
-			Thread.sleep(1000);
-			cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
-			return device;
-		} catch (NullPointerException e) {
-			LoggerUtil.error("设备名称有误，devicesJson中无法找到该设备名称："+ deviceName+ ";请将设备开启调试模式，并与电脑连接");
-		} catch (InterruptedException e) {
+			cmd.runCmdServer("appium -a 127.0.0.1 -p " + device.getApmsrv_port() + " -U " + device.getIp()
+					+ ":5555" + " -bp " + device.getApmsrv_bp());
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return device;
 	}
-	
-	public void setUpAppiumServer() {
 
-		cmd.runCommandThruProcess("appium -a 127.0.0.1 -p "
-				+ device.getApmsrv_port() + " -U " +device.getIp()+":5555"				
-				+ " -bp " + device.getApmsrv_bp());
-	}
-	
 	public void setDownAllCommand() {
 		cmd.runCommandThruProcess("taskkill /F /IM adb.exe");
 		cmd.runCommandThruProcess("taskkill /F /IM node.exe");
 	}
+
 }

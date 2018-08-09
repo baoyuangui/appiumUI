@@ -22,7 +22,9 @@ public class Device {
 		this.udid = deviceJson.getString("udid");
 		this.ip = deviceJson.getString("ip");
 		this.screenSize = deviceJson.getString("screenSize");
-
+		this.apmsrv_port = deviceJson.getString("apmsrv_port");
+		this.apmsrv_bp = deviceJson.getString("apmsrv_bp");
+		
 	}
 
 	public Device() {

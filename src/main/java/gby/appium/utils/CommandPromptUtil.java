@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.SequenceInputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -27,17 +29,17 @@ public class CommandPromptUtil {
 		}
         
         String line;
-        String allLine = "";
+        StringBuffer allLine = new StringBuffer();
         try {
 			while ((line = br.readLine()) != null) {
-			    allLine = allLine + "" + line + "\n";
+			    allLine.append(line);
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
         LoggerUtil.debug("命令结果：" + allLine );
-        return allLine;
+        return allLine.toString();
     }
 
     public List<String> runCommand(String command)
@@ -79,16 +81,19 @@ public class CommandPromptUtil {
         commands.add(command);
         ProcessBuilder builder = new ProcessBuilder(commands);
         final Process process = builder.start();
-        InputStream is = process.getInputStream();
-        InputStreamReader isr = new InputStreamReader(is);
         LoggerUtil.debug("执行命令：" + commands.toString());
+        
+        SequenceInputStream sis = new SequenceInputStream
+        		(process.getInputStream (), process.getErrorStream ());
+        InputStreamReader isr = new InputStreamReader (sis,"utf-8");
         return new BufferedReader(isr);
     }
 
-    public Process execForProcessToExecute(String cmd) throws IOException {
+    public Process runCmdServer(String cmd) throws IOException {
         Process pr = null;
         List<String> commands = new ArrayList<>();
-
+        
+        
         if(OSType.contains("Windows"))
         {
             commands.add("cmd");
@@ -101,6 +106,7 @@ public class CommandPromptUtil {
         commands.add(cmd);
         ProcessBuilder builder = new ProcessBuilder(commands);
         pr = builder.start();
+        LoggerUtil.debug("执行命令：" + commands.toString());
         return pr;
     }
 
@@ -121,7 +127,7 @@ public class CommandPromptUtil {
     	List<String> devicesCom = new ArrayList<String>();
 		devicesCom = runCommand("adb devices");
     	for (String str : devicesCom) {
-    		if (Pattern.compile("\\w+").matcher(str).find()) {
+    		if (!Pattern.compile("\\.").matcher(str).find()) {
         		if (str.contains("List")) {
         			continue;	
         		} else if (str.contains("device")) {
@@ -131,7 +137,7 @@ public class CommandPromptUtil {
         		}
     		}
     		}
-    	System.out.println(devicesList.toString());
+    	LoggerUtil.debug(devicesList.toString());
 		return devicesList;
     }
 

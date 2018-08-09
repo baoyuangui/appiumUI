@@ -1,0 +1,5 @@
+2018-08-09 20:03:34,926 [LenovoK32c36] DEBUG [gby.appium.ui.AppiumInit] - deviceName: LenovoK32c36
+2018-08-09 20:03:35,126 [LenovoK32c36] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.217:5555]
+2018-08-09 20:03:35,324 [LenovoK32c36] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.217:5555
+2018-08-09 20:03:59,768 [LenovoK32c36] INFO  [gby.appium.ui.InitAppStart.<init>() Line: 56] - AndroidDriver初始化完成，打开app成功
+2018-08-09 20:04:04,803 [LenovoK32c36] INFO  [gby.testng.testcase.OpenHousePageCase] - 点击房源列表，进入房源详情ok

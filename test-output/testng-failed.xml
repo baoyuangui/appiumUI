@@ -1,42 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="serverURL" value="127.0.0.1:4710"/>
-  <parameter name="udid" value="192.168.20.24:5555"/>
-  <test name="vivo_x9_Test">
-    <parameter name="serverURL" value="127.0.0.1:4710"/>
-    <parameter name="udid" value="192.168.20.24:5555"/>
+  <parameter name="deviceName" value="GiONEE_GN5001S"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="OPPOR9tm">
+    <parameter name="deviceName" value="LenovoK32c36"/>
     <classes>
       <class name="gby.testng.testcase.InitDriverCase"/>
       <class name="gby.testng.testcase.OpenHousePageCase"/>
     </classes>
-  </test> <!-- vivo_x9_Test -->
-  <test name="mytest">
+  </test> <!-- OPPOR9tm -->
+  <test name="LenovoK32c36">
+    <parameter name="deviceName" value="GiONEE_GN5001S"/>
     <classes>
-      <class name="test.testng.parralel.MethodP"/>
-      <class name="test.testng.parralel.NewTest"/>
+      <class name="gby.testng.testcase.InitDriverCase"/>
+      <class name="gby.testng.testcase.LoginCase"/>
     </classes>
-  </test> <!-- mytest -->
-  <test name="mytest2">
-    <classes>
-      <class name="test.testng.parralel.MethodP"/>
-      <class name="test.testng.parralel.NewTest"/>
-    </classes>
-  </test> <!-- mytest2 -->
-  <test name="vivo_x9_Test(failed)" parallel="tests">
-    <parameter name="serverURL" value="127.0.0.1:4710"/>
-    <parameter name="udid" value="192.168.20.24:5555"/>
-    <classes>
-      <class name="gby.testng.testcase.InitDriverCase">
-        <methods>
-          <include name="f" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- gby.testng.testcase.InitDriverCase -->
-      <class name="gby.testng.testcase.OpenHousePageCase">
-        <methods>
-          <include name="f"/>
-        </methods>
-      </class> <!-- gby.testng.testcase.OpenHousePageCase -->
-    </classes>
-  </test> <!-- vivo_x9_Test(failed) -->
+  </test> <!-- LenovoK32c36 -->
 </suite> <!-- Failed suite [Suite] -->

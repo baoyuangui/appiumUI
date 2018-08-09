@@ -1,21 +1,41 @@
 {
+	"GiONEE_GN5001S": {
+		"apmsrv_port": 4996,
+		"os_ver": "5.1",
+		"screenSize": " 720_1280",
+		"os": "android",
+		"ip": "192.168.20.138",
+		"apmsrv_bp": 4997,
+		"name": "GiONEE_GN5001S",
+		"udid": "7POFC6HI5HPF5L6T"
+	},
 	"OPPOR9tm": {
-		"apmsrv_port": "4710",
+		"apmsrv_port": 4682,
 		"os_ver": "5.1",
 		"screenSize": " 1080_1920",
 		"os": "android",
 		"ip": "192.168.20.60",
-		"apmsrv_bp": "4711",
+		"apmsrv_bp": 4683,
 		"name": "OPPOR9tm",
 		"udid": "MFQ8FMJZJVPNRGZH"
 	},
+	"Huawei_H60-L01": {
+		"apmsrv_port": 5098,
+		"os_ver": "4.4.2",
+		"screenSize": " 1080_1920",
+		"os": "android",
+		"ip": "192.168.20.210",
+		"apmsrv_bp": 5099,
+		"name": "Huawei_H60-L01",
+		"udid": "7N2SSE154L033031"
+	},
 	"LenovoK32c36": {
-		"apmsrv_port": "4720",
+		"apmsrv_port": 5007,
 		"os_ver": "5.1.1",
 		"screenSize": " 1080_1920",
 		"os": "android",
 		"ip": "192.168.20.217",
-		"apmsrv_bp": "4721",
+		"apmsrv_bp": 5008,
 		"name": "LenovoK32c36",
 		"udid": "c8b2c8cf"
 	}

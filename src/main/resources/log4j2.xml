@@ -9,10 +9,9 @@
 	<Appenders>
 		<!--很直白，Console指定了结果输出到控制台 -->
 		<Console name="ConsolePrint" target="SYSTEM_OUT">
-			<PatternLayout
-				pattern="%d [%t] %-5p [%c] - %m%n" />
+			<PatternLayout pattern="%d [%t] %-5p [%c] - %m%n" />
 		</Console>
-		<Routing name="thread">
+		<Routing name="thread1">
 			<Routes pattern="$${ctx:ThreadName}">
 				<Route>
 					<RollingFile name="RollingFile-${ctx:ThreadName}_error"
@@ -22,18 +21,24 @@
 						<ThresholdFilter level="ERROR" onMatch="ACCEPT"
 							onMismatch="DENY" />
 						<PatternLayout
-							pattern="%d{yyyy.MM.dd HH:mm:ss z} %t %-5level %class{36} %L %M - %msg%xEx%n" />
+							pattern="%d [%t] %-5p [%c] - %m%n" />
 						<Policies>
 							<SizeBasedTriggeringPolicy size="100M" />
 						</Policies>
 						<DefaultRolloverStrategy max="100" />
 					</RollingFile>
+				</Route>
+			</Routes>
+		</Routing >
+		<Routing name="thread2">
+			<Routes pattern="$${ctx:ThreadName}">
+				<Route>
 					<RollingFile name="RollingFile-${ctx:ThreadName}"
 						fileName="${logFilePath}/${ctx:ThreadName}.log"
 						filePattern="${logFilePath}/${ctx:ThreadName}-%d{HH-mm-ss}.log"
 						append="false">
 						<PatternLayout
-							pattern="%d{yyyy.MM.dd HH:mm:ss z} %t %-5level %class{36} %L %M - %msg%xEx%n" />
+							pattern="%d [%t] %-5p [%c] - %m%n" />
 						<Policies>
 							<SizeBasedTriggeringPolicy size="100M" />
 						</Policies>
@@ -49,7 +54,8 @@
 		<Root level="DEBUG" includeLocation="true">
 			<!--AppenderRef中的ref值必须是在前面定义的appenders -->
 			<AppenderRef ref="ConsolePrint" />
-			<AppenderRef ref="thread" />
+			<AppenderRef ref="thread1" />
+			<AppenderRef ref="thread2" />
 		</Root>
 	</Loggers>
 </Configuration>
