@@ -5,18 +5,33 @@
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
   </listeners>
-  <test name="OPPOR9tm">
-    <parameter name="deviceName" value="LenovoK32c36"/>
+  <test name="vivoX9">
+    <parameter name="deviceName" value="vivoX9"/>
     <classes>
       <class name="gby.testng.testcase.InitDriverCase"/>
       <class name="gby.testng.testcase.OpenHousePageCase"/>
     </classes>
-  </test> <!-- OPPOR9tm -->
-  <test name="LenovoK32c36">
+  </test> <!-- vivoX9 -->
+  <test name="GiONEE_GN5001S">
     <parameter name="deviceName" value="GiONEE_GN5001S"/>
     <classes>
       <class name="gby.testng.testcase.InitDriverCase"/>
       <class name="gby.testng.testcase.LoginCase"/>
     </classes>
-  </test> <!-- LenovoK32c36 -->
+  </test> <!-- GiONEE_GN5001S -->
+  <test name="vivoX9(failed)" parallel="tests">
+    <parameter name="deviceName" value="vivoX9"/>
+    <classes>
+      <class name="gby.testng.testcase.InitDriverCase">
+        <methods>
+          <include name="setDown"/>
+        </methods>
+      </class> <!-- gby.testng.testcase.InitDriverCase -->
+      <class name="gby.testng.testcase.OpenHousePageCase">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- gby.testng.testcase.OpenHousePageCase -->
+    </classes>
+  </test> <!-- vivoX9(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,4 @@
+2018-08-10 16:41:46,300 [OPPOR9tm] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 31] - deviceName: OPPOR9tm
+2018-08-10 16:41:46,449 [OPPOR9tm] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.60:5555]
+2018-08-10 16:41:46,572 [OPPOR9tm] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.60:5555
+2018-08-10 16:41:49,789 [OPPOR9tm] INFO  [gby.appium.ui.SetUpDriver.<init>() Line: 51] - 启动appiumServer

@@ -1,20 +1,30 @@
 package gby.appium.utils;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.List;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.SequenceInputStream;
+import java.lang.reflect.Field;
+import java.util.concurrent.locks.ReentrantLock;
+
+import org.apache.logging.log4j.ThreadContext;
+import org.apache.logging.log4j.spi.ThreadContextMap;
 
 import gby.appium.ui.DevicesManager;
-import net.bytebuddy.implementation.bind.annotation.Super;
 import gby.appium.ui.Device;
 
 public class DevicesConnect extends DevicesManager {
 
 	public Device device;
+	private Process prs ;
+	public ReentrantLock serverLock = new ReentrantLock();
+ 
 
 	public DevicesConnect(String deviceName) {
 		super();
 		device = fromJsonfileGetDevices().get(deviceName);
-		
+
 	}
 
 	public DevicesConnect(String path, String deviceName) {
@@ -32,7 +42,7 @@ public class DevicesConnect extends DevicesManager {
 				cmd.runCommandThruProcess("adb -s " + device.getUdid() + " tcpip 5555");
 				Thread.sleep(1000);
 				cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
-			} catch (NullPointerException  | InterruptedException e) {
+			} catch (NullPointerException | InterruptedException e) {
 				// TODO: handle exception
 				LoggerUtil.error("无法连接设备，确认设备名称无误，尝试usb连接电脑再运行一次：" + e.getMessage());
 			}
@@ -64,20 +74,78 @@ public class DevicesConnect extends DevicesManager {
 		}
 	}
 
-	public void setUpAppiumServer() {
+	public void startServer() {
+		
+		serverLock.lock();
+		ThreadContext.put("ThreadName", Thread.currentThread().getName());
+		
+			try {
+				prs = cmd.runCmdToProcess("appium -a 127.0.0.1 -p " + device.getApmsrv_port() + " -U "
+						+device.getIp() + ":5555" + " -bp " + device.getApmsrv_bp());
+				InputStream inputStream = prs.getInputStream();
+				InputStream errorStream = prs.getErrorStream();
+				SequenceInputStream sis = new SequenceInputStream
+		        		(inputStream, errorStream);
+				BufferedReader reader = new BufferedReader(new InputStreamReader(sis,"gbk"));
+				String line;
+				while ((line = reader.readLine()) != null) {
+					LoggerUtil.debug(line);
+					if(line.contains("listener started")) {
+						LoggerUtil.info("appiumServer已启动");
+						serverLock.unlock();
+					}
+					if(line.contains("Could not start")) {
+						LoggerUtil.error("appiumServer无法启动，可能是已存在");
+						serverLock.unlock();
+					}
+				}
+				prs.waitFor();
+				Thread.sleep(2000);
+				LoggerUtil.debug("Stop appium server");
+				inputStream.close();
+				reader.close();
+				prs.destroy();
+			} catch (IOException | InterruptedException e) {
+				// TODO Auto-generated catch block
+				LoggerUtil.error("appiumServer运行出错",e);
+			}
 
-		try {
-			cmd.runCmdServer("appium -a 127.0.0.1 -p " + device.getApmsrv_port() + " -U " + device.getIp()
-					+ ":5555" + " -bp " + device.getApmsrv_bp());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+}
+
+	public void stopServer() {
+
+		if (prs != null) {
+			System.out.println(prs);
+			prs.destroy();
+
+/*			long pid = -1;
+			Field field = null;
+			try {
+				field = prs.getClass().getDeclaredField("handle");
+				field.setAccessible(true);
+				pid = Kernel32.INSTANCE.GetProcessId((Long) field.get(prs));
+				cmd.runCommandThruProcess("taskkill /F /PID "+pid);
+				LoggerUtil.debug(pid+"");
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}*/
+			cmd.runCommandThruProcess("taskkill /F /IM node.exe");
+
+			
 		}
 	}
 
+//public void stopServer(String port) {
+//    Process process = processHashMap.get(port);
+//    stopServer(process);
+//    processHashMap.remove(port);
+//    LoggerUtil.debug("停止appiumServer");
+//}
+
+	
 	public void setDownAllCommand() {
-		cmd.runCommandThruProcess("taskkill /F /IM adb.exe");
-		cmd.runCommandThruProcess("taskkill /F /IM node.exe");
+//		cmd.runCommandThruProcess("taskkill /F /IM node.exe");
+		stopServer();	
 	}
 
 }

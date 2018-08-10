@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 09 17:02:10 CST 2018</td>
+<td>Started on:</td><td>Fri Aug 10 20:07:13 CST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2194 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4539 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,40 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='gby.testng.testcase.InitDriverCase.f()'><b>f</b><br>Test class: gby.testng.testcase.InitDriverCase<br>Parameters: GiONEE_GN5001S<br/>
-<a href="#Output-1750498848" onClick='toggleBox("Output-1750498848", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1578009262" onClick='toggleBox("Output-1578009262", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1750498848" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1750498848">
+<a href="#Output-1578009262" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1578009262">
+[debug] deviceName: GiONEE_GN5001S<br/>
 [debug] 执行命令：[cmd, /c, adb connect 192.168.20.138:5555]<br/>
 [debug] 命令结果：already connected to 192.168.20.138:5555<br/>
+[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 4996 -U 192.168.20.138:5555 -bp 4997]<br/>
+[debug] [35m[Appium][39m Welcome to Appium v1.8.1<br/>
+[debug] [35m[Appium][39m Non-default server args:<br/>
+[debug] [35m[Appium][39m   address: 127.0.0.1<br/>
+[debug] [35m[Appium][39m   port: 4996<br/>
+[debug] [35m[Appium][39m   bootstrapPort: 4997<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.138:5555<br/>
+[debug] [35m[Appium][39m Deprecated server args:<br/>
+[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.138:5555"}'<br/>
+[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.138:5555<br/>
+[debug] [35m[HTTP][39m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.<br/>
+[error] appiumServer无法启动，可能是已存在<br/>
+[debug] Fatal Error: listen EADDRINUSE 127.0.0.1:4996<br/>
+[debug]     at Object._errnoException (util.js:992:11)<br/>
+[debug]     at _exceptionWithHostPort (util.js:1014:20)<br/>
+[debug]     at Server.setupListenHandle [as _listen2] (net.js:1355:14)<br/>
+[debug]     at listenInCluster (net.js:1396:12)<br/>
+[debug]     at doListen (net.js:1505:7)<br/>
+[debug]     at _combinedTickCallback (internal/process/next_tick.js:141:11)<br/>
+[debug]     at process._tickCallback (internal/process/next_tick.js:180:9)<br/>
+[error] 初始化driver失败<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-	at java.util.Optional.orElseGet(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)
-	at gby.appium.ui.InitAppStart.&lt;init&gt;(InitAppStart.java:41)
-	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:32)
+<td><div><pre>java.lang.NoSuchMethodError
+	at java.lang.Thread.destroy(Unknown Source)
+	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -127,64 +134,10 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	... 36 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1750498848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1750498848'><pre>org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-	at java.util.Optional.orElseGet(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)
-	at gby.appium.ui.InitAppStart.&lt;init&gt;(InitAppStart.java:41)
-	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1578009262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1578009262'><pre>java.lang.NoSuchMethodError
+	at java.lang.Thread.destroy(Unknown Source)
+	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -209,47 +162,31 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	... 36 more
 </pre></div></td>
-<td>2</td>
-<td>gby.testng.testcase.InitDriverCase@74e52303</td></tr>
+<td>4</td>
+<td>gby.testng.testcase.InitDriverCase@4883b407</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gby.testng.testcase.InitDriverCase.setDown()'><b>setDown</b><br>Test class: gby.testng.testcase.InitDriverCase<br/>
+<a href="#Output-691691381" onClick='toggleBox("Output-691691381", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-691691381" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-691691381">
+[debug] 执行命令：[cmd, /c, taskkill /F /PID 12044]<br/>
+[debug] 命令结果：����: û���ҵ����� "12044"��<br/>
+[debug] 12044<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>gby.testng.testcase.InitDriverCase@4883b407</td></tr>
 </table><p>
 </body>
 </html>

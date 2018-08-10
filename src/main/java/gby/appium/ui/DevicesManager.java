@@ -100,7 +100,7 @@ public class DevicesManager {
 
 	public  void flashDeviceInfo() {
 		
-		List<String> adbUdids = cmd.adbDevices();
+		List<String> adbUdids = adbDevices();
 		JSONObject adbDevices = new JSONObject();
 		JSONObject adbDevice = null;
 		
@@ -144,5 +144,25 @@ public class DevicesManager {
 		return ip;
 
 	}
+    public List<String> adbDevices() {
+    	
+        List<String> devicesList = new ArrayList<String>();
+    	List<String> devicesCom = new ArrayList<String>();
+		devicesCom = cmd.runCommand("adb devices");
+    	for (String str : devicesCom) {
+    		if (!Pattern.compile("\\.").matcher(str).find()) {
+        		if (str.contains("List")) {
+        			continue;	
+        		} else if (str.contains("device")) {
+        			devicesList.add(str.split("device")[0].replaceAll("\\s", ""));
+        		} else {
+        			System.out.println("设备未确认秘钥连接或其他错误：" + str);
+        		}
+    		}
+    		}
+    	LoggerUtil.debug(devicesList.toString());
+		return devicesList;
+    }
+
 
 }

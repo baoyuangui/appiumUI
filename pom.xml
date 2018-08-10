@@ -112,6 +112,13 @@
     <version>1.18.0</version>
     <scope>provided</scope>
 </dependency>   <!--为了实现日志按线程分离记录 -->
+
+
+<dependency>
+    <groupId>net.java.dev.jna</groupId>
+    <artifactId>jna</artifactId>
+    <version>4.1.0</version>
+</dependency><!-- 为了获取processID，杀掉相应系统进程  -->
 		
 	</dependencies>
 

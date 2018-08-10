@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>TestNG:  GiONEE_GN5001S</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GiONEE_GN5001S</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 10 20:23:44 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23737 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gby.testng.testcase.InitDriverCase.f()'><b>f</b><br>Test class: gby.testng.testcase.InitDriverCase<br>Parameters: GiONEE_GN5001S<br/>
+<a href="#Output-1256303977" onClick='toggleBox("Output-1256303977", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1256303977" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1256303977">
+[debug] deviceName: GiONEE_GN5001S<br/>
+[debug] 执行命令：[cmd, /c, adb connect 192.168.20.138:5555]<br/>
+[debug] 命令结果：already connected to 192.168.20.138:5555<br/>
+[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 4996 -U 192.168.20.138:5555 -bp 4997]<br/>
+[debug] [35m[Appium][39m Welcome to Appium v1.8.1<br/>
+[debug] [35m[Appium][39m Non-default server args:<br/>
+[debug] [35m[Appium][39m   address: 127.0.0.1<br/>
+[debug] [35m[Appium][39m   port: 4996<br/>
+[debug] [35m[Appium][39m   bootstrapPort: 4997<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.138:5555<br/>
+[debug] [35m[Appium][39m Deprecated server args:<br/>
+[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.138:5555"}'<br/>
+[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.138:5555<br/>
+[debug] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4996<br/>
+[info] appiumServer已启动<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m<br/>
+[debug] [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"5.1","automationName":"Appium","platformName":"Android","udid":"192.168.20.138:5555","deviceName":"GiONEE_GN5001S"},"capabilities":{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"Appium","appium:deviceName":"GiONEE_GN5001S","platformName":"android","appium:platformVersion":"5.1","appium:udid":"192.168.20.138:5555"},"firstMatch":[{}]}}[39m<br/>
+[debug] [debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"5.1","automationName":"Appium","platformName":"Android","udid":"192.168.20.138:5555","deviceName":"GiONEE_GN5001S"},null,{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"Appium","appium:deviceName":"GiONEE_GN5001S","platformName":"android","appium:platformVersion":"5.1","appium:udid":"192.168.20.138:5555"},"firstMatch":[{}]}]<br/>
+[debug] [debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1533903829686 (20:23:49 GMT+0800 (涓浗鏍囧噯鏃堕棿))<br/>
+[debug] [35m[BaseDriver][39m The capabilities ["udid"] are not standard capabilities and should have an extension prefix<br/>
+[debug] [35m[Appium][39m Creating new AndroidDriver (v2.7.0) session<br/>
+[debug] [35m[Appium][39m Capabilities:<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.138:5555<br/>
+[debug] [35m[Appium][39m   platformName: android<br/>
+[debug] [35m[Appium][39m   app: D:\git\Appium/src/main/resources/hizhu.apk<br/>
+[debug] [35m[Appium][39m   appActivity: com.loulifang.house.activities.TMainActivity<br/>
+[debug] [35m[Appium][39m   appPackage: com.loulifang.house<br/>
+[debug] [35m[Appium][39m   automationName: Appium<br/>
+[debug] [35m[Appium][39m   deviceName: GiONEE_GN5001S<br/>
+[debug] [35m[Appium][39m   platformVersion: 5.1<br/>
+[debug] [debug] [35m[BaseDriver][39m W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities [object Object] were provided<br/>
+[debug] [debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...<br/>
+[debug] [35m[BaseDriver][39m Session created with session id: 4c9c8cd8-cccd-40fa-90ef-cbb868595e77<br/>
+[debug] [debug] [35m[AndroidDriver][39m Getting Java version<br/>
+[debug] [35m[AndroidDriver][39m Java version is: 1.8.0_171<br/>
+[debug] <br/>
+[debug] [35m[ADB][39m Checking whether adb is present<br/>
+[debug] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Administrator\AppData\Local\Android\android-sdk' (newest first):<br/>
+[debug] [35m[ADB][39m     C:/Users/Administrator/AppData/Local/Android/android-sdk/build-tools/28.0.1<br/>
+[debug] [35m[ADB][39m Using adb.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe<br/>
+[debug] [35m[AndroidDriver][39m Retrieving device list<br/>
+[debug] [debug] [35m[ADB][39m Trying to find a connected android device<br/>
+[debug] [debug] [35m[ADB][39m Getting connected devices...<br/>
+[debug] [debug] [35m[ADB][39m 2 device(s) connected<br/>
+[debug] [35m[AndroidDriver][39m Using device: 192.168.20.138:5555<br/>
+[debug] [debug] [35m[ADB][39m Setting device id to 192.168.20.138:5555<br/>
+[debug] [35m[BaseDriver][39m Using local app 'D:\git\Appium/src/main/resources/hizhu.apk'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Checking whether app is actually present<br/>
+[debug] [35m[AndroidDriver][39m Starting Android session<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 wait-for-device'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell echo ping'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Pushing settings apk to device...<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for io.appium.settings<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell pm list packages io.appium.settings'<br/>
+[debug] [debug] [35m[ADB][39m App is installed<br/>
+[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.settings'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell dumpsys package io.appium.settings'<br/>
+[debug] [35m[ADB][39m Checking whether aapt is present<br/>
+[debug] [35m[ADB][39m Using aapt.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\aapt.exe<br/>
+[debug] [debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell ps'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell getprop ro.build.version.sdk'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22<br/>
+[debug] [debug] [35m[ADB][39m Device API level: 22<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'<br/>
+[debug] [debug] [35m[ADB][39m Device API level: 22<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell settings put secure mock_location 1'<br/>
+[debug] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.<br/>
+[debug] [35m[AndroidDriver][39m Got language: 'null' and country: 'null'<br/>
+[debug] [debug] [35m[Logcat][39m Starting logcat capture<br/>
+[debug] [debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for io.appium.unlock<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell pm list packages io.appium.unlock'<br/>
+[debug] [debug] [35m[ADB][39m App is installed<br/>
+[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell dumpsys package io.appium.unlock'<br/>
+[debug] [debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')<br/>
+[debug] [35m[ADB][39m Getting device platform version<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell getprop ro.build.version.release'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.release': 5.1<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell wm size'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell getprop ro.product.model'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.product.model': GN5001S<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell getprop ro.product.manufacturer'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': GiONEE<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell pm list packages com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m App is installed<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell pm list packages com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m App is installed<br/>
+[debug] [debug] [35m[ADB][39m Getting package info for 'com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell dumpsys package com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m The installed 'com.loulifang.house' package does not require upgrade (58 > 56)<br/>
+[debug] [35m[AndroidDriver][39m Performing fast reset on 'com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell pm list packages com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m App is installed<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell am force-stop com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell pm clear com.loulifang.house'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.loulifang.house' application (stop and clear)<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell rm -rf /data/local/tmp/strings.json'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Extracting strings from apk<br/>
+[debug] [debug] [35m[AndroidDriver][39m D:\git\Appium/src/main/resources/hizhu.apk<br/>
+[debug] [debug] [35m[AndroidDriver][39m null<br/>
+[debug] [debug] [35m[AndroidDriver][39m C:\Users\ADMINI~1\AppData\Local\Temp\com.loulifang.house<br/>
+[debug] [debug] [35m[ADB][39m Extracting strings for language: default<br/>
+[debug] [35m[ADB][39m Successfully extracted 457 strings from 'D:\git\Appium/src/main/resources/hizhu.apk' resources for '(default)' configuration<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 push C\:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\com.loulifang.house\\strings.json /data/local/tmp'<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect<br/>
+[debug] [debug] [35m[ADB][39m Forwarding system: 4997 to device: 4724<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 forward tcp\:4997 tcp\:4724'<br/>
+[debug] [debug] [35m[UiAutomator][39m Starting UiAutomator<br/>
+[debug] [debug] [35m[UiAutomator][39m Moving to state 'starting'<br/>
+[debug] [debug] [35m[UiAutomator][39m Parsing uiautomator jar<br/>
+[debug] [debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 push C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar /data/local/tmp/'<br/>
+[debug] [debug] [35m[ADB][39m Attempting to kill all uiautomator processes<br/>
+[debug] [debug] [35m[ADB][39m Getting all processes with uiautomator<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell ps'<br/>
+[debug] [35m[ADB][39m No uiautomator process found to kill, continuing...<br/>
+[debug] [debug] [35m[UiAutomator][39m Starting UIAutomator<br/>
+[debug] [debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","192.168.20.138:5555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.loulifang.house","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]<br/>
+[debug] [debug] [35m[UiAutomator][39m Moving to state 'online'<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] json loading complete.<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.<br/>
+[debug] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell dumpsys window'<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected<br/>
+[debug] [35m[AndroidDriver][39m Screen already unlocked, doing nothing<br/>
+[debug] [debug] [35m[ADB][39m Device API level: 22<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.138\:5555 shell am start -W -n com.loulifang.house/com.loulifang.house.activities.TMainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'<br/>
+[debug] [35m[Appium][39m New AndroidDriver session created successfully, session 4c9c8cd8-cccd-40fa-90ef-cbb868595e77 added to master session list<br/>
+[debug] [debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1533903846538 (20:24:06 GMT+0800 (涓浗鏍囧噯鏃堕棿))<br/>
+[debug] [debug] [35m[W3C][39m Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","udid":"192.168.20.138:5555","app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","automationName":"Appium","deviceName":"GiONEE_GN5001S","platformVersion":"5.1"},"platformName":"android","udid":"192.168.20.138:5555","app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","automationName":"Appium","deviceName":"192.168.20.138:5555","platformVersion":"5.1","deviceUDID":"192.168.20.138:5555","deviceScreenSize":"720x1280","deviceModel":"GN5001S","deviceManufacturer":"GiONEE"}}<br/>
+[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m16864 ms - 975[39m<br/>
+[debug] [35m[HTTP][39m [90m[39m<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77[39m<br/>
+[debug] [35m[HTTP][39m [90m{}[39m<br/>
+[debug] [debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["4c9c8cd8-cccd-40fa-90ef-cbb868595e77"]<br/>
+[debug] [debug] [35m[W3C][39m Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","udid":"192.168.20.138:5555","app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","automationName":"Appium","deviceName":"GiONEE_GN5001S","platformVersion":"5.1"},"platformName":"android","udid":"192.168.20.138:5555","app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","automationName":"Appium","deviceName":"192.168.20.138:5555","platformVersion":"5.1","deviceUDID":"192.168.20.138:5555","deviceScreenSize":"720x1280","deviceModel":"GN5001S","deviceManufacturer":"GiONEE"}<br/>
+[debug] [35m[HTTP][39m [37m<-- GET /wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77 [39m[32m200[39m [90m10 ms - 907[39m<br/>
+[debug] [35m[HTTP][39m [90m[39m<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77[39m<br/>
+[debug] [35m[HTTP][39m [90m{}[39m<br/>
+[debug] [debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["4c9c8cd8-cccd-40fa-90ef-cbb868595e77"]<br/>
+[debug] [debug] [35m[W3C][39m Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","udid":"192.168.20.138:5555","app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","automationName":"Appium","deviceName":"GiONEE_GN5001S","platformVersion":"5.1"},"platformName":"android","udid":"192.168.20.138:5555","app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","automationName":"Appium","deviceName":"192.168.20.138:5555","platformVersion":"5.1","deviceUDID":"192.168.20.138:5555","deviceScreenSize":"720x1280","deviceModel":"GN5001S","deviceManufacturer":"GiONEE"}<br/>
+[debug] [35m[HTTP][39m [37m<-- GET /wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77 [39m[32m200[39m [90m3 ms - 907[39m<br/>
+[debug] [35m[HTTP][39m [90m[39m<br/>
+[info] AndroidDriver初始化完成，打开app成功<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77/element[39m<br/>
+[debug] [35m[HTTP][39m [90m{"using":"id","value":"com.loulifang.house:id/mineLyt"}[39m<br/>
+[debug] [debug] [35m[W3C][39m Calling AppiumDriver.findElement() with args: ["id","com.loulifang.house:id/mineLyt","4c9c8cd8-cccd-40fa-90ef-cbb868595e77"]<br/>
+[debug] [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator<br/>
+[debug] [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.loulifang.house:id/mineLyt","context":"","multiple":false}}<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.loulifang.house:id/mineLyt","context":"","multiple":false}}<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.loulifang.house:id/mineLyt' using 'ID' with the contextId: '' multiple: false<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.loulifang.house:id/mineLyt]<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77/element[39m<br/>
+[debug] [35m[HTTP][39m [90m{"using":"id","value":"com.loulifang.house:id/llItem"}[39m<br/>
+[debug] [debug] [35m[W3C][39m Calling AppiumDriver.findElement() with args: ["id","com.loulifang.house:id/llItem","4c9c8cd8-cccd-40fa-90ef-cbb868595e77"]<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.loulifang.house:id/mineLyt' using 'ID' with the contextId: '' multiple: false<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.loulifang.house:id/mineLyt]<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Received command result from bootstrap<br/>
+[debug] [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator<br/>
+[debug] [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.loulifang.house:id/llItem","context":"","multiple":false}}<br/>
+[debug] [debug] [35m[W3C][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"1"}<br/>
+[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77/element [39m[32m200[39m [90m1505 ms - 53[39m<br/>
+[debug] [35m[HTTP][39m [90m[39m<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.loulifang.house:id/llItem","context":"","multiple":false}}<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77/element/1/click[39m<br/>
+[debug] [35m[HTTP][39m [90m{"id":"1"}[39m<br/>
+[debug] [debug] [35m[W3C][39m Calling AppiumDriver.click() with args: ["1","4c9c8cd8-cccd-40fa-90ef-cbb868595e77"]<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.loulifang.house:id/llItem' using 'ID' with the contextId: '' multiple: false<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.loulifang.house:id/llItem]<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Received command result from bootstrap<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}<br/>
+[debug] [debug] [35m[W3C][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"2"}<br/>
+[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77/element [39m[32m200[39m [90m1579 ms - 53[39m<br/>
+[debug] [35m[HTTP][39m [90m[39m<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77/element/2/click[39m<br/>
+[debug] [35m[HTTP][39m [90m{"id":"2"}[39m<br/>
+[debug] [debug] [35m[W3C][39m Calling AppiumDriver.click() with args: ["2","4c9c8cd8-cccd-40fa-90ef-cbb868595e77"]<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Received command result from bootstrap<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}<br/>
+[debug] [debug] [35m[W3C][39m Responding to client with driver.click() result: true<br/>
+[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session/4c9c8cd8-cccd-40fa-90ef-cbb868595e77/element/1/click [39m[32m200[39m [90m547 ms - 14[39m<br/>
+[debug] [35m[HTTP][39m [90m[39m<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION<br/>
+[debug] [debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>gby.testng.testcase.InitDriverCase@2c5529ab</td></tr>
+<tr>
+<td title='gby.testng.testcase.LoginCase.f()'><b>f</b><br>Test class: gby.testng.testcase.LoginCase</td>
+<td></td>
+<td>2</td>
+<td>gby.testng.testcase.LoginCase@39a8312f</td></tr>
+</table><p>
+</body>
+</html>

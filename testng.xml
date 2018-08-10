@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="tests">
 
-	<test name="OPPOR9tm">
+	<test name="vivoX9">
 <!-- 		设备id及对应的server端口 -->
-		<parameter name="deviceName" value="LenovoK32c36" />
+		<parameter name="deviceName" value="vivoX9" />
 		<classes>
 			<class name="gby.testng.testcase.InitDriverCase" />
 			<class name="gby.testng.testcase.OpenHousePageCase" />
 		</classes>
 	</test>
 
-	<test name="LenovoK32c36">
+	<test name="GiONEE_GN5001S">
 <!-- 		设备id及对应的server端口 -->
 		<parameter name="deviceName" value="GiONEE_GN5001S" />
 		<classes>
@@ -59,7 +59,7 @@
 <!-- 	</test> -->
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="com.uiframe.testng.TestNGListener" />
+<!-- 		<listener class-name="com.uiframe.testng.TestNGListener" /> -->
 <!-- 		<listener class-name="com.uiframe.testng.RetryListener" /> -->
 
 	</listeners>

@@ -29,6 +29,16 @@
 		"name": "Huawei_H60-L01",
 		"udid": "7N2SSE154L033031"
 	},
+	"vivoX9": {
+		"apmsrv_port": 4597,
+		"os_ver": "7.1.2",
+		"screenSize": " 1080_1920",
+		"os": "android",
+		"ip": "192.168.20.24",
+		"apmsrv_bp": 4598,
+		"name": "vivoX9",
+		"udid": "6b00d640"
+	},
 	"LenovoK32c36": {
 		"apmsrv_port": 5007,
 		"os_ver": "5.1.1",

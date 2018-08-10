@@ -1,0 +1,464 @@
+<html>
+<head>
+<title>TestNG:  Huawei_H60-L01</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Huawei_H60-L01</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 10 17:25:31 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>231 seconds (231861 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gby.testng.testcase.InitDriverCase.setDown()'><b>setDown</b><br>Test class: gby.testng.testcase.InitDriverCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at gby.testng.testcase.InitDriverCase.setDown(InitDriverCase.java:42)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1868454849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1868454849'><pre>java.lang.NullPointerException
+	at gby.testng.testcase.InitDriverCase.setDown(InitDriverCase.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:636)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gby.testng.testcase.InitDriverCase.f()'><b>f</b><br>Test class: gby.testng.testcase.InitDriverCase<br>Parameters: Huawei_H60-L01<br/>
+<a href="#Output-893448157" onClick='toggleBox("Output-893448157", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-893448157" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-893448157">
+[debug] deviceName: Huawei_H60-L01<br/>
+[debug] 执行命令：[cmd, /c, adb connect 192.168.20.210:5555]<br/>
+[debug] 命令结果：connected to 192.168.20.210:5555<br/>
+[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 5098 -U 192.168.20.210:5555 -bp 5099]<br/>
+[debug] [35m[Appium][39m Welcome to Appium v1.8.1<br/>
+[debug] [35m[Appium][39m Non-default server args:<br/>
+[debug] [35m[Appium][39m   address: 127.0.0.1<br/>
+[debug] [35m[Appium][39m   port: 5098<br/>
+[debug] [35m[Appium][39m   bootstrapPort: 5099<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.210:5555<br/>
+[debug] [35m[Appium][39m Deprecated server args:<br/>
+[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.210:5555"}'<br/>
+[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.210:5555<br/>
+[debug] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:5098<br/>
+[info] appiumServer已启动<br/>
+[info] 启动appiumServer<br/>
+[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m<br/>
+[debug] [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"4.4.2","automationName":"Appium","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.210:5555","deviceName":"Huawei_H60-L01","resetKeyboard":true},"capabilities":{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"Appium","appium:deviceName":"Huawei_H60-L01","platformName":"android","appium:platformVersion":"4.4.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.210:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}}[39m<br/>
+[debug] [debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"4.4.2","automationName":"Appium","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.210:5555","deviceName":"Huawei_H60-L01","resetKeyboard":true},null,{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"Appium","appium:deviceName":"Huawei_H60-L01","platformName":"android","appium:platformVersion":"4.4.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.210:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}]<br/>
+[debug] [debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1533893135874 (17:25:35 GMT+0800 (中国标准时间))<br/>
+[debug] [35m[BaseDriver][39m The capabilities ["udid"] are not standard capabilities and should have an extension prefix<br/>
+[debug] [35m[Appium][39m Creating new AndroidDriver (v2.7.0) session<br/>
+[debug] [35m[Appium][39m Capabilities:<br/>
+[debug] [35m[Appium][39m   udid: 192.168.20.210:5555<br/>
+[debug] [35m[Appium][39m   platformName: android<br/>
+[debug] [35m[Appium][39m   app: D:\git\Appium/src/main/resources/hizhu.apk<br/>
+[debug] [35m[Appium][39m   appActivity: com.loulifang.house.activities.TMainActivity<br/>
+[debug] [35m[Appium][39m   appPackage: com.loulifang.house<br/>
+[debug] [35m[Appium][39m   automationName: Appium<br/>
+[debug] [35m[Appium][39m   deviceName: Huawei_H60-L01<br/>
+[debug] [35m[Appium][39m   platformVersion: 4.4.2<br/>
+[debug] [35m[Appium][39m   resetKeyboard: true<br/>
+[debug] [35m[Appium][39m   unicodeKeyboard: true<br/>
+[debug] [debug] [35m[BaseDriver][39m W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities [object Object] were provided<br/>
+[debug] [debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...<br/>
+[debug] [35m[BaseDriver][39m Session created with session id: ae39156f-6712-42e9-a15a-daf0cb8061e9<br/>
+[debug] [debug] [35m[AndroidDriver][39m Getting Java version<br/>
+[debug] [35m[AndroidDriver][39m Java version is: 1.8.0_171<br/>
+[debug] <br/>
+[debug] [35m[ADB][39m Checking whether adb is present<br/>
+[debug] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Administrator\AppData\Local\Android\android-sdk' (newest first):<br/>
+[debug] [35m[ADB][39m     C:/Users/Administrator/AppData/Local/Android/android-sdk/build-tools/28.0.1<br/>
+[debug] [35m[ADB][39m Using adb.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe<br/>
+[debug] [35m[AndroidDriver][39m Retrieving device list<br/>
+[debug] [debug] [35m[ADB][39m Trying to find a connected android device<br/>
+[debug] [debug] [35m[ADB][39m Getting connected devices...<br/>
+[debug] [debug] [35m[ADB][39m 3 device(s) connected<br/>
+[debug] [35m[AndroidDriver][39m Using device: 192.168.20.210:5555<br/>
+[debug] [debug] [35m[ADB][39m Setting device id to 192.168.20.210:5555<br/>
+[debug] [35m[BaseDriver][39m Using local app 'D:\git\Appium/src/main/resources/hizhu.apk'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Checking whether app is actually present<br/>
+[debug] [35m[AndroidDriver][39m Starting Android session<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 wait-for-device'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell echo ping'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Pushing settings apk to device...<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for io.appium.settings<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell pm list packages io.appium.settings'<br/>
+[debug] [debug] [35m[ADB][39m App is installed<br/>
+[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.settings'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell dumpsys package io.appium.settings'<br/>
+[debug] [35m[ADB][39m Checking whether aapt is present<br/>
+[debug] [35m[ADB][39m Using aapt.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\aapt.exe<br/>
+[debug] [debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell ps'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell getprop ro.build.version.sdk'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 19<br/>
+[debug] [debug] [35m[ADB][39m Device API level: 19<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'<br/>
+[debug] [debug] [35m[ADB][39m Device API level: 19<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell settings put secure mock_location 1'<br/>
+[debug] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.<br/>
+[debug] [35m[AndroidDriver][39m Got language: 'null' and country: 'null'<br/>
+[debug] [debug] [35m[Logcat][39m Starting logcat capture<br/>
+[debug] [debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support<br/>
+[debug] [debug] [35m[AndroidDriver][39m Pushing unicode ime to device...<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk'<br/>
+[debug] [debug] [35m[ADB][39m Install command stdout: [100%] /data/local/tmp/UnicodeIME-debug.apk<br/>
+[debug] <br/>
+[debug] [debug] [35m[ADB][39m C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: 1 file pushed. 0.0 MB/s (36795 bytes in 0.724s)<br/>
+[debug] <br/>
+[debug] [debug] [35m[ADB][39m 	pkg: /data/local/tmp/UnicodeIME-debug.apk<br/>
+[debug] <br/>
+[debug] <br/>
+[debug] [debug] [35m[ADB][39m Killed<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell settings get secure default_input_method'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Unsetting previous IME io.appium.android.ime/.UnicodeIME<br/>
+[debug] [debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.android.ime/.UnicodeIME'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell ime enable io.appium.android.ime/.UnicodeIME'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell ime set io.appium.android.ime/.UnicodeIME'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for io.appium.unlock<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell pm list packages io.appium.unlock'<br/>
+[debug] [debug] [35m[ADB][39m App is installed<br/>
+[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell dumpsys package io.appium.unlock'<br/>
+[debug] [debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')<br/>
+[debug] [35m[ADB][39m Getting device platform version<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell getprop ro.build.version.release'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.release': 4.4.2<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell wm size'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell getprop ro.product.model'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.product.model': H60-L01<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell getprop ro.product.manufacturer'<br/>
+[debug] [debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': HUAWEI<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell pm list packages com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m App is not installed<br/>
+[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell pm list packages com.loulifang.house'<br/>
+[debug] [debug] [35m[ADB][39m App is not installed<br/>
+[debug] [debug] [35m[ADB][39m App 'D:\git\Appium/src/main/resources/hizhu.apk' not installed. Installing<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 install D\:\\git\\Appium/src/main/resources/hizhu.apk'<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 install D\:\\git\\Appium/src/main/resources/hizhu.apk'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Shutting down Android driver<br/>
+[debug] [debug] [35m[AndroidDriver][39m Called deleteSession but bootstrap wasn't active<br/>
+[debug] [debug] [35m[Logcat][39m Stopping logcat capture<br/>
+[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.210\:5555 shell am force-stop io.appium.unlock'<br/>
+[debug] [debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.<br/>
+[debug] [debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1533893359945 (17:29:19 GMT+0800 (中国标准时间))<br/>
+[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m224147 ms - 1920[39m<br/>
+[debug] [35m[HTTP][39m [90m[39m<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: SetUpDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)
+	at gby.appium.ui.SetUpDriver.&lt;init&gt;(SetUpDriver.java:71)
+	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:36)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+	... 34 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.210\:5555 install D\:\\git\\Appium/src/main/resources/hizhu.apk&apos; timed out after 90000ms&apos;; Stderr: &apos;&apos;; Code: &apos;null&apos;
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: SetUpDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.210\:5555 install D\:\\git\\Appium/src/main/resources/hizhu.apk&apos; timed out after 90000ms&apos;; Stderr: &apos;&apos;; Code: &apos;null&apos;
+    at getResponseForW3CError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:806:13)
+    at asyncHandler$ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:361:37)
+    at tryCatch (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace893448157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace893448157'><pre>org.openqa.selenium.WebDriverException: It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: SetUpDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)
+	at gby.appium.ui.SetUpDriver.&lt;init&gt;(SetUpDriver.java:71)
+	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+	... 34 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.210\:5555 install D\:\\git\\Appium/src/main/resources/hizhu.apk&apos; timed out after 90000ms&apos;; Stderr: &apos;&apos;; Code: &apos;null&apos;
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: SetUpDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.210\:5555 install D\:\\git\\Appium/src/main/resources/hizhu.apk&apos; timed out after 90000ms&apos;; Stderr: &apos;&apos;; Code: &apos;null&apos;
+    at getResponseForW3CError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:806:13)
+    at asyncHandler$ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:361:37)
+    at tryCatch (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	... 39 more
+</pre></div></td>
+<td>228</td>
+<td>gby.testng.testcase.InitDriverCase@22555ebf</td></tr>
+<tr>
+<td title='gby.testng.testcase.OpenHousePageCase.f()'><b>f</b><br>Test class: gby.testng.testcase.OpenHousePageCase</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: Appium, databaseEnabled: false, desired: {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: Appium, deviceName: GiONEE_GN5001S, platformName: android, platformVersion: 5.1, resetKeyboard: true, udid: 192.168.20.138:5555, unicodeKeyboard: true}, deviceManufacturer: GiONEE, deviceModel: GN5001S, deviceName: 192.168.20.138:5555, deviceScreenSize: 720x1280, deviceUDID: 192.168.20.138:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 5.1, resetKeyboard: true, takesScreenshot: true, udid: 192.168.20.138:5555, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 342c815a-1382-43fc-aaa8-8657e393ebd6
+*** Element info: {Using=id, value=com.loulifang.house:id/llItem}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at gby.testng.testcase.OpenHousePageCase.f(OpenHousePageCase.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1884103109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1884103109'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.91&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: Appium, databaseEnabled: false, desired: {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: Appium, deviceName: GiONEE_GN5001S, platformName: android, platformVersion: 5.1, resetKeyboard: true, udid: 192.168.20.138:5555, unicodeKeyboard: true}, deviceManufacturer: GiONEE, deviceModel: GN5001S, deviceName: 192.168.20.138:5555, deviceScreenSize: 720x1280, deviceUDID: 192.168.20.138:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 5.1, resetKeyboard: true, takesScreenshot: true, udid: 192.168.20.138:5555, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 342c815a-1382-43fc-aaa8-8657e393ebd6
+*** Element info: {Using=id, value=com.loulifang.house:id/llItem}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at gby.testng.testcase.OpenHousePageCase.f(OpenHousePageCase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>gby.testng.testcase.OpenHousePageCase@36ebc363</td></tr>
+</table><p>
+</body>
+</html>
