@@ -11,9 +11,9 @@
 		</classes>
 	</test>
 
-	<test name="GiONEE_GN5001S">
+	<test name="GiONEE_GN5001S ">
 <!-- 		设备id及对应的server端口 -->
-		<parameter name="deviceName" value="GiONEE_GN5001S" />
+		<parameter name="deviceName" value="GiONEE_GN5001S " />
 		<classes>
 			<class name="gby.testng.testcase.InitDriverCase" />
 			<class name="gby.testng.testcase.LoginCase" />
