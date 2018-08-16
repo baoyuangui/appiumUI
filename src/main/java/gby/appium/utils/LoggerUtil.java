@@ -6,6 +6,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Reporter;
 
+
+
+
+
+
 /**
  * Gjp日志工具类 {logger name 值为 [className].[methodName]() Line: [fileLine]} <br/>
  * 若要自定义可配置打印出执行的方法名和执行行号位置等信息，请参考RequestLoggerLogger.java<br/>
@@ -21,6 +26,7 @@ public class LoggerUtil {
 	 * @author yzChen
 	 * @date 2016年10月13日 下午11:50:59
 	 */
+
 	public static StackTraceElement findCaller() {
 		// 获取堆栈信息
 		StackTraceElement[] callStack = Thread.currentThread().getStackTrace();
@@ -75,6 +81,7 @@ public class LoggerUtil {
 		return log;
 	}
 
+
 	public static void trace(String msg) {
 //    	if(Config.SCREEN_SHOTPATH == 1)
 //    		trace(msg, null);
@@ -94,6 +101,7 @@ public class LoggerUtil {
 	public static void debug(String msg) {
 		debug(msg, null);
 		Reporter.log("[debug] " + msg);
+		
 	}
 
 	public static void debug(String msg, Throwable e) {

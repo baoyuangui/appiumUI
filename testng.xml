@@ -3,7 +3,6 @@
 <suite name="Suite" parallel="tests">
 
 	<test name="vivoX9">
-<!-- 		设备id及对应的server端口 -->
 		<parameter name="deviceName" value="vivoX9" />
 		<classes>
 			<class name="gby.testng.testcase.InitDriverCase" />
@@ -11,13 +10,14 @@
 		</classes>
 	</test>
 
-	<test name="GiONEE_GN5001S ">
-<!-- 		设备id及对应的server端口 -->
-		<parameter name="deviceName" value="GiONEE_GN5001S " />
-		<classes>
-			<class name="gby.testng.testcase.InitDriverCase" />
-			<class name="gby.testng.testcase.LoginCase" />
-		</classes>
+
+
+	<test name="OPPOR9tm">
+	<parameter name="deviceName" value="OPPOR9tm" />
+	<classes>
+	<class name="gby.testng.testcase.InitDriverCase" />
+	<class name="gby.testng.testcase.LoginCase" />
+	</classes>
 	</test>
 
 
@@ -44,23 +44,23 @@
 	<!-- </classes> -->
 	<!-- </test> -->
 
-<!-- 	<test name="mytest"> -->
-		<!-- 设备id及对应的server端口 -->
-<!-- 		<classes> -->
-<!-- 			<class name="test.testng.parralel.MethodP" /> -->
-<!-- 			<class name="test.testng.parralel.NewTest" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
-<!-- 	<test name="mytest2"> -->
-<!-- 		<classes> -->
-<!-- 			<class name="test.testng.parralel.MethodP" /> -->
-<!-- 			<class name="test.testng.parralel.NewTest" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+	<!-- <test name="mytest"> -->
+	<!-- 设备id及对应的server端口 -->
+	<!-- <classes> -->
+	<!-- <class name="test.testng.parralel.MethodP" /> -->
+	<!-- <class name="test.testng.parralel.NewTest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+	<!-- <test name="mytest2"> -->
+	<!-- <classes> -->
+	<!-- <class name="test.testng.parralel.MethodP" /> -->
+	<!-- <class name="test.testng.parralel.NewTest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-<!-- 		<listener class-name="com.uiframe.testng.TestNGListener" /> -->
-<!-- 		<listener class-name="com.uiframe.testng.RetryListener" /> -->
+		<!-- <listener class-name="com.uiframe.testng.TestNGListener" /> -->
+		<!-- <listener class-name="com.uiframe.testng.RetryListener" /> -->
 
 	</listeners>
 </suite> <!-- Suite -->

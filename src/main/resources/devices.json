@@ -1,4 +1,14 @@
 {
+	"HUAWEINXT-AL10": {
+		"apmsrv_port": 4984,
+		"os_ver": "7.0",
+		"screenSize": " 1080_1920",
+		"os": "android",
+		"ip": "192.168.20.128",
+		"apmsrv_bp": 4985,
+		"name": "HUAWEINXT-AL10",
+		"udid": "5LM0216307001811"
+	},
 	"GiONEE_GN5001S": {
 		"apmsrv_port": 4996,
 		"os_ver": "5.1",
@@ -14,7 +24,7 @@
 		"os_ver": "5.1",
 		"screenSize": " 1080_1920",
 		"os": "android",
-		"ip": "192.168.20.60",
+		"ip": "192.168.20.178",
 		"apmsrv_bp": 4683,
 		"name": "OPPOR9tm",
 		"udid": "MFQ8FMJZJVPNRGZH"
@@ -24,7 +34,7 @@
 		"os_ver": "4.4.2",
 		"screenSize": " 1080_1920",
 		"os": "android",
-		"ip": "192.168.20.210",
+		"ip": "192.168.20.179",
 		"apmsrv_bp": 5099,
 		"name": "Huawei_H60-L01",
 		"udid": "7N2SSE154L033031"
@@ -34,7 +44,7 @@
 		"os_ver": "7.1.2",
 		"screenSize": " 1080_1920",
 		"os": "android",
-		"ip": "192.168.20.24",
+		"ip": "192.168.20.159",
 		"apmsrv_bp": 4598,
 		"name": "vivoX9",
 		"udid": "6b00d640"

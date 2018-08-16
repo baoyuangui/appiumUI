@@ -1,16 +1,14 @@
-package gby.appium.ui;
+package gby.appium.deviceM;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
-import gby.appium.ui.AppiumInit;
-import gby.appium.utils.DevicesConnect;
+
 import gby.appium.utils.LoggerUtil;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -20,13 +18,14 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 public class SetUpDriver {
 
-	public AndroidDriver<AndroidElement> driver;
+//	public AndroidDriver<AndroidElement> driver;
 	public DevicesConnect dc;
 	
 	public SetUpDriver(String deviceName) {
 		dc = new DevicesConnect(deviceName);
 	}
 	public AndroidDriver<AndroidElement> getDriver() throws MalformedURLException {
+	
 		dc.adbConnect();
 		
 		new Thread(new Runnable() {
@@ -56,7 +55,7 @@ public class SetUpDriver {
 		DesiredCapabilities cap = new DesiredCapabilities();
 
 		// 设置启动参数
-		cap.setCapability("automationName", "Appium");
+		cap.setCapability("automationName", "uiautomator2");
 		cap.setCapability("platformName", dc.device.getOs());
 		cap.setCapability("platformVersion", dc.device.getOs_ver());
 		cap.setCapability("deviceName", dc.device.getName());
@@ -64,19 +63,20 @@ public class SetUpDriver {
 		cap.setCapability("app", System.getProperty("user.dir")+"/src/main/resources/hizhu.apk");
 		cap.setCapability("appPackage", "com.loulifang.house");
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
-//		cap.setCapability("unicodeKeyboard", true);
-//		cap.setCapability("resetKeyboard", true);
+		cap.setCapability("unicodeKeyboard", true);
+		cap.setCapability("resetKeyboard", true);
+//		cap.setCapability("systemPort", dc.device.getApmsrv_bp());
 
 		// 初始化AndroidDriver
 		String url = "http://127.0.0.1:" + dc.device.getApmsrv_port() + "/wd/hub";
-		try {
-			driver = new AndroidDriver<AndroidElement>(new URL(url), cap);
+//		try {
+			AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL(url), cap);
 			LoggerUtil.info("AndroidDriver初始化完成，打开app成功");
-			return driver;
-		} catch (Exception e) {
-			// TODO: handle exception
-			LoggerUtil.error("初始化driver失败");
-		}
+//			return driver;
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//			LoggerUtil.error("初始化driver失败");
+//		}
 
 		return driver;
 	}

@@ -1,4 +1,30 @@
-2018-08-10 20:23:45,047 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
-2018-08-10 20:23:45,258 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.24:5555]
-2018-08-10 20:23:45,483 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.24:5555
-2018-08-10 20:24:03,878 [vivoX9] INFO  [gby.appium.ui.SetUpDriver.getDriver() Line: 74] - AndroidDriver初始化完成，打开app成功
+2018-08-15 10:52:49,108 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
+2018-08-15 10:52:49,280 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - ִ�����[cmd, /c, adb connect 192.168.20.159:5555]
+2018-08-15 10:52:49,455 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - ��������already connected to 192.168.20.159:5555
+2018-08-15 10:53:21,927 [vivoX9] INFO  [gby.appium.ui.SetUpDriver.getDriver() Line: 75] - AndroidDriver��ʼ����ɣ���app�ɹ�
+2018-08-16 12:31:30,650 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
+2018-08-16 12:31:30,837 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-08-16 12:32:07,320 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：* daemon not running; starting now at tcp:5037could not read ok from ADB Server* failed to start daemonerror: cannot connect to daemon
+2018-08-16 12:32:07,345 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb devices]
+2018-08-16 12:32:07,918 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommand() Line: 65] - 命令结果：[List of devices attached, ]
+2018-08-16 12:32:07,919 [vivoX9] DEBUG [gby.appium.ui.DevicesManager.adbDevices() Line: 162] - []
+2018-08-16 12:33:05,955 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
+2018-08-16 12:33:06,105 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-08-16 12:33:10,560 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：connected to 192.168.20.159:5555* daemon not running; starting now at tcp:5037* daemon started successfully
+2018-08-16 12:33:47,655 [vivoX9] INFO  [gby.appium.ui.SetUpDriver.getDriver() Line: 76] - AndroidDriver初始化完成，打开app成功
+2018-08-16 12:34:44,345 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
+2018-08-16 12:34:44,523 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-08-16 12:34:44,860 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-08-16 12:36:10,375 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
+2018-08-16 12:36:10,599 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-08-16 12:36:10,861 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-08-16 12:37:06,369 [vivoX9] INFO  [gby.appium.ui.SetUpDriver.getDriver() Line: 76] - AndroidDriver初始化完成，打开app成功
+2018-08-16 12:37:11,659 [vivoX9] INFO  [gby.testng.testcase.OpenHousePageCase] - 点击房源列表，进入房源详情ok
+2018-08-16 12:39:30,006 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
+2018-08-16 12:39:30,185 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-08-16 12:39:30,422 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-08-16 12:40:01,348 [vivoX9] INFO  [gby.appium.ui.SetUpDriver.getDriver() Line: 76] - AndroidDriver初始化完成，打开app成功
+2018-08-16 12:40:08,628 [vivoX9] INFO  [gby.testng.testcase.OpenHousePageCase] - 点击房源列表，进入房源详情ok
+2018-08-16 13:16:45,314 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: vivoX9
+2018-08-16 13:16:45,513 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-08-16 13:16:45,722 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555

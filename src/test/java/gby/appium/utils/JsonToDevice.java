@@ -3,7 +3,6 @@ package gby.appium.utils;
 import java.util.HashMap;
 import java.util.Map;
 
-import gby.appium.ui.Device;
 
 public class JsonToDevice {
 

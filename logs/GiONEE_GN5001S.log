@@ -1,4 +1,0 @@
-2018-08-10 20:23:45,057 [GiONEE_GN5001S] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 36] - deviceName: GiONEE_GN5001S
-2018-08-10 20:23:45,309 [GiONEE_GN5001S] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.138:5555]
-2018-08-10 20:23:45,530 [GiONEE_GN5001S] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.138:5555
-2018-08-10 20:24:06,612 [GiONEE_GN5001S] INFO  [gby.appium.ui.SetUpDriver.getDriver() Line: 74] - AndroidDriver初始化完成，打开app成功

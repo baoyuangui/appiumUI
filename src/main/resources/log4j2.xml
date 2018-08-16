@@ -15,9 +15,9 @@
 			<Routes pattern="$${ctx:ThreadName}">
 				<Route>
 					<RollingFile name="RollingFile-${ctx:ThreadName}_error"
-						fileName="${logFilePath}/${ctx:ThreadName}_error.log"
-						filePattern="${logFilePath}/${ctx:ThreadName}-%d{HH-mm-ss}_error.log"
-						append="false">
+						fileName="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}_error.log"
+						filePattern="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}-%d{HH-mm-ss}_error.log"
+						append="true">
 						<ThresholdFilter level="ERROR" onMatch="ACCEPT"
 							onMismatch="DENY" />
 						<PatternLayout
@@ -35,8 +35,8 @@
 				<Route>
 					<RollingFile name="RollingFile-${ctx:ThreadName}"
 						fileName="${logFilePath}/${ctx:ThreadName}.log"
-						filePattern="${logFilePath}/${ctx:ThreadName}-%d{HH-mm-ss}.log"
-						append="false">
+						filePattern="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}-%d{HH-mm-ss}.log"
+						append="true">
 						<PatternLayout
 							pattern="%d [%t] %-5p [%c] - %m%n" />
 						<Policies>

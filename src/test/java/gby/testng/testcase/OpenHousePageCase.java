@@ -1,10 +1,11 @@
 package gby.testng.testcase;
 
 
-import org.openqa.selenium.By;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
+
 import gby.testng.testcase.InitDriverCase;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -27,6 +28,12 @@ public class OpenHousePageCase {
 //	  
 //	  driver.swipe();
 //	  
+	  try {
+		Thread.sleep(2000);;
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	  driver.findElementById("com.loulifang.house:id/llItem").click();
 	  
 	  logger.info("点击房源列表，进入房源详情ok");

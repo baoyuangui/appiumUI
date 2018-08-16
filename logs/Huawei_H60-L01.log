@@ -1,4 +1,0 @@
-2018-08-10 17:25:31,265 [Huawei_H60-L01] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 35] - deviceName: Huawei_H60-L01
-2018-08-10 17:25:31,414 [Huawei_H60-L01] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.210:5555]
-2018-08-10 17:25:31,719 [Huawei_H60-L01] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：connected to 192.168.20.210:5555
-2018-08-10 17:25:34,849 [Huawei_H60-L01] INFO  [gby.appium.ui.SetUpDriver.<init>() Line: 51] - 启动appiumServer

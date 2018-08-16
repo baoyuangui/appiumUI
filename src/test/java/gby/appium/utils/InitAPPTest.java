@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import gby.appium.deviceM.DevicesConnect;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -20,7 +21,7 @@ public class InitAPPTest {
 
 
 		
-		DevicesConnect dc = new DevicesConnect("GiONEE_GN5001S");
+		DevicesConnect dc = new DevicesConnect("vivoX9");
 		dc.adbConnect();
 
 /*        AppiumServiceBuilder builder =
@@ -30,6 +31,7 @@ public class InitAPPTest {
 
         AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
         service.start();*/
+		
 //		new Thread(new Runnable() {
 //			@Override
 //			public void run() {

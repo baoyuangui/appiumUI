@@ -14,12 +14,11 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import gby.appium.ui.AppiumInit;
-import gby.appium.ui.SetUpDriver;
+import gby.appium.deviceM.SetUpDriver;
 import gby.appium.utils.LoggerUtil;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import lombok.extern.java.Log;
+
 
 public class InitDriverCase {
 
@@ -36,6 +35,8 @@ public class InitDriverCase {
 		LoggerUtil.debug("deviceName: " + deviceName);
 		sClass = new SetUpDriver(deviceName);
 		driver = sClass.getDriver();
+
+
 /*		if(driver==null) {
 			Thread.currentThread().destroy();
 			LoggerUtil.error("driver初始化失败");

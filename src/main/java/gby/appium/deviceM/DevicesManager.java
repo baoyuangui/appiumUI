@@ -1,18 +1,17 @@
-package gby.appium.ui;
+package gby.appium.deviceM;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.support.spring.JSONPResponseBodyAdvice;
 
 import gby.appium.utils.CommandPromptUtil;
 import gby.appium.utils.JsonParser;
 import gby.appium.utils.LoggerUtil;
 
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.commons.lang3.ObjectUtils.Null;
 
 public class DevicesManager {
 
@@ -20,7 +19,7 @@ public class DevicesManager {
 
 //	public String path;
 	public JsonParser jParser;
-
+	
 //    private static Map<String, Process> processUDIDs = new HashMap<>();
 //    private ArrayList<Process> prcsList = null;
 //    Process process;
@@ -118,7 +117,7 @@ public class DevicesManager {
 			String devStr = oldJson.toString();		
 			jParser.writeFile(devStr);
 		}else {
-			LoggerUtil.debug("没有插入电脑的设备");
+			LoggerUtil.error("没有插入电脑的设备");
 		}
 
 	}
@@ -151,12 +150,12 @@ public class DevicesManager {
 		devicesCom = cmd.runCommand("adb devices");
     	for (String str : devicesCom) {
     		if (!Pattern.compile("\\.").matcher(str).find()) {
-        		if (str.contains("List")) {
+        		if (str.contains("List")|| str.equals("")) {
         			continue;	
         		} else if (str.contains("device")) {
         			devicesList.add(str.split("device")[0].replaceAll("\\s", ""));
         		} else {
-        			System.out.println("设备未确认秘钥连接或其他错误：" + str);
+        			LoggerUtil.error("设备未确认秘钥连接或其他错误：" + str);
         		}
     		}
     		}
