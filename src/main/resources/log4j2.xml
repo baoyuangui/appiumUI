@@ -49,7 +49,7 @@
 		</Routing>
 	</Appenders>
 	<Loggers>
-		<!--Logger用于定义log的level以及所采用的appender，如果无需自定义，可以使用root解决，root标签是log的默认输出形式 -->
+<!-- 		Logger用于定义log的level以及所采用的appender，如果无需自定义，可以使用root解决，root标签是log的默认输出形式 -->
 		<!-- 级别顺序（低到高）：TRACE < DEBUG < INFO < WARN < ERROR < FATAL -->
 		<Root level="DEBUG" includeLocation="true">
 			<!--AppenderRef中的ref值必须是在前面定义的appenders -->

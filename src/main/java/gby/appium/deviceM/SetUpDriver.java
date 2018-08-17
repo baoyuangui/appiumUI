@@ -65,8 +65,9 @@ public class SetUpDriver {
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
 		cap.setCapability("unicodeKeyboard", true);
 		cap.setCapability("resetKeyboard", true);
-//		cap.setCapability("systemPort", dc.device.getApmsrv_bp());
-
+//		cap.setCapability("systemPort", dc.device.getApmsrv_bp()+1);
+		/*据说多设备平行运行时，如果不配置不同的systemPort，会出错。不过目前我没遇到*/
+		
 		// 初始化AndroidDriver
 		String url = "http://127.0.0.1:" + dc.device.getApmsrv_port() + "/wd/hub";
 //		try {
