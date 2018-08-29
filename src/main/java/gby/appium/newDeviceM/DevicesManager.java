@@ -1,4 +1,4 @@
-package gby.appium.deviceM;
+package gby.appium.newDeviceM;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

@@ -107,12 +107,14 @@ public class AppiumStudy {
 		AndroidElement el = null;
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		try {
-			el = wait.until(new ExpectedCondition<AndroidElement>() {
-				@Override
-				public AndroidElement apply(WebDriver d) {
-					return findEleBys(id);
-				}
-			});
+			el = wait.until(AndroidElement -> findEleBys(id));
+			
+//			el = wait.until(new ExpectedCondition<AndroidElement>() {
+//				@Override
+//				public AndroidElement apply(WebDriver d) {
+//					return findEleBys(id);
+//				}
+//			});
 			LoggerUtil.debug("元素已找到：" + name+": " +id);
 		} catch (Exception e) {
 			// TODO: handle exception

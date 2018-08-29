@@ -1,4 +1,4 @@
-package gby.appium.deviceM;
+package gby.appium.newDeviceM;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,0 +1,11 @@
+## 2018-8-27 因为使用jenkins远程服务，对deviceM包下的代码进行了重构。
+		  	 adb -s 设备id 刷新ip等方法不适用，直接使用静态ip，获取其他设备信息。
+		  	 
+		  	 adbConnect方法也不再使用tcpip参数，直接根据静态ip，adb connect ip:5555进行远程连接
+		  	 后期手动更新devicesJson文件，更新ip
+		  	 
+		  	 此外，启动appiumServer封装的方法也不再使用，直接使用appium自带的类构造server
+		  	 同时，在device对象里添加system_port,防止多设备同时运行时出问题（有网友出现问题）
+		  	 
+		  	 
+				
