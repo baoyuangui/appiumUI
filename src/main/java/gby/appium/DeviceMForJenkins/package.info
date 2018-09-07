@@ -5,7 +5,7 @@
 		  	 后期手动更新devicesJson文件，更新ip
 		  	 
 		  	 此外，启动appiumServer封装的方法也不再使用，直接使用appium自带的类构造server
-		  	 同时，在device对象里添加system_port,防止多设备同时运行时出问题（有网友出现问题）
+		  	 同时，在device对象里添加system_port,防止多设备同时运行时出问题（有网友出现问题）s
 		  	 
 		  	 
 				
