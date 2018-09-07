@@ -3,37 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="gby.appium.listern.RetryListener"/>
+    <listener class-name="gby.appium.listern.TestNGListener"/>
   </listeners>
   <test thread-count="5" name="vivoX9(failed)" parallel="tests">
     <parameter name="deviceName" value="vivoX9"/>
     <classes>
-      <class name="gby.testng.testcase.OpenHousePageCase">
+      <class name="gby.testng.testcase.PublishPostCase">
         <methods>
-          <include name="f"/>
+          <include name="intoPublisPostPage"/>
+          <include name="setup"/>
+          <include name="deletePost"/>
+          <include name="publishRoom"/>
         </methods>
-      </class> <!-- gby.testng.testcase.OpenHousePageCase -->
-      <class name="gby.testng.testcase.InitDriverCase">
-        <methods>
-          <include name="setDown"/>
-          <include name="f" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- gby.testng.testcase.InitDriverCase -->
+      </class> <!-- gby.testng.testcase.PublishPostCase -->
     </classes>
   </test> <!-- vivoX9(failed) -->
-  <test thread-count="5" name="OPPOR9tm(failed)" parallel="tests">
-    <parameter name="deviceName" value="OPPOR9tm"/>
-    <classes>
-      <class name="gby.testng.testcase.LoginCase">
-        <methods>
-          <include name="f"/>
-        </methods>
-      </class> <!-- gby.testng.testcase.LoginCase -->
-      <class name="gby.testng.testcase.InitDriverCase">
-        <methods>
-          <include name="setDown"/>
-          <include name="f" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- gby.testng.testcase.InitDriverCase -->
-    </classes>
-  </test> <!-- OPPOR9tm(failed) -->
 </suite> <!-- Failed suite [Suite] -->

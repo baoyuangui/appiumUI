@@ -6,19 +6,24 @@
 		<parameter name="deviceName" value="vivoX9" />
 		<classes>
 			<class name="gby.testng.testcase.InitDriverCase" />
-			<class name="gby.testng.testcase.OpenHousePageCase" />
+			<class name="gby.testng.testcase.PublishPostCase" />
 		</classes>
 	</test>
 
+<!-- 	<test name="mytest"> -->
+<!-- 	<classes> -->
+<!-- 	<class name="other.testngtest.NewTest" /> -->
+<!-- 	<class name="gby.testng.testcase.LoginCase" /> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
 
-
-	<test name="OPPOR9tm">
-	<parameter name="deviceName" value="OPPOR9tm" />
-	<classes>
-	<class name="gby.testng.testcase.InitDriverCase" />
-	<class name="gby.testng.testcase.LoginCase" />
-	</classes>
-	</test>
+<!-- 	<test name="OPPOR9tm"> -->
+<!-- 	<parameter name="deviceName" value="OPPOR9tm" /> -->
+<!-- 	<classes> -->
+<!-- 	<class name="gby.testng.testcase.InitDriverCase" /> -->
+<!-- 	<class name="gby.testng.testcase.LoginCase" /> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
 
 
 	
@@ -58,8 +63,7 @@
 	<!-- </test> -->
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<!-- <listener class-name="com.uiframe.testng.TestNGListener" /> -->
-		<!-- <listener class-name="com.uiframe.testng.RetryListener" /> -->
-
+		<listener class-name="gby.appium.listern.RetryListener" />
+		<listener class-name="gby.appium.listern.TestNGListener" />
 	</listeners>
 </suite> <!-- Suite -->

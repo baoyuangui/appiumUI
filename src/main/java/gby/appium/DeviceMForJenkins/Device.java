@@ -1,4 +1,4 @@
-package gby.appium.newDeviceM;
+package gby.appium.DeviceMForJenkins;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -9,6 +9,7 @@ public class Device {
 	private String os_ver;
 	private String udid;
 	private String ip;
+	private String udid2;//ip+port
 	private String screenSize;
 	private String apmsrv_port;
 	private String apmsrv_bp;
@@ -97,5 +98,7 @@ public class Device {
 	public void setApmsrv_bp(String apmsrv_bp) {
 		this.apmsrv_bp = apmsrv_bp;
 	}
+	
+	
 
 }

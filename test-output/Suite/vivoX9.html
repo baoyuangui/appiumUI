@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>vivoX9</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 16 13:16:45 CST 2018</td>
+<td>Started on:</td><td>Fri Sep 07 13:51:42 CST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32539 ms)</td>
+<tr><td>Total time:</td><td>115 seconds (115827 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,6 +68,85 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gby.testng.testcase.PublishPostCase.deletePost()'><b>deletePost</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
+<a href="#Output-301702375" onClick='toggleBox("Output-301702375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-301702375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-301702375">
+[info] 【mineButton】识别成功<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[info] 【myPostButton】暂未找到，轮询中...<br/>
+[error] 【myPostButton】识别失败：识别超时<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 【myPostButton】元素识别失败，该测试方法自动结束失败
+	at gby.appium.page.BasePage.findElement(BasePage.java:94)
+	at gby.appium.page.MinePage.deletePost(MinePage.java:32)
+	at gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace301702375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace301702375'><pre>java.lang.AssertionError: 【myPostButton】元素识别失败，该测试方法自动结束失败
+	at org.testng.Assert.fail(Assert.java:96)
+	at gby.appium.page.BasePage.findElement(BasePage.java:94)
+	at gby.appium.page.MinePage.deletePost(MinePage.java:32)
+	at gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>15</td>
+<td>gby.testng.testcase.PublishPostCase@167fdd33</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -75,213 +154,83 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='gby.testng.testcase.InitDriverCase.f()'><b>f</b><br>Test class: gby.testng.testcase.InitDriverCase<br>Parameters: vivoX9<br/>
-<a href="#Output-509415849" onClick='toggleBox("Output-509415849", this, "Show output", "Hide output");'>Show output</a>
+<td title='gby.testng.testcase.PublishPostCase.intoPublisPostPage()'><b>intoPublisPostPage</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
+<a href="#Output-1697424364" onClick='toggleBox("Output-1697424364", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-509415849" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-509415849">
-[debug] deviceName: vivoX9<br/>
-[debug] 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]<br/>
-[debug] 命令结果：already connected to 192.168.20.159:5555<br/>
-[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 4597 -U 192.168.20.159:5555 -bp 4598]<br/>
-[debug] [35m[Appium][39m Welcome to Appium v1.8.1<br/>
-[debug] [35m[Appium][39m Non-default server args:<br/>
-[debug] [35m[Appium][39m   address: 127.0.0.1<br/>
-[debug] [35m[Appium][39m   port: 4597<br/>
-[debug] [35m[Appium][39m   bootstrapPort: 4598<br/>
-[debug] [35m[Appium][39m   udid: 192.168.20.159:5555<br/>
-[debug] [35m[Appium][39m Deprecated server args:<br/>
-[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.159:5555"}'<br/>
-[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:<br/>
-[debug] [35m[Appium][39m   udid: 192.168.20.159:5555<br/>
-[debug] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4597<br/>
-[info] appiumServer已启动<br/>
-[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m<br/>
-[debug] [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"7.1.2","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.159:5555","deviceName":"vivoX9","resetKeyboard":true},"capabilities":{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"vivoX9","platformName":"android","appium:platformVersion":"7.1.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.159:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}}[39m<br/>
-[debug] [debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"7.1.2","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.159:5555","deviceName":"vivoX9","resetKeyboard":true},null,{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"vivoX9","platformName":"android","appium:platformVersion":"7.1.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.159:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}]<br/>
-[debug] [debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1534396609731 (13:16:49 GMT+0800 (涓浗鏍囧噯鏃堕棿))<br/>
-[debug] [35m[BaseDriver][39m The capabilities ["udid"] are not standard capabilities and should have an extension prefix<br/>
-[debug] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.12.0) session<br/>
-[debug] [35m[Appium][39m Capabilities:<br/>
-[debug] [35m[Appium][39m   udid: 192.168.20.159:5555<br/>
-[debug] [35m[Appium][39m   platformName: android<br/>
-[debug] [35m[Appium][39m   app: D:\git\Appium/src/main/resources/hizhu.apk<br/>
-[debug] [35m[Appium][39m   appActivity: com.loulifang.house.activities.TMainActivity<br/>
-[debug] [35m[Appium][39m   appPackage: com.loulifang.house<br/>
-[debug] [35m[Appium][39m   automationName: uiautomator2<br/>
-[debug] [35m[Appium][39m   deviceName: vivoX9<br/>
-[debug] [35m[Appium][39m   platformVersion: 7.1.2<br/>
-[debug] [35m[Appium][39m   resetKeyboard: true<br/>
-[debug] [35m[Appium][39m   unicodeKeyboard: true<br/>
-[debug] [debug] [35m[BaseDriver][39m W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities [object Object] were provided<br/>
-[debug] [debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...<br/>
-[debug] [35m[BaseDriver][39m Session created with session id: 86edf657-480d-4321-8d4a-d681505d968e<br/>
-[debug] [35m[BaseDriver][39m Using local app 'D:\git\Appium/src/main/resources/hizhu.apk'<br/>
-[debug] [debug] [35m[UiAutomator2][39m Checking whether app is actually present<br/>
-[debug] [debug] [35m[AndroidDriver][39m Getting Java version<br/>
-[debug] [35m[AndroidDriver][39m Java version is: 1.8.0_171<br/>
-[debug] <br/>
-[debug] [35m[ADB][39m Checking whether adb is present<br/>
-[debug] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Administrator\AppData\Local\Android\android-sdk' (newest first):<br/>
-[debug] [35m[ADB][39m     C:/Users/Administrator/AppData/Local/Android/android-sdk/build-tools/28.0.1<br/>
-[debug] [35m[ADB][39m Using adb.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe<br/>
-[debug] [35m[AndroidDriver][39m Retrieving device list<br/>
-[debug] [debug] [35m[ADB][39m Trying to find a connected android device<br/>
-[debug] [debug] [35m[ADB][39m Getting connected devices...<br/>
-[debug] [debug] [35m[ADB][39m 3 device(s) connected<br/>
-[debug] [35m[AndroidDriver][39m Using device: 192.168.20.159:5555<br/>
-[debug] [debug] [35m[ADB][39m Setting device id to 192.168.20.159:5555<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.build.version.sdk'<br/>
-[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 25<br/>
-[debug] [debug] [35m[ADB][39m Device API level: 25<br/>
-[debug] [35m[ADB][39m Getting device platform version<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.build.version.release'<br/>
-[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.release': 7.1.2<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell wm size'<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell wm density'<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.product.model'<br/>
-[debug] [debug] [35m[ADB][39m Current device property 'ro.product.model': vivo X9<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.product.manufacturer'<br/>
-[debug] [debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': vivo<br/>
-[debug] [debug] [35m[ADB][39m Device API level: 25<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am force-stop io.appium.uiautomator2.server'<br/>
-[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk<br/>
-[debug] [35m[ADB][39m Using apksigner.bat from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat<br/>
-[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk'<br/>
-[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' is already signed.<br/>
-[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk<br/>
-[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'<br/>
-[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already signed.<br/>
-[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.uiautomator2.server'<br/>
-[debug] [debug] [35m[ADB][39m App is installed<br/>
-[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server'<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.uiautomator2.server'<br/>
-[debug] [35m[ADB][39m Checking whether aapt is present<br/>
-[debug] [35m[ADB][39m Using aapt.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\aapt.exe<br/>
-[debug] [debug] [35m[ADB][39m The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.12.0' >= '1.12.0')<br/>
-[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.uiautomator2.server.test'<br/>
-[debug] [debug] [35m[ADB][39m App is installed<br/>
-[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server.test'<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.uiautomator2.server.test'<br/>
-[debug] [35m[ADB][39m Cannot read version codes of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'<br/>
-[debug] [35m[ADB][39m Cannot read version names of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed<br/>
-[debug] [debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list instrumentation'<br/>
-[debug] [debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 wait-for-device'<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell echo ping'<br/>
-[debug] [debug] [35m[AndroidDriver][39m Pushing settings apk to device...<br/>
-[debug] [debug] [35m[ADB][39m Getting install status for io.appium.settings<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.settings'<br/>
-[debug] [debug] [35m[ADB][39m App is installed<br/>
-[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.settings'<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.settings'<br/>
-[debug] [debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell ps'<br/>
-[debug] [debug] [35m[ADB][39m Device API level: 25<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'<br/>
-[debug] [debug] [35m[ADB][39m Device API level: 25<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell appops set io.appium.settings android\:mock_location allow'<br/>
-[debug] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.<br/>
-[debug] [35m[AndroidDriver][39m Got language: 'null' and country: 'null'<br/>
-[debug] [debug] [35m[Logcat][39m Starting logcat capture<br/>
-[debug] [debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support<br/>
-[debug] [debug] [35m[AndroidDriver][39m Pushing unicode ime to device...<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk'<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk'<br/>
-[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session<br/>
-[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session<br/>
-[debug] [35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: Error: Trying to proxy a session command without session id<br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am force-stop com.loulifang.house'<br/>
-[debug] [debug] [35m[Logcat][39m Stopping logcat capture<br/>
-[debug] [debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 <br/>
-[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 forward --remove tcp\:8201'<br/>
-[debug] [debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1534396632653 (13:17:12 GMT+0800 (涓浗鏍囧噯鏃堕棿))<br/>
-[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m23028 ms - 2450[39m<br/>
-[debug] [35m[HTTP][39m [90m[39m<br/>
+<a href="#Output-1697424364" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1697424364">
+[info] 【intoPublisPostPage】测试用例开始执行<br/>
+[info] 【findRoommateButton】识别成功<br/>
+[info] 【publishIcon】识别成功<br/>
+[info] 【hasntRoomButton】暂未找到，轮询中...<br/>
+[info] 【hasntRoomButton】识别成功<br/>
+[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]<br/>
+[debug] 命令结果：  mCurrentFocus=Window{fa4a905 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}<br/>
+[info] 【userName】识别成功<br/>
+[info] 【password】识别成功<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[error] 【loginButton】识别失败：识别超时<br/>
+[error] 【intoPublisPostPage】测试用例执行失败<br/>
+<a target='_blank' href="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png"><br/>
+<img width="350" src="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png" />    失败截图：C:\Users\ADMINI~1\AppData\Local\Temp\screenshot8123587305158351560.png<br/>
+</a><br /><br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】识别成功<br/>
+[info] 正在返回首页...<br/>
+[info] 已返回首页<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.77&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: SetUpDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)
-	at gby.appium.ui.SetUpDriver.getDriver(SetUpDriver.java:75)
-	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:38)
+<td><div><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
+	at gby.appium.page.BasePage.findElement(BasePage.java:94)
+	at gby.appium.page.LoginPage.login(LoginPage.java:15)
+	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
+	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-	... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk&apos; exited with code 1&apos;; Stderr: &apos;adb: failed to install C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: Failure [-200]&apos;; Code: &apos;1&apos;
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.77&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: SetUpDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk&apos; exited with code 1&apos;; Stderr: &apos;adb: failed to install C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: Failure [-200]&apos;; Code: &apos;1&apos;
-    at getResponseForW3CError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:806:13)
-    at asyncHandler$ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:361:37)
-    at tryCatch (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
-    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
-    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
-    at GeneratorFunctionPrototype.invoke (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
-    at &lt;anonymous&gt;
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	... 39 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace509415849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace509415849'><pre>org.openqa.selenium.WebDriverException: It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.77&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: SetUpDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)
-	at gby.appium.ui.SetUpDriver.getDriver(SetUpDriver.java:75)
-	at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:38)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1697424364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1697424364'><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
+	at org.testng.Assert.fail(Assert.java:96)
+	at gby.appium.page.BasePage.findElement(BasePage.java:94)
+	at gby.appium.page.LoginPage.login(LoginPage.java:15)
+	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
+	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -294,57 +243,113 @@ Driver info: driver.version: SetUpDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-	... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk&apos; exited with code 1&apos;; Stderr: &apos;adb: failed to install C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: Failure [-200]&apos;; Code: &apos;1&apos;
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.77&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: SetUpDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk&apos; exited with code 1&apos;; Stderr: &apos;adb: failed to install C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: Failure [-200]&apos;; Code: &apos;1&apos;
-    at getResponseForW3CError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:806:13)
-    at asyncHandler$ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:361:37)
-    at tryCatch (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
-    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
-    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
-    at GeneratorFunctionPrototype.invoke (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
-    at &lt;anonymous&gt;
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	... 39 more
 </pre></div></td>
-<td>27</td>
-<td>gby.testng.testcase.InitDriverCase@385c9627</td></tr>
+<td>21</td>
+<td>gby.testng.testcase.PublishPostCase@167fdd33</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='gby.testng.testcase.OpenHousePageCase.f()'><b>f</b><br>Test class: gby.testng.testcase.OpenHousePageCase</td>
-<td><div><pre>java.lang.NullPointerException
-	at gby.testng.testcase.OpenHousePageCase.f(OpenHousePageCase.java:37)
+<td title='gby.testng.testcase.InitDriverCase.f()'><b>f</b><br>Test class: gby.testng.testcase.InitDriverCase<br>Parameters: vivoX9<br/>
+<a href="#Output-951599721" onClick='toggleBox("Output-951599721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-951599721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-951599721">
+[info] 【f】测试用例开始执行<br/>
+[debug] deviceName: vivoX9<br/>
+[debug] 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]<br/>
+[debug] 命令结果：connected to 192.168.20.159:5555* daemon not running; starting now at tcp:5037* daemon started successfully<br/>
+[info] AndroidDriver初始化完成，打开app成功<br/>
+[info] 【f】测试用例执行成功<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>gby.testng.testcase.InitDriverCase@5f282abb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gby.testng.testcase.PublishPostCase.intoPublisPostPage()'><b>intoPublisPostPage</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
+<a href="#Output-472153624" onClick='toggleBox("Output-472153624", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-472153624" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472153624">
+[info] 【intoPublisPostPage】测试用例开始执行<br/>
+[info] 【findRoommateButton】暂未找到，轮询中...<br/>
+[info] 【findRoommateButton】暂未找到，轮询中...<br/>
+[info] 【findRoommateButton】暂未找到，轮询中...<br/>
+[info] 【findRoommateButton】暂未找到，轮询中...<br/>
+[info] 【findRoommateButton】识别成功<br/>
+[info] 【publishIcon】识别成功<br/>
+[info] 【hasntRoomButton】暂未找到，轮询中...<br/>
+[info] 【hasntRoomButton】识别成功<br/>
+[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]<br/>
+[debug] 命令结果：  mCurrentFocus=Window{3b21bc7 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}<br/>
+[info] 【userName】识别成功<br/>
+[info] 【password】识别成功<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[info] 【loginButton】暂未找到，轮询中...<br/>
+[error] 【loginButton】识别失败：识别超时<br/>
+[info] 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'intoPublisPostPage' 执行失败，重试第 1 次<br/>
+[error] 【intoPublisPostPage】测试用例被跳过<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】识别成功<br/>
+[info] 正在返回首页...<br/>
+[info] 已返回首页<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
+	at gby.appium.page.BasePage.findElement(BasePage.java:94)
+	at gby.appium.page.LoginPage.login(LoginPage.java:15)
+	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
+	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace237319097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace237319097'><pre>java.lang.NullPointerException
-	at gby.testng.testcase.OpenHousePageCase.f(OpenHousePageCase.java:37)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace472153624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace472153624'><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
+	at org.testng.Assert.fail(Assert.java:96)
+	at gby.appium.page.BasePage.findElement(BasePage.java:94)
+	at gby.appium.page.LoginPage.login(LoginPage.java:15)
+	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
+	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -366,8 +371,43 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>5</td>
-<td>gby.testng.testcase.OpenHousePageCase@139982de</td></tr>
+<td>25</td>
+<td>gby.testng.testcase.PublishPostCase@167fdd33</td></tr>
+<tr>
+<td title='gby.testng.testcase.PublishPostCase.publishRoom()'><b>publishRoom</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
+<a href="#Output-515650704" onClick='toggleBox("Output-515650704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515650704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515650704">
+[error] 【publishRoom】测试用例被跳过<br/>
+[info] 【homePageButton】识别成功<br/>
+[info] 正在返回首页...<br/>
+[info] 已返回首页<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Throwable: Method PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515650704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515650704'><pre>java.lang.Throwable: Method PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>

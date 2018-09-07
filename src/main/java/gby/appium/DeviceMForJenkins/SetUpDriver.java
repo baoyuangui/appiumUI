@@ -1,4 +1,4 @@
-package gby.appium.deviceM;
+package gby.appium.DeviceMForJenkins;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -65,7 +65,7 @@ public class SetUpDriver {
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
 		cap.setCapability("unicodeKeyboard", true);
 		cap.setCapability("resetKeyboard", true);
-//		cap.setCapability("systemPort", dc.device.getApmsrv_bp()+1);
+//		cap.setCapability("systemPort", Integer.parseInt(dc.device.getApmsrv_bp()+1));
 		/*据说多设备平行运行时，如果不配置不同的systemPort，会出错。不过目前我没遇到*/
 		
 		// 初始化AndroidDriver

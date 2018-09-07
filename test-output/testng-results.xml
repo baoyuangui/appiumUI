@@ -1,1012 +1,400 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
+<testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
   <reporter-output>
     <line>
+      <![CDATA[[info] 测试初始化]]>
+    </line>
+    <line>
+      <![CDATA[[info] 【f】测试用例开始执行]]>
+    </line>
+    <line>
       <![CDATA[[debug] deviceName: vivoX9]]>
-    </line>
-    <line>
-      <![CDATA[[debug] deviceName: OPPOR9tm]]>
-    </line>
-    <line>
-      <![CDATA[[debug] 执行命令：[cmd, /c, adb connect 192.168.20.178:5555]]]>
     </line>
     <line>
       <![CDATA[[debug] 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]]]>
     </line>
     <line>
-      <![CDATA[[debug] 命令结果：already connected to 192.168.20.178:5555]]>
+      <![CDATA[[debug] 命令结果：connected to 192.168.20.159:5555* daemon not running; starting now at tcp:5037* daemon started successfully]]>
     </line>
     <line>
-      <![CDATA[[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 4682 -U 192.168.20.178:5555 -bp 4683]]]>
+      <![CDATA[[info] AndroidDriver初始化完成，打开app成功]]>
     </line>
     <line>
-      <![CDATA[[debug] 命令结果：already connected to 192.168.20.159:5555]]>
+      <![CDATA[[info] 【f】测试用例执行成功]]>
     </line>
     <line>
-      <![CDATA[[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 4597 -U 192.168.20.159:5555 -bp 4598]]]>
+      <![CDATA[[info] 【intoPublisPostPage】测试用例开始执行]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Welcome to Appium v1.8.1]]>
+      <![CDATA[[info] 【findRoommateButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Non-default server args:]]>
+      <![CDATA[[info] 【findRoommateButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   address: 127.0.0.1]]>
+      <![CDATA[[info] 【findRoommateButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   port: 4682]]>
+      <![CDATA[[info] 【findRoommateButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   bootstrapPort: 4683]]>
+      <![CDATA[[info] 【findRoommateButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.178:5555]]>
+      <![CDATA[[info] 【publishIcon】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Deprecated server args:]]>
+      <![CDATA[[info] 【hasntRoomButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.178:5555"}']]>
+      <![CDATA[[info] 【hasntRoomButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:]]>
+      <![CDATA[[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.178:5555]]>
+      <![CDATA[[debug] 命令结果：  mCurrentFocus=Window{3b21bc7 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4682]]>
+      <![CDATA[[info] 【userName】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] appiumServer已启动]]>
+      <![CDATA[[info] 【password】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Welcome to Appium v1.8.1]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Non-default server args:]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   address: 127.0.0.1]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   port: 4597]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   bootstrapPort: 4598]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.159:5555]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Deprecated server args:]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.159:5555"}']]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.159:5555]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4597]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] appiumServer已启动]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"5.1","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.178:5555","deviceName":"OPPOR9tm","resetKeyboard":true},"capabilities":{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"OPPOR9tm","platformName":"android","appium:platformVersion":"5.1","appium:resetKeyboard":true,"appium:udid":"192.168.20.178:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}}[39m]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"7.1.2","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.159:5555","deviceName":"vivoX9","resetKeyboard":true},"capabilities":{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"vivoX9","platformName":"android","appium:platformVersion":"7.1.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.159:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}}[39m]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"5.1","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.178:5555","deviceName":"OPPOR9tm","resetKeyboard":true},null,{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"OPPOR9tm","platformName":"android","appium:platformVersion":"5.1","appium:resetKeyboard":true,"appium:udid":"192.168.20.178:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}]]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"7.1.2","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.159:5555","deviceName":"vivoX9","resetKeyboard":true},null,{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"vivoX9","platformName":"android","appium:platformVersion":"7.1.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.159:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}]]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1534396609730 (13:16:49 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1534396609731 (13:16:49 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[BaseDriver][39m The capabilities ["udid"] are not standard capabilities and should have an extension prefix]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[BaseDriver][39m The capabilities ["udid"] are not standard capabilities and should have an extension prefix]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.12.0) session]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Capabilities:]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.178:5555]]>
+      <![CDATA[[error] 【loginButton】识别失败：识别超时]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   platformName: android]]>
+      <![CDATA[[info] 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'intoPublisPostPage' 执行失败，重试第 1 次]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   app: D:\git\Appium/src/main/resources/hizhu.apk]]>
+      <![CDATA[[error] 【intoPublisPostPage】测试用例被跳过]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   appActivity: com.loulifang.house.activities.TMainActivity]]>
+      <![CDATA[[info] 【homePageButton】未找到，识别失败,元素list长度为0]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   appPackage: com.loulifang.house]]>
+      <![CDATA[[info] 正在返回首页...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   automationName: uiautomator2]]>
+      <![CDATA[[info] 【homePageButton】未找到，识别失败,元素list长度为0]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   deviceName: OPPOR9tm]]>
+      <![CDATA[[info] 正在返回首页...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   platformVersion: 5.1]]>
+      <![CDATA[[info] 【homePageButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   resetKeyboard: true]]>
+      <![CDATA[[info] 正在返回首页...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   unicodeKeyboard: true]]>
+      <![CDATA[[info] 已返回首页]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.12.0) session]]>
+      <![CDATA[[info] 【intoPublisPostPage】测试用例开始执行]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m Capabilities:]]>
+      <![CDATA[[info] 【findRoommateButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.159:5555]]>
+      <![CDATA[[info] 【publishIcon】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   platformName: android]]>
+      <![CDATA[[info] 【hasntRoomButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   app: D:\git\Appium/src/main/resources/hizhu.apk]]>
+      <![CDATA[[info] 【hasntRoomButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   appActivity: com.loulifang.house.activities.TMainActivity]]>
+      <![CDATA[[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   appPackage: com.loulifang.house]]>
+      <![CDATA[[debug] 命令结果：  mCurrentFocus=Window{fa4a905 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   automationName: uiautomator2]]>
+      <![CDATA[[info] 【userName】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   deviceName: vivoX9]]>
+      <![CDATA[[info] 【password】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   platformVersion: 7.1.2]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   resetKeyboard: true]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[Appium][39m   unicodeKeyboard: true]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities [object Object] were provided]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities [object Object] were provided]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[BaseDriver][39m Session created with session id: 058afd6b-624a-46a7-9c62-4df656e57968]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[BaseDriver][39m Session created with session id: 86edf657-480d-4321-8d4a-d681505d968e]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[BaseDriver][39m Using local app 'D:\git\Appium/src/main/resources/hizhu.apk']]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Checking whether app is actually present]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[BaseDriver][39m Using local app 'D:\git\Appium/src/main/resources/hizhu.apk']]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Checking whether app is actually present]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Getting Java version]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Getting Java version]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Java version is: 1.8.0_171]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] ]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Checking whether adb is present]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Administrator\AppData\Local\Android\android-sdk' (newest first):]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m     C:/Users/Administrator/AppData/Local/Android/android-sdk/build-tools/28.0.1]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Using adb.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Retrieving device list]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Trying to find a connected android device]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting connected devices...]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Java version is: 1.8.0_171]]>
+      <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] ]]>
+      <![CDATA[[error] 【loginButton】识别失败：识别超时]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Checking whether adb is present]]>
+      <![CDATA[[error] 【intoPublisPostPage】测试用例执行失败]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Administrator\AppData\Local\Android\android-sdk' (newest first):]]>
+      <![CDATA[<a target='_blank' href="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png">]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m     C:/Users/Administrator/AppData/Local/Android/android-sdk/build-tools/28.0.1]]>
+      <![CDATA[<img width="350" src="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png" />    失败截图：C:\Users\ADMINI~1\AppData\Local\Temp\screenshot8123587305158351560.png]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Using adb.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe]]>
+      <![CDATA[</a><br />]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Retrieving device list]]>
+      <![CDATA[[info] 【homePageButton】未找到，识别失败,元素list长度为0]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Trying to find a connected android device]]>
+      <![CDATA[[info] 正在返回首页...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting connected devices...]]>
+      <![CDATA[[info] 【homePageButton】未找到，识别失败,元素list长度为0]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m 3 device(s) connected]]>
+      <![CDATA[[info] 正在返回首页...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Using device: 192.168.20.159:5555]]>
+      <![CDATA[[info] 【homePageButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Setting device id to 192.168.20.159:5555]]>
+      <![CDATA[[info] 正在返回首页...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.build.version.sdk']]>
+      <![CDATA[[info] 已返回首页]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m 3 device(s) connected]]>
+      <![CDATA[[error] 【publishRoom】测试用例被跳过]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Using device: 192.168.20.178:5555]]>
+      <![CDATA[[info] 【homePageButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Setting device id to 192.168.20.178:5555]]>
+      <![CDATA[[info] 正在返回首页...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.build.version.sdk']]>
+      <![CDATA[[info] 已返回首页]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 25]]>
+      <![CDATA[[info] 【mineButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Getting device platform version]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.build.version.release']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [35m[ADB][39m Getting device platform version]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.build.version.release']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.release': 5.1]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell wm size']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.release': 7.1.2]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell wm size']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell wm density']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell wm density']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.product.model']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.product.model']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.model': OPPO R9tm]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.product.manufacturer']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.model': vivo X9]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.product.manufacturer']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': OPPO]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop io.appium.uiautomator2.server']]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': vivo]]>
+      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am force-stop io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Using apksigner.bat from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Using apksigner.bat from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' is already signed.]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' is already signed.]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already signed.]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already signed.]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Checking whether aapt is present]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Using aapt.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\aapt.exe]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.12.0' >= '1.12.0')]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Checking whether aapt is present]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Using aapt.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\aapt.exe]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.12.0' >= '1.12.0')]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Cannot read version codes of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Cannot read version names of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list instrumentation']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Cannot read version codes of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Cannot read version names of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list instrumentation']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 wait-for-device']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell echo ping']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing settings apk to device...]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.settings]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.settings']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 wait-for-device']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell echo ping']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing settings apk to device...]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.settings]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.settings']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.settings']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.settings']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ps']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.settings']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.settings']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell ps']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell settings put secure mock_location 1']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell appops set io.appium.settings android\:mock_location allow']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Got language: 'null' and country: 'null']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[Logcat][39m Starting logcat capture]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing unicode ime to device...]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Got language: 'null' and country: 'null']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[Logcat][39m Starting logcat capture]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing unicode ime to device...]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Install command stdout: [100%] /data/local/tmp/UnicodeIME-debug.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] ]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: 1 file pushed. 0.4 MB/s (36795 bytes in 0.087s)]]>
-    </line>
-    <line>
-      <![CDATA[[debug] ]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m pkg: /data/local/tmp/UnicodeIME-debug.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] ]]>
-    </line>
-    <line>
-      <![CDATA[[debug] ]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Failure [-99]]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell settings get secure default_input_method']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Unsetting previous IME com.sohu.inputmethod.sogouoem/.SogouIME]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.android.ime/.UnicodeIME']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ime enable io.appium.android.ime/.UnicodeIME']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ime set io.appium.android.ime/.UnicodeIME']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.unlock]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.unlock']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.unlock']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.unlock']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to 8201]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Forwarding system: 8201 to device: 6790]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 forward tcp\:8201 tcp\:6790']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell rm -rf /data/local/tmp/strings.json']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: Error: Trying to proxy a session command without session id]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am force-stop com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Extracting strings from apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m D:\git\Appium/src/main/resources/hizhu.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m null]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m C:\Users\ADMINI~1\AppData\Local\Temp\com.loulifang.house]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Extracting strings for language: default]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[ADB][39m Successfully extracted 457 strings from 'D:\git\Appium/src/main/resources/hizhu.apk' resources for '(default)' configuration]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 push C\:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\com.loulifang.house\\strings.json /data/local/tmp']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for D:\git\Appium/src/main/resources/hizhu.apk]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,D:\git\Appium/src/main/resources/hizhu.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[Logcat][39m Stopping logcat capture]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 ]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 forward --remove tcp\:8201']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1534396632653 (13:17:12 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m23028 ms - 2450[39m]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[HTTP][39m [90m[39m]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m 'D:\git\Appium/src/main/resources/hizhu.apk' is already signed.]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'com.loulifang.house' package does not require upgrade (58 > 56)]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[AndroidDriver][39m Performing fast reset on 'com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm clear com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.loulifang.house' application (stop and clear)]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop io.appium.uiautomator2.server']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[UiAutomator2][39m Starting uiautomator2 server 1.12.0]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' and test from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[UiAutomator2][39m Running command: 'adb -s 192.168.20.178:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[UiAutomator2][39m Waiting up to 20000ms for UiAutomator2 to be online...]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: Error: Trying to proxy a session command without session id]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Resetting IME to 'com.sohu.inputmethod.sogouoem/.SogouIME']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ime set com.sohu.inputmethod.sogouoem/.SogouIME']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop com.loulifang.house']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[Logcat][39m Stopping logcat capture]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 ]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 forward --remove tcp\:8201']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 forward --remove tcp\:8201']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[UiAutomator2][39m Unable to remove port forward 'Error executing adbExec. Original error: 'Command 'C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.178\:5555 forward --remove tcp\:8201' exited with code 1'; Stderr: 'error: listener 'tcp:8201' not found'; Code: '1'']]>
-    </line>
-    <line>
-      <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1534396680247 (13:18:00 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[33m400[39m [90m70527 ms - 1190[39m]]>
-    </line>
-    <line>
-      <![CDATA[[debug] [35m[HTTP][39m [90m[39m]]>
-    </line>
-    <line>
-      <![CDATA[[debug] 执行命令：[cmd, /c, taskkill /F /IM node.exe]]]>
-    </line>
-    <line>
-      <![CDATA[[debug] 命令结果：�ɹ�: ����ֹ���� "node.exe"���� PID Ϊ 9584���ɹ�: ����ֹ���� "node.exe"���� PID Ϊ 8548��]]>
+      <![CDATA[[error] 【myPostButton】识别失败：识别超时]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="75003" started-at="2018-08-16T05:16:45Z" finished-at="2018-08-16T05:18:00Z">
+  <suite name="Suite" duration-ms="115827" started-at="2018-09-07T05:51:42Z" finished-at="2018-09-07T05:53:37Z">
     <groups>
     </groups>
-    <test name="vivoX9" duration-ms="32539" started-at="2018-08-16T05:16:45Z" finished-at="2018-08-16T05:17:17Z">
-      <class name="gby.testng.testcase.OpenHousePageCase">
-        <test-method status="FAIL" signature="f()[pri:0, instance:gby.testng.testcase.OpenHousePageCase@139982de]" name="f" duration-ms="5002" started-at="2018-08-16T05:17:12Z" finished-at="2018-08-16T05:17:17Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at gby.testng.testcase.OpenHousePageCase.f(OpenHousePageCase.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- gby.testng.testcase.OpenHousePageCase -->
+    <test name="vivoX9" duration-ms="115827" started-at="2018-09-07T05:51:42Z" finished-at="2018-09-07T05:53:37Z">
       <class name="gby.testng.testcase.InitDriverCase">
-        <test-method status="FAIL" signature="f(java.lang.String)[pri:0, instance:gby.testng.testcase.InitDriverCase@385c9627]" name="f" duration-ms="27484" started-at="2018-08-16T05:16:45Z" finished-at="2018-08-16T05:17:12Z">
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:gby.testng.testcase.InitDriverCase@5f282abb]" name="f" duration-ms="44255" started-at="2018-09-07T05:51:42Z" finished-at="2018-09-07T05:52:26Z">
           <params>
             <param index="0">
               <value>
@@ -1014,94 +402,10 @@ at java.lang.Thread.run(Unknown Source)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: SetUpDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: SetUpDriver
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at gby.appium.ui.SetUpDriver.getDriver(SetUpDriver.java:75)
-at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:38)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: Failure [-200]'; Code: '1'
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: SetUpDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: Failure [-200]'; Code: '1'
-    at getResponseForW3CError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:806:13)
-    at asyncHandler$ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:361:37)
-    at tryCatch (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
-    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
-    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
-    at GeneratorFunctionPrototype.invoke (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
-    at <anonymous>
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-... 39 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
+            <line>
+              <![CDATA[[info] 【f】测试用例开始执行]]>
+            </line>
             <line>
               <![CDATA[[debug] deviceName: vivoX9]]>
             </line>
@@ -1109,444 +413,42 @@ at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.
               <![CDATA[[debug] 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]]]>
             </line>
             <line>
-              <![CDATA[[debug] 命令结果：already connected to 192.168.20.159:5555]]>
+              <![CDATA[[debug] 命令结果：connected to 192.168.20.159:5555* daemon not running; starting now at tcp:5037* daemon started successfully]]>
             </line>
             <line>
-              <![CDATA[[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 4597 -U 192.168.20.159:5555 -bp 4598]]]>
+              <![CDATA[[info] AndroidDriver初始化完成，打开app成功]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Welcome to Appium v1.8.1]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m Non-default server args:]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   address: 127.0.0.1]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   port: 4597]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   bootstrapPort: 4598]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.159:5555]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m Deprecated server args:]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.159:5555"}']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.159:5555]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4597]]>
-            </line>
-            <line>
-              <![CDATA[[info] appiumServer已启动]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"7.1.2","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.159:5555","deviceName":"vivoX9","resetKeyboard":true},"capabilities":{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"vivoX9","platformName":"android","appium:platformVersion":"7.1.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.159:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}}[39m]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"7.1.2","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.159:5555","deviceName":"vivoX9","resetKeyboard":true},null,{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"vivoX9","platformName":"android","appium:platformVersion":"7.1.2","appium:resetKeyboard":true,"appium:udid":"192.168.20.159:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}]]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1534396609731 (13:16:49 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[BaseDriver][39m The capabilities ["udid"] are not standard capabilities and should have an extension prefix]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.12.0) session]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m Capabilities:]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.159:5555]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   platformName: android]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   app: D:\git\Appium/src/main/resources/hizhu.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   appActivity: com.loulifang.house.activities.TMainActivity]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   appPackage: com.loulifang.house]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   automationName: uiautomator2]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   deviceName: vivoX9]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   platformVersion: 7.1.2]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   resetKeyboard: true]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   unicodeKeyboard: true]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities [object Object] were provided]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[BaseDriver][39m Session created with session id: 86edf657-480d-4321-8d4a-d681505d968e]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[BaseDriver][39m Using local app 'D:\git\Appium/src/main/resources/hizhu.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Checking whether app is actually present]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Getting Java version]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Java version is: 1.8.0_171]]>
-            </line>
-            <line>
-              <![CDATA[[debug] ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Checking whether adb is present]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Administrator\AppData\Local\Android\android-sdk' (newest first):]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m     C:/Users/Administrator/AppData/Local/Android/android-sdk/build-tools/28.0.1]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Using adb.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Retrieving device list]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Trying to find a connected android device]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting connected devices...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m 3 device(s) connected]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Using device: 192.168.20.159:5555]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Setting device id to 192.168.20.159:5555]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.build.version.sdk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 25]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Getting device platform version]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.build.version.release']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.release': 7.1.2]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell wm size']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell wm density']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.product.model']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.model': vivo X9]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell getprop ro.product.manufacturer']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': vivo]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am force-stop io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Using apksigner.bat from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' is already signed.]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already signed.]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Checking whether aapt is present]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Using aapt.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\aapt.exe]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.12.0' >= '1.12.0')]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Cannot read version codes of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Cannot read version names of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list instrumentation']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 wait-for-device']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell echo ping']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing settings apk to device...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.settings]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell pm list packages io.appium.settings']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.settings']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell dumpsys package io.appium.settings']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell ps']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 25]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell appops set io.appium.settings android\:mock_location allow']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Got language: 'null' and country: 'null']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[Logcat][39m Starting logcat capture]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing unicode ime to device...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: Error: Trying to proxy a session command without session id]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 shell am force-stop com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[Logcat][39m Stopping logcat capture]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.159\:5555 forward --remove tcp\:8201']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1534396632653 (13:17:12 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m23028 ms - 2450[39m]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[HTTP][39m [90m[39m]]>
+              <![CDATA[[info] 【f】测试用例执行成功]]>
             </line>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- gby.testng.testcase.InitDriverCase -->
-    </test> <!-- vivoX9 -->
-    <test name="OPPOR9tm" duration-ms="75003" started-at="2018-08-16T05:16:45Z" finished-at="2018-08-16T05:18:00Z">
-      <class name="gby.testng.testcase.LoginCase">
-        <test-method status="FAIL" signature="f()[pri:0, instance:gby.testng.testcase.LoginCase@40005471]" name="f" duration-ms="6" started-at="2018-08-16T05:18:00Z" finished-at="2018-08-16T05:18:00Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at gby.testng.testcase.LoginCase.f(LoginCase.java:11)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+      <class name="gby.testng.testcase.PublishPostCase">
+        <test-method status="PASS" signature="setup()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33]" name="setup" is-config="true" duration-ms="2" started-at="2018-09-07T05:52:26Z" finished-at="2018-09-07T05:52:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- gby.testng.testcase.LoginCase -->
-      <class name="gby.testng.testcase.InitDriverCase">
-        <test-method status="FAIL" signature="f(java.lang.String)[pri:0, instance:gby.testng.testcase.InitDriverCase@3d285d7e]" name="f" duration-ms="74970" started-at="2018-08-16T05:16:45Z" finished-at="2018-08-16T05:18:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[OPPOR9tm]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="intoPublisPostPage()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33]" name="intoPublisPostPage" duration-ms="21081" started-at="2018-09-07T05:52:56Z" finished-at="2018-09-07T05:53:17Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: SetUpDriver]]>
+              <![CDATA[【loginButton】元素识别失败，该测试方法自动结束失败]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: SetUpDriver
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at gby.appium.ui.SetUpDriver.getDriver(SetUpDriver.java:75)
-at gby.testng.testcase.InitDriverCase.f(InitDriverCase.java:38)
+              <![CDATA[java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
+at org.testng.Assert.fail(Assert.java:96)
+at gby.appium.page.BasePage.findElement(BasePage.java:94)
+at gby.appium.page.LoginPage.login(LoginPage.java:15)
+at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
+at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -1559,656 +461,302 @@ at java.util.concurrent.FutureTask.run(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[[info] 【intoPublisPostPage】测试用例开始执行]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【findRoommateButton】识别成功]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【publishIcon】识别成功]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【hasntRoomButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【hasntRoomButton】识别成功]]>
+            </line>
+            <line>
+              <![CDATA[[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]]]>
+            </line>
+            <line>
+              <![CDATA[[debug] 命令结果：  mCurrentFocus=Window{fa4a905 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【userName】识别成功]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【password】识别成功]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【loginButton】暂未找到，轮询中...]]>
+            </line>
+            <line>
+              <![CDATA[[error] 【loginButton】识别失败：识别超时]]>
+            </line>
+            <line>
+              <![CDATA[[error] 【intoPublisPostPage】测试用例执行失败]]>
+            </line>
+            <line>
+              <![CDATA[<a target='_blank' href="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png">]]>
+            </line>
+            <line>
+              <![CDATA[<img width="350" src="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png" />    失败截图：C:\Users\ADMINI~1\AppData\Local\Temp\screenshot8123587305158351560.png]]>
+            </line>
+            <line>
+              <![CDATA[</a><br />]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【homePageButton】未找到，识别失败,元素list长度为0]]>
+            </line>
+            <line>
+              <![CDATA[[info] 正在返回首页...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【homePageButton】未找到，识别失败,元素list长度为0]]>
+            </line>
+            <line>
+              <![CDATA[[info] 正在返回首页...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【homePageButton】识别成功]]>
+            </line>
+            <line>
+              <![CDATA[[info] 正在返回首页...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 已返回首页]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- intoPublisPostPage -->
+        <test-method status="SKIP" signature="publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33]" name="publishRoom" duration-ms="0" started-at="2018-09-07T05:53:21Z" depends-on-methods="gby.testng.testcase.PublishPostCase.intoPublisPostPage" finished-at="2018-09-07T05:53:21Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[[error] 【publishRoom】测试用例被跳过]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【homePageButton】识别成功]]>
+            </line>
+            <line>
+              <![CDATA[[info] 正在返回首页...]]>
+            </line>
+            <line>
+              <![CDATA[[info] 已返回首页]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- publishRoom -->
+        <test-method status="FAIL" signature="deletePost()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33]" name="deletePost" is-config="true" duration-ms="15605" started-at="2018-09-07T05:53:22Z" finished-at="2018-09-07T05:53:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[【myPostButton】元素识别失败，该测试方法自动结束失败]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 【myPostButton】元素识别失败，该测试方法自动结束失败
+at org.testng.Assert.fail(Assert.java:96)
+at gby.appium.page.BasePage.findElement(BasePage.java:94)
+at gby.appium.page.MinePage.deletePost(MinePage.java:32)
+at gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:64)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-... 34 more
-Caused by: org.openqa.selenium.WebDriverException: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8201
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: SetUpDriver
-remote stacktrace: ProxyRequestError: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8201
-    at JWProxy.proxy$ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:152:13)
-    at tryCatch (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
-    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
-    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
-    at GeneratorFunctionPrototype.invoke (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
-    at <anonymous>
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-... 39 more
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[[debug] deviceName: OPPOR9tm]]>
+              <![CDATA[[info] 【mineButton】识别成功]]>
             </line>
             <line>
-              <![CDATA[[debug] 执行命令：[cmd, /c, adb connect 192.168.20.178:5555]]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] 命令结果：already connected to 192.168.20.178:5555]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] 执行命令：[cmd, /c, appium -a 127.0.0.1 -p 4682 -U 192.168.20.178:5555 -bp 4683]]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Welcome to Appium v1.8.1]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Non-default server args:]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   address: 127.0.0.1]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   port: 4682]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   bootstrapPort: 4683]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.178:5555]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Deprecated server args:]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"192.168.20.178:5555"}']]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.178:5555]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4682]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] appiumServer已启动]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"5.1","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.178:5555","deviceName":"OPPOR9tm","resetKeyboard":true},"capabilities":{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"OPPOR9tm","platformName":"android","appium:platformVersion":"5.1","appium:resetKeyboard":true,"appium:udid":"192.168.20.178:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}}[39m]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appActivity":"com.loulifang.house.activities.TMainActivity","appPackage":"com.loulifang.house","platformVersion":"5.1","automationName":"uiautomator2","unicodeKeyboard":true,"platformName":"Android","udid":"192.168.20.178:5555","deviceName":"OPPOR9tm","resetKeyboard":true},null,{"alwaysMatch":{"appium:app":"D:\\git\\Appium/src/main/resources/hizhu.apk","appium:appActivity":"com.loulifang.house.activities.TMainActivity","appium:appPackage":"com.loulifang.house","appium:automationName":"uiautomator2","appium:deviceName":"OPPOR9tm","platformName":"android","appium:platformVersion":"5.1","appium:resetKeyboard":true,"appium:udid":"192.168.20.178:5555","appium:unicodeKeyboard":true},"firstMatch":[{}]}]]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1534396609730 (13:16:49 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[BaseDriver][39m The capabilities ["udid"] are not standard capabilities and should have an extension prefix]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.12.0) session]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m Capabilities:]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   udid: 192.168.20.178:5555]]>
+              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[debug] [35m[Appium][39m   platformName: android]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   app: D:\git\Appium/src/main/resources/hizhu.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   appActivity: com.loulifang.house.activities.TMainActivity]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   appPackage: com.loulifang.house]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   automationName: uiautomator2]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   deviceName: OPPOR9tm]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   platformVersion: 5.1]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   resetKeyboard: true]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[Appium][39m   unicodeKeyboard: true]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities [object Object] were provided]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[BaseDriver][39m Session created with session id: 058afd6b-624a-46a7-9c62-4df656e57968]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[BaseDriver][39m Using local app 'D:\git\Appium/src/main/resources/hizhu.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Checking whether app is actually present]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Getting Java version]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Java version is: 1.8.0_171]]>
-            </line>
-            <line>
-              <![CDATA[[debug] ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Checking whether adb is present]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Administrator\AppData\Local\Android\android-sdk' (newest first):]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m     C:/Users/Administrator/AppData/Local/Android/android-sdk/build-tools/28.0.1]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Using adb.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Retrieving device list]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Trying to find a connected android device]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting connected devices...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m 3 device(s) connected]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Using device: 192.168.20.178:5555]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Setting device id to 192.168.20.178:5555]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.build.version.sdk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Getting device platform version]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.build.version.release']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.build.version.release': 5.1]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell wm size']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell wm density']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.product.model']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.model': OPPO R9tm]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell getprop ro.product.manufacturer']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': OPPO]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Using apksigner.bat from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' is already signed.]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already signed.]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Checking whether aapt is present]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Using aapt.exe from C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\aapt.exe]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.12.0' >= '1.12.0')]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Cannot read version codes of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Cannot read version names of 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list instrumentation']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 wait-for-device']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell echo ping']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing settings apk to device...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.settings]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.settings']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.settings']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.settings']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ps']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Device API level: 22]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell settings put secure mock_location 1']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Got language: 'null' and country: 'null']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[Logcat][39m Starting logcat capture]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing unicode ime to device...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 install C\:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Install command stdout: [100%] /data/local/tmp/UnicodeIME-debug.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-ime\bin\UnicodeIME-debug.apk: 1 file pushed. 0.4 MB/s (36795 bytes in 0.087s)]]>
-            </line>
-            <line>
-              <![CDATA[[debug] ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m pkg: /data/local/tmp/UnicodeIME-debug.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Failure [-99]]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell settings get secure default_input_method']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Unsetting previous IME com.sohu.inputmethod.sogouoem/.SogouIME]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.android.ime/.UnicodeIME']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ime enable io.appium.android.ime/.UnicodeIME']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ime set io.appium.android.ime/.UnicodeIME']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for io.appium.unlock]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages io.appium.unlock']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'io.appium.unlock']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package io.appium.unlock']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to 8201]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Forwarding system: 8201 to device: 6790]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 forward tcp\:8201 tcp\:6790']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell rm -rf /data/local/tmp/strings.json']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Extracting strings from apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m D:\git\Appium/src/main/resources/hizhu.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m null]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m C:\Users\ADMINI~1\AppData\Local\Temp\com.loulifang.house]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Extracting strings for language: default]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[ADB][39m Successfully extracted 457 strings from 'D:\git\Appium/src/main/resources/hizhu.apk' resources for '(default)' configuration]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 push C\:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\com.loulifang.house\\strings.json /data/local/tmp']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Checking app cert for D:\git\Appium/src/main/resources/hizhu.apk]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Starting 'C:\Users\Administrator\AppData\Local\Android\android-sdk\build-tools\28.0.1\apksigner.bat' with args 'verify,--print-certs,D:\git\Appium/src/main/resources/hizhu.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m 'D:\git\Appium/src/main/resources/hizhu.apk' is already signed.]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting package info for 'com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell dumpsys package com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m The installed 'com.loulifang.house' package does not require upgrade (58 > 56)]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[AndroidDriver][39m Performing fast reset on 'com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Getting install status for com.loulifang.house]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm list packages com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m App is installed]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell pm clear com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.loulifang.house' application (stop and clear)]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop io.appium.uiautomator2.server']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[UiAutomator2][39m Starting uiautomator2 server 1.12.0]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' and test from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[UiAutomator2][39m Running command: 'adb -s 192.168.20.178:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[UiAutomator2][39m Waiting up to 20000ms for UiAutomator2 to be online...]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: Error: Trying to proxy a session command without session id]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[UiAutomator2][39m Resetting IME to 'com.sohu.inputmethod.sogouoem/.SogouIME']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell ime set com.sohu.inputmethod.sogouoem/.SogouIME']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 shell am force-stop com.loulifang.house']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[Logcat][39m Stopping logcat capture]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 ]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 forward --remove tcp\:8201']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[ADB][39m Running 'C:\Users\Administrator\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s 192.168.20.178\:5555 forward --remove tcp\:8201']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[UiAutomator2][39m Unable to remove port forward 'Error executing adbExec. Original error: 'Command 'C\:\\Users\\Administrator\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.20.178\:5555 forward --remove tcp\:8201' exited with code 1'; Stderr: 'error: listener 'tcp:8201' not found'; Code: '1'']]>
-            </line>
-            <line>
-              <![CDATA[[debug] [debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1534396680247 (13:18:00 GMT+0800 (涓浗鏍囧噯鏃堕棿))]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[33m400[39m [90m70527 ms - 1190[39m]]>
-            </line>
-            <line>
-              <![CDATA[[debug] [35m[HTTP][39m [90m[39m]]>
+              <![CDATA[[error] 【myPostButton】识别失败：识别超时]]>
             </line>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="setDown()[pri:0, instance:gby.testng.testcase.InitDriverCase@3d285d7e]" name="setDown" is-config="true" duration-ms="189" started-at="2018-08-16T05:18:00Z" finished-at="2018-08-16T05:18:00Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[debug] 执行命令：[cmd, /c, taskkill /F /IM node.exe]]]>
-            </line>
-            <line>
-              <![CDATA[[debug] 命令结果：�ɹ�: ����ֹ���� "node.exe"���� PID Ϊ 9584���ɹ�: ����ֹ���� "node.exe"���� PID Ϊ 8548��]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setDown -->
-      </class> <!-- gby.testng.testcase.InitDriverCase -->
-    </test> <!-- OPPOR9tm -->
+        </test-method> <!-- deletePost -->
+      </class> <!-- gby.testng.testcase.PublishPostCase -->
+    </test> <!-- vivoX9 -->
   </suite> <!-- Suite -->
 </testng-results>

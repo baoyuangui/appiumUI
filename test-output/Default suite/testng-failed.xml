@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="deviceName" value="vivoX9"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gby.testng.testcase.InitDriverCase">
+      <class name="gby.testng.testcase.PublishPostCase">
         <methods>
-          <include name="f" invocation-numbers="0"/>
+          <include name="intoPublisPostPage"/>
+          <include name="setup"/>
+          <include name="deletePost"/>
+          <include name="publishRoom"/>
         </methods>
-      </class> <!-- gby.testng.testcase.InitDriverCase -->
+      </class> <!-- gby.testng.testcase.PublishPostCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

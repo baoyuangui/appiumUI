@@ -8,8 +8,10 @@ import java.util.Map;
 
 import org.openqa.selenium.Point;
 
+import gby.appium.utils.AssertUtils;
 import gby.appium.utils.CommandPromptUtil;
-
+import gby.appium.utils.ElementShot;
+import gby.appium.utils.WebShot;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
@@ -21,17 +23,25 @@ public class FindRoommateBasePage extends BasePage {
 		super(driver);
 	}
 
+	
+	public void clickIntoRoommatePage() {
+		findElement("findRoommateButton").click();
+//		ElementShot.captureElement(findElement("findRoommateButton"));
+	}
+	
+	
 	public void openPublishPage() {
 		// 无房->发房
-		findElement("findRoommateButton").click();
 		findElement("publishIcon").click();
 		findElement("hasntRoomButton").click();
 
 		// 判断是否需要登录，进入发帖页面
 		CommandPromptUtil cmd = new CommandPromptUtil();
-		String res = cmd.runCommandThruProcess("adb shell dumpsys window | findstr mCurrentFocus");
+		String res = cmd.runCommandThruProcess("adb -s "+ device.getUdid2() + " shell dumpsys window | findstr mCurrentFocus");
 		if (res.contains("LoginActivity")) {
-			OwnerPage.simplelogin(driver, "15575993304", "180205");
+			LoginPage loginPage = new LoginPage(driver);
+			loginPage.login("15575993304", "180205");
+			AssertUtils.checkIsNextPage(this, "hasntRoomButton");
 			findElement("hasntRoomButton").click();
 		}//常规流程先登录再发帖，故这里登录写死了
 	}
@@ -88,7 +98,7 @@ public class FindRoommateBasePage extends BasePage {
 		// 选择房间照片
 		findElement("addImagesButton").click();
 		findElement("albumButton").click();
-		findElement("screenshotAlbum").click();
+		findElement("imagesAlbum").click();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

@@ -1,0 +1,6 @@
+{
+	"userName":"id@com.loulifang.house:id/userName",
+	"password":"id@com.loulifang.house:id/verCode",
+	"loginButton":"id@com.loulifang.house:id/confirm"
+		
+}

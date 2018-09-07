@@ -1,4 +1,4 @@
-package gby.appium.newDeviceM;
+package gby.appium.DeviceMForJenkins;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -55,7 +55,7 @@ public class DevicesManager {
 				.replaceAll("\\s+", "");
 		String osVersion = cmd.runCommandThruProcess("adb -s " + udid + " shell getprop ro.build.version.release")
 				.replaceAll("\\s+", "");
-
+		
 		String deviceName = model.contains(brand) ? model : brand + "_" + model;
 		
 		//根据设备名称字符值计算对应appium server的端口
@@ -76,6 +76,7 @@ public class DevicesManager {
 		adbDevice.put("screenSize", getScreenResolution);
 		adbDevice.put("os", "android");
 		adbDevice.put("ip", ip);
+		adbDevice.put("udid2", ip+":5555");
 		adbDevice.put("apmsrv_port", apmsrv_port);
 		adbDevice.put("apmsrv_bp", apmsrv_bp);
 

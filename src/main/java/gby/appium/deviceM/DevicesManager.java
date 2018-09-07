@@ -76,6 +76,7 @@ public class DevicesManager {
 		adbDevice.put("screenSize", getScreenResolution);
 		adbDevice.put("os", "android");
 		adbDevice.put("ip", ip);
+		adbDevice.put("udid2", ip+":5555");
 		adbDevice.put("apmsrv_port", apmsrv_port);
 		adbDevice.put("apmsrv_bp", apmsrv_bp);
 

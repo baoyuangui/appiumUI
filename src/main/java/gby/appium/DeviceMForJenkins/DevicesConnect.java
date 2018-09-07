@@ -1,4 +1,4 @@
-package gby.appium.newDeviceM;
+package gby.appium.DeviceMForJenkins;
 
 import java.io.BufferedReader;
 import java.io.IOException;

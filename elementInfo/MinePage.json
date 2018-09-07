@@ -4,6 +4,13 @@
 	"messageButton":"id@com.loulifang.house:id/serviceLyt",
 	"mineButton":"id@com.loulifang.house:id/mineLyt",
 	
+	"loginButton":"id@com.loulifang.house:id/profileLyt",
+	"nickname":"id@com.loulifang.house:id/nameText",
+	"phoneNumber":"id@com.loulifang.house:id/phoneNumberText",
+	
+	"collectionCount":"id@com.loulifang.house:id/myCollectCnt",//收藏数
+	"appointmentCount":"id@com.loulifang.house:id/myAppointCnt",//预约数	
+	
 	"myPostButton":"id@com.loulifang.house:id/myTopicLyt",
 	
 	"deleteButtons":"id@com.loulifang.house:id/tvw_item_delete",

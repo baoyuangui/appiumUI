@@ -16,14 +16,16 @@
 				<Route>
 					<RollingFile name="RollingFile-${ctx:ThreadName}_error"
 						fileName="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}_error.log"
-						filePattern="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}-%d{HH-mm-ss}_error.log"
+						filePattern="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}-%d{yyyy-MM-dd}-%i_error.log"
 						append="true">
 						<ThresholdFilter level="ERROR" onMatch="ACCEPT"
 							onMismatch="DENY" />
 						<PatternLayout
 							pattern="%d [%t] %-5p [%c] - %m%n" />
-						<Policies>
-							<SizeBasedTriggeringPolicy size="100M" />
+						<Policies> 
+							<TimeBasedTriggeringPolicy modulate="true"
+												interval="1" />
+							<SizeBasedTriggeringPolicy size="10MB" />
 						</Policies>
 						<DefaultRolloverStrategy max="100" />
 					</RollingFile>
@@ -34,13 +36,15 @@
 			<Routes pattern="$${ctx:ThreadName}">
 				<Route>
 					<RollingFile name="RollingFile-${ctx:ThreadName}"
-						fileName="${logFilePath}/${ctx:ThreadName}.log"
-						filePattern="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}-%d{HH-mm-ss}.log"
+						fileName="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}.log"
+						filePattern="${logFilePath}/${ctx:ThreadName}/${ctx:ThreadName}-%d{yyyy-MM-dd}-%i.log"
 						append="true">
 						<PatternLayout
 							pattern="%d [%t] %-5p [%c] - %m%n" />
-						<Policies>
-							<SizeBasedTriggeringPolicy size="100M" />
+						 <Policies> 
+							<TimeBasedTriggeringPolicy modulate="true"
+												interval="1" />
+							<SizeBasedTriggeringPolicy size="10MB" />
 						</Policies>
 						<DefaultRolloverStrategy max="100" />
 					</RollingFile>

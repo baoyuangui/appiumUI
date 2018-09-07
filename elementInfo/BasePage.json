@@ -1,0 +1,7 @@
+{
+	"homePageButton":"id@com.loulifang.house:id/llfLyt",
+	"findRoommateButton":"id@com.loulifang.house:id/friendLyt",
+	"messageButton":"id@com.loulifang.house:id/serviceLyt",
+	"mineButton":"id@com.loulifang.house:id/mineLyt"
+		
+}

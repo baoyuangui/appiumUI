@@ -5,8 +5,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.SequenceInputStream;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Logger;
 
 import org.apache.logging.log4j.ThreadContext;
 
@@ -20,7 +22,20 @@ public class DevicesConnect extends DevicesManager {
 
 	public DevicesConnect(String deviceName) {
 		super();
-		device = fromJsonfileGetDevices().get(deviceName);
+		List<String> devs = new ArrayList<String>();
+		for(String dev : fromJsonfileGetDevices().keySet()) {
+			if(dev.toUpperCase().contains(deviceName.toUpperCase())) {
+				devs.add(dev);
+			}
+		}
+		if(devs.size() == 0) {
+			device = null;	
+		}else{
+			if(devs.size() > 1)
+				LoggerUtil.debug("输入的设备名称匹配有多个，仅使用第一个：" + devs.get(0));
+			device = fromJsonfileGetDevices().get(devs.get(0));
+		}
+		
 
 	}
 
@@ -29,10 +44,11 @@ public class DevicesConnect extends DevicesManager {
 		device = fromJsonfileGetDevices().get(deviceName);
 	}
 
-//	@SuppressWarnings("deprecation")
+
 	/*
-	 * 由于远程adb的原因，设备json中udid也用ip：port代替
-	 * ip使用静态ip，从而
+	 * 
+	 * 根据device对象是否为空，从而通过电脑刷新设备信息
+	 * 并开启wifi调试模式，连接设备
 	 * 
 	 * 
 	 * */
@@ -45,7 +61,7 @@ public class DevicesConnect extends DevicesManager {
 			try {
 				cmd.runCommandThruProcess("adb -s " + device.getUdid() + " tcpip 5555");
 				Thread.sleep(1000);
-				cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
+				cmd.runCommandThruProcess("adb connect " + device.getUdid2());
 			} catch (NullPointerException | InterruptedException e) {
 				// TODO: handle exception
 				LoggerUtil.error("无法连接设备，确认设备名称无误，尝试usb连接电脑再运行一次：" + e.getMessage());
@@ -55,7 +71,7 @@ public class DevicesConnect extends DevicesManager {
 		} else {
 
 			// json中存在设备，尝试连接
-			String ipConStr = cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
+			String ipConStr = cmd.runCommandThruProcess("adb connect " + device.getUdid2());
 
 			// 连接不成功,可能ip改变，刷新设备信息，再次连接
 			if (ipConStr.contains("cannot") &&
@@ -73,7 +89,7 @@ public class DevicesConnect extends DevicesManager {
 //					Thread.currentThread().destroy();
 				}
 
-				String str = cmd.runCommandThruProcess("adb connect " + device.getIp() + ":5555");
+				String str = cmd.runCommandThruProcess("adb connect " + device.getUdid2());
 				
 				// 刷新ip后依旧无法连接，提示报错
 				if (str.contains("cannot"))
@@ -89,11 +105,11 @@ public class DevicesConnect extends DevicesManager {
 
 		try {
 			prs = cmd.runCmdToProcess("appium -a 127.0.0.1 -p " + device.getApmsrv_port() + " -U " + device.getIp()
-					+ ":5555" + " -bp " + device.getApmsrv_bp());
+					+ ":5555" + " -bp " + device.getApmsrv_bp() );//
 			InputStream inputStream = prs.getInputStream();
 			InputStream errorStream = prs.getErrorStream();
 			SequenceInputStream sis = new SequenceInputStream(inputStream, errorStream);
-			BufferedReader reader = new BufferedReader(new InputStreamReader(sis, "gbk"));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(sis, "UTF-8"));
 			String line;
 			while ((line = reader.readLine()) != null) {
 				LoggerUtil.debug(line);
@@ -112,6 +128,7 @@ public class DevicesConnect extends DevicesManager {
 			inputStream.close();
 			reader.close();
 			prs.destroy();
+			LoggerUtil.debug(prs.toString()+" destroied");
 		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			LoggerUtil.error("appiumServer运行出错", e);

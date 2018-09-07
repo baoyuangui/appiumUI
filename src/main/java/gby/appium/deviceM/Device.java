@@ -12,6 +12,8 @@ public class Device {
 	private String screenSize;
 	private String apmsrv_port;
 	private String apmsrv_bp;
+	private String udid2;//ip:5555
+
 
 	public Device(JSONObject deviceJson) {
 
@@ -19,6 +21,7 @@ public class Device {
 		this.os = deviceJson.getString("os");
 		this.os_ver = deviceJson.getString("os_ver");
 		this.udid = deviceJson.getString("udid");
+		this.udid2 = deviceJson.getString("udid2"); 
 		this.ip = deviceJson.getString("ip");
 		this.screenSize = deviceJson.getString("screenSize");
 		this.apmsrv_port = deviceJson.getString("apmsrv_port");
@@ -96,6 +99,15 @@ public class Device {
 
 	public void setApmsrv_bp(String apmsrv_bp) {
 		this.apmsrv_bp = apmsrv_bp;
+	}
+	
+
+	public String getUdid2() {
+		return udid2;
+	}
+
+	public void setUdid2(String udid2) {
+		this.udid2 = udid2;
 	}
 
 }
