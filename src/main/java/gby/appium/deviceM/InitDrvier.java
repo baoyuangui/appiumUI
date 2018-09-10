@@ -26,20 +26,20 @@ public class InitDrvier {
 		dc = new DevicesConnect(deviceName);
 		dc.adbConnect();
 		
-//		new Thread(new Runnable() {
-//			@Override
-//			public void run() {
-//				// TODO Auto-generated method stub
-//				dc.startServer();//方法内部获取了锁
-//			}
-//		}, dc.device.getName() + "_appiumServer").start();
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				dc.startServer();//方法内部获取了锁
+			}
+		}, dc.device.getName() + "_appiumServer").start();
 		
 		
-		AppiumServiceBuilder builder = new AppiumServiceBuilder()
-				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-				.withIPAddress("127.0.0.1").usingPort(Integer.parseInt(dc.device.getApmsrv_port()));
-		AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
-		service.start();
+// 		AppiumServiceBuilder builder = new AppiumServiceBuilder()
+// 				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+// 				.withIPAddress("127.0.0.1").usingPort(Integer.parseInt(dc.device.getApmsrv_port()));
+// 		AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+// 		service.start();
 		
 		
 		
