@@ -26,13 +26,13 @@ public class InitDrvier {
 		dc = new DevicesConnect(deviceName);
 		dc.adbConnect();
 		
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				dc.startServer();//方法内部获取了锁
-			}
-		}, dc.device.getName() + "_appiumServer").start();
+// 		new Thread(new Runnable() {
+// 			@Override
+// 			public void run() {
+// 				// TODO Auto-generated method stub
+// 				dc.startServer();//方法内部获取了锁
+// 			}
+// 		}, dc.device.getName() + "_appiumServer").start();
 		
 		
 // 		AppiumServiceBuilder builder = new AppiumServiceBuilder()
