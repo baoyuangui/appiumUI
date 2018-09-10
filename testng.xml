@@ -16,16 +16,6 @@
 <!-- 	<class name="gby.testng.testcase.LoginCase" /> -->
 <!-- 	</classes> -->
 <!-- 	</test> -->
-
-<!-- 	<test name="OPPOR9tm"> -->
-<!-- 	<parameter name="deviceName" value="OPPOR9tm" /> -->
-<!-- 	<classes> -->
-<!-- 	<class name="gby.testng.testcase.InitDriverCase" /> -->
-<!-- 	<class name="gby.testng.testcase.LoginCase" /> -->
-<!-- 	</classes> -->
-<!-- 	</test> -->
-
-
 	
 	<!-- <test name="jingli_Test"> -->
 	<!-- 设备id及对应的server端口 -->
