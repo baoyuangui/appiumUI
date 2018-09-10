@@ -35,11 +35,11 @@ public class InitDrvier {
 // 		}, dc.device.getName() + "_appiumServer").start();
 		
 		
-// 		AppiumServiceBuilder builder = new AppiumServiceBuilder()
-// 				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-// 				.withIPAddress("127.0.0.1").usingPort(Integer.parseInt(dc.device.getApmsrv_port()));
-// 		AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
-// 		service.start();
+		AppiumServiceBuilder builder = new AppiumServiceBuilder()
+				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+				.withIPAddress("127.0.0.1").usingPort(Integer.parseInt(dc.device.getApmsrv_port()));
+		AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+		service.start();
 		
 		
 		
