@@ -105,7 +105,7 @@ public class DevicesConnect extends DevicesManager {
 
 		try {
 			prs = cmd.runCmdToProcess("appium -a 127.0.0.1 -p " + device.getApmsrv_port() + " -U " + device.getIp()
-					+ ":5555" + " -bp " + device.getApmsrv_bp() );//
+					+ ":5555" + " -bp " + device.getApmsrv_bp() +"	--session-override ");//
 			InputStream inputStream = prs.getInputStream();
 			InputStream errorStream = prs.getErrorStream();
 			SequenceInputStream sis = new SequenceInputStream(inputStream, errorStream);
@@ -123,12 +123,12 @@ public class DevicesConnect extends DevicesManager {
 				}
 			}
 			prs.waitFor();
-////				Thread.sleep(2000);
-////				LoggerUtil.debug("Stop appium server");
-//			inputStream.close();
-//			reader.close();
-//			prs.destroy();
-//			LoggerUtil.debug(prs.toString()+" destroied");
+//				Thread.sleep(2000);
+//				LoggerUtil.debug("Stop appium server");
+			inputStream.close();
+			reader.close();
+			prs.destroy();
+			LoggerUtil.debug(prs.toString()+" destroied");
 		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			LoggerUtil.error("appiumServer运行出错", e);
