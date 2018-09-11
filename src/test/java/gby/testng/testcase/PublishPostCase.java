@@ -63,10 +63,10 @@ public class PublishPostCase {
   public void deletePost() {
 	  minepg =  new MinePage(driver);
 	  minepg.clickIntoMinepg();
-	  AssertUtils.checkIsNextPage(minepg, "titleInput");
+	  AssertUtils.checkIsNextPage(minepg, "loginButton");
 	  
 	  minepg.deletePost();
 	  Assert.assertEquals(minepg.findToast("删除成功"), true, "删除失败，没有找到删除成功的toast");
   }
-  
+   
 }

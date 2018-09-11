@@ -145,7 +145,7 @@ public class AssertUtils extends Assert{
     	 try {
     		 Assert.assertNotNull(bg.findElement(excepted));
          } catch (AssertionError e) {
-             Assert.fail("检查点检查出错误");
+             Assert.fail("未进入："+ bg.getClass().getSimpleName() + "页面");
          }
     		
 

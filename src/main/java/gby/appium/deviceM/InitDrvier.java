@@ -78,14 +78,8 @@ public class InitDrvier {
 		
 		// 初始化AndroidDriver
 		String url = "http://127.0.0.1:" + dc.device.getApmsrv_port() + "/wd/hub";
-//		try {
-			driver = new AndroidDriver<AndroidElement>(new URL(url), cap);
-			LoggerUtil.info("AndroidDriver初始化完成，打开app成功");
-//			return driver;
-//		} catch (Exception e) {
-//			// TODO: handle exception
-//			LoggerUtil.error("初始化driver失败");
-//		}
+		driver = new AndroidDriver<AndroidElement>(new URL(url), cap);
+		LoggerUtil.info("AndroidDriver初始化完成，打开app成功");
 
 	}
 
