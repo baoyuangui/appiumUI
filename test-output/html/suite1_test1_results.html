@@ -12,7 +12,7 @@
 <body>
 <h1>vivoX9</h1>
 <p>
-  Test duration: 80.943s
+  Test duration: 91.768s
 </p>
 
   <table class="resultsTable configTable">
@@ -26,46 +26,22 @@
                   deletePost
       </td>
   <td class="duration">
-    15.605s
+    0.693s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         [info] 【mineButton】识别成功<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [info] 【myPostButton】暂未找到，轮询中...<br />
-                                [error] 【myPostButton】识别失败：识别超时<br />
+                                [error] 【titleInput】识别失败：识别超时<br />
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: 【myPostButton】元素识别失败，该测试方法自动结束失败</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: 检查点检查出错误</b></a><br />
     <div class="stackTrace" id="exception-0">
               org.testng.Assert.fail(Assert.java:96)<br />
-              gby.appium.page.BasePage.findElement(BasePage.java:94)<br />
-              gby.appium.page.MinePage.deletePost(MinePage.java:32)<br />
-              gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:64)<br />
+              gby.appium.utils.AssertUtils.checkIsNextPage(AssertUtils.java:148)<br />
+              gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:66)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
@@ -102,71 +78,47 @@
             
 <tr>
   <td class="method">
-                  intoPublisPostPage
+                  publishRoom
       </td>
   <td class="duration">
-    21.081s
+    15.581s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        [info] 【intoPublisPostPage】测试用例开始执行<br />
-                                [info] 【findRoommateButton】识别成功<br />
-                                [info] 【publishIcon】识别成功<br />
-                                [info] 【hasntRoomButton】暂未找到，轮询中...<br />
-                                [info] 【hasntRoomButton】识别成功<br />
-                                [debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]<br />
-                                [debug] 命令结果：&nbsp; mCurrentFocus=Window{fa4a905 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}<br />
-                                [info] 【userName】识别成功<br />
-                                [info] 【password】识别成功<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [info] 【loginButton】暂未找到，轮询中...<br />
-                                [error] 【loginButton】识别失败：识别超时<br />
-                                [error] 【intoPublisPostPage】测试用例执行失败<br />
-                                &lt;a target=&apos;_blank&apos; href=&quot;file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png&quot;&gt;<br />
-                                &lt;img width=&quot;350&quot; src=&quot;file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png&quot; /&gt;&nbsp;&nbsp;&nbsp; 失败截图：C:\Users\ADMINI~1\AppData\Local\Temp\screenshot8123587305158351560.png<br />
+                        [info] 【publishRoom】测试用例开始执行<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [info] 【titleInput】暂未找到，轮询中...<br />
+                                [error] 【titleInput】识别失败：识别超时<br />
+                                [error] 【publishRoom】测试用例执行失败<br />
+                                &lt;a target=&apos;_blank&apos; href=&quot;file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.publishRoom_20180911105247.png&quot;&gt;<br />
+                                &lt;img width=&quot;350&quot; src=&quot;file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.publishRoom_20180911105247.png&quot; /&gt;&nbsp;&nbsp;&nbsp; 失败截图：D:\git\Appium\vivoX9_screenshots\PublishPostCase.publishRoom_20180911105247.png<br />
                                 &lt;/a&gt;&lt;br /&gt;<br />
-                                [info] 【homePageButton】未找到，识别失败,元素list长度为0<br />
-                                [info] 正在返回首页...<br />
-                                [info] 【homePageButton】未找到，识别失败,元素list长度为0<br />
-                                [info] 正在返回首页...<br />
                                 [info] 【homePageButton】识别成功<br />
                                 [info] 正在返回首页...<br />
                                 [info] 已返回首页<br />
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败</b></a><br />
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
     <div class="stackTrace" id="exception-1">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              gby.appium.page.BasePage.findElement(BasePage.java:94)<br />
-              gby.appium.page.LoginPage.login(LoginPage.java:15)<br />
-              gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)<br />
-              gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)<br />
+              gby.appium.page.FindRoommateBasePage.inputText(FindRoommateBasePage.java:50)<br />
+              gby.testng.testcase.PublishPostCase.publishRoom(PublishPostCase.java:50)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
@@ -192,35 +144,6 @@
 </tr>
       </table>
 
-  <table class="resultsTable" width="100%">
-    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">gby.testng.testcase.PublishPostCase</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  publishRoom
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">gby.testng.testcase.PublishPostCase.intoPublisPostPage</span>
-                
-    
-            <div class="testOutput">
-                        [error] 【publishRoom】测试用例被跳过<br />
-                                [info] 【homePageButton】识别成功<br />
-                                [info] 正在返回首页...<br />
-                                [info] 已返回首页<br />
-                  </div>
-    
-
-      </td>
-</tr>
-      </table>
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
@@ -233,7 +156,7 @@
                   f
       </td>
   <td class="duration">
-    44.255s
+    56.953s
   </td>
   <td class="result">
         
@@ -243,9 +166,44 @@
                         [info] 【f】测试用例开始执行<br />
                                 [debug] deviceName: vivoX9<br />
                                 [debug] 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]<br />
-                                [debug] 命令结果：connected to 192.168.20.159:5555* daemon not running; starting now at tcp:5037* daemon started successfully<br />
+                                [debug] 命令结果：already connected to 192.168.20.159:5555<br />
                                 [info] AndroidDriver初始化完成，打开app成功<br />
                                 [info] 【f】测试用例执行成功<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">gby.testng.testcase.PublishPostCase</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  intoPublisPostPage
+      </td>
+  <td class="duration">
+    18.539s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [info] 【intoPublisPostPage】测试用例开始执行<br />
+                                [info] 【findRoommateButton】识别成功<br />
+                                [info] 【publishIcon】识别成功<br />
+                                [info] 【hasntRoomButton】识别成功<br />
+                                [debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]<br />
+                                [debug] 命令结果：&nbsp; mCurrentFocus=Window{d93a781 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}<br />
+                                [info] 【userName】识别成功<br />
+                                [info] 【password】识别成功<br />
+                                [info] 【loginButton】识别成功<br />
+                                [info] 【hasntRoomButton】暂未找到，轮询中...<br />
+                                [info] 【hasntRoomButton】暂未找到，轮询中...<br />
+                                [info] 【hasntRoomButton】识别成功<br />
+                                [info] 【hasntRoomButton】识别成功<br />
+                                [info] 【titleInput】识别成功<br />
+                                [info] 【intoPublisPostPage】测试用例执行成功<br />
                   </div>
     
 

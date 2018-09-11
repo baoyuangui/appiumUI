@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>vivoX9</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 07 13:51:42 CST 2018</td>
+<td>Started on:</td><td>Tue Sep 11 10:50:31 CST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>115 seconds (115827 ms)</td>
+<tr><td>Total time:</td><td>138 seconds (138036 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,51 +76,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='gby.testng.testcase.PublishPostCase.deletePost()'><b>deletePost</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
-<a href="#Output-301702375" onClick='toggleBox("Output-301702375", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-948713975" onClick='toggleBox("Output-948713975", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-301702375" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-301702375">
+<a href="#Output-948713975" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-948713975">
 [info] 【mineButton】识别成功<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[info] 【myPostButton】暂未找到，轮询中...<br/>
-[error] 【myPostButton】识别失败：识别超时<br/>
+[error] 【titleInput】识别失败：识别超时<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: 【myPostButton】元素识别失败，该测试方法自动结束失败
-	at gby.appium.page.BasePage.findElement(BasePage.java:94)
-	at gby.appium.page.MinePage.deletePost(MinePage.java:32)
-	at gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:64)
+<td><div><pre>java.lang.AssertionError: 检查点检查出错误
+	at gby.appium.utils.AssertUtils.checkIsNextPage(AssertUtils.java:148)
+	at gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:66)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace301702375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace301702375'><pre>java.lang.AssertionError: 【myPostButton】元素识别失败，该测试方法自动结束失败
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948713975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948713975'><pre>java.lang.AssertionError: 检查点检查出错误
 	at org.testng.Assert.fail(Assert.java:96)
-	at gby.appium.page.BasePage.findElement(BasePage.java:94)
-	at gby.appium.page.MinePage.deletePost(MinePage.java:32)
-	at gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:64)
+	at gby.appium.utils.AssertUtils.checkIsNextPage(AssertUtils.java:148)
+	at gby.testng.testcase.PublishPostCase.deletePost(PublishPostCase.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -143,7 +118,7 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>15</td>
+<td>0</td>
 <td>gby.testng.testcase.PublishPostCase@167fdd33</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
@@ -154,75 +129,49 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='gby.testng.testcase.PublishPostCase.intoPublisPostPage()'><b>intoPublisPostPage</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
-<a href="#Output-1697424364" onClick='toggleBox("Output-1697424364", this, "Show output", "Hide output");'>Show output</a>
+<td title='gby.testng.testcase.PublishPostCase.publishRoom()'><b>publishRoom</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
+<a href="#Output-463060187" onClick='toggleBox("Output-463060187", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1697424364" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1697424364">
-[info] 【intoPublisPostPage】测试用例开始执行<br/>
-[info] 【findRoommateButton】识别成功<br/>
-[info] 【publishIcon】识别成功<br/>
-[info] 【hasntRoomButton】暂未找到，轮询中...<br/>
-[info] 【hasntRoomButton】识别成功<br/>
-[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]<br/>
-[debug] 命令结果：  mCurrentFocus=Window{fa4a905 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}<br/>
-[info] 【userName】识别成功<br/>
-[info] 【password】识别成功<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[error] 【loginButton】识别失败：识别超时<br/>
-[error] 【intoPublisPostPage】测试用例执行失败<br/>
-<a target='_blank' href="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png"><br/>
-<img width="350" src="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.intoPublisPostPage_20180907015318.png" />    失败截图：C:\Users\ADMINI~1\AppData\Local\Temp\screenshot8123587305158351560.png<br/>
+<a href="#Output-463060187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-463060187">
+[info] 【publishRoom】测试用例开始执行<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[info] 【titleInput】暂未找到，轮询中...<br/>
+[error] 【titleInput】识别失败：识别超时<br/>
+[error] 【publishRoom】测试用例执行失败<br/>
+<a target='_blank' href="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.publishRoom_20180911105247.png"><br/>
+<img width="350" src="file:D:\git\Appium\vivoX9_screenshots\PublishPostCase.publishRoom_20180911105247.png" />    失败截图：D:\git\Appium\vivoX9_screenshots\PublishPostCase.publishRoom_20180911105247.png<br/>
 </a><br /><br/>
-[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
-[info] 正在返回首页...<br/>
-[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
-[info] 正在返回首页...<br/>
 [info] 【homePageButton】识别成功<br/>
 [info] 正在返回首页...<br/>
 [info] 已返回首页<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
-	at gby.appium.page.BasePage.findElement(BasePage.java:94)
-	at gby.appium.page.LoginPage.login(LoginPage.java:15)
-	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
-	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
+<td><div><pre>java.lang.NullPointerException
+	at gby.appium.page.FindRoommateBasePage.inputText(FindRoommateBasePage.java:50)
+	at gby.testng.testcase.PublishPostCase.publishRoom(PublishPostCase.java:50)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1697424364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1697424364'><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
-	at org.testng.Assert.fail(Assert.java:96)
-	at gby.appium.page.BasePage.findElement(BasePage.java:94)
-	at gby.appium.page.LoginPage.login(LoginPage.java:15)
-	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
-	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace463060187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace463060187'><pre>java.lang.NullPointerException
+	at gby.appium.page.FindRoommateBasePage.inputText(FindRoommateBasePage.java:50)
+	at gby.testng.testcase.PublishPostCase.publishRoom(PublishPostCase.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -244,7 +193,7 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>21</td>
+<td>15</td>
 <td>gby.testng.testcase.PublishPostCase@167fdd33</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -256,21 +205,47 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='gby.testng.testcase.InitDriverCase.f()'><b>f</b><br>Test class: gby.testng.testcase.InitDriverCase<br>Parameters: vivoX9<br/>
-<a href="#Output-951599721" onClick='toggleBox("Output-951599721", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-178498454" onClick='toggleBox("Output-178498454", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-951599721" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-951599721">
+<a href="#Output-178498454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-178498454">
 [info] 【f】测试用例开始执行<br/>
 [debug] deviceName: vivoX9<br/>
 [debug] 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]<br/>
-[debug] 命令结果：connected to 192.168.20.159:5555* daemon not running; starting now at tcp:5037* daemon started successfully<br/>
+[debug] 命令结果：already connected to 192.168.20.159:5555<br/>
 [info] AndroidDriver初始化完成，打开app成功<br/>
 [info] 【f】测试用例执行成功<br/>
 </div>
 </td>
 <td></td>
-<td>44</td>
+<td>56</td>
 <td>gby.testng.testcase.InitDriverCase@5f282abb</td></tr>
+<tr>
+<td title='gby.testng.testcase.PublishPostCase.intoPublisPostPage()'><b>intoPublisPostPage</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
+<a href="#Output-624381882" onClick='toggleBox("Output-624381882", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-624381882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-624381882">
+[info] 【intoPublisPostPage】测试用例开始执行<br/>
+[info] 【findRoommateButton】识别成功<br/>
+[info] 【publishIcon】识别成功<br/>
+[info] 【hasntRoomButton】识别成功<br/>
+[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]<br/>
+[debug] 命令结果：  mCurrentFocus=Window{d93a781 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}<br/>
+[info] 【userName】识别成功<br/>
+[info] 【password】识别成功<br/>
+[info] 【loginButton】识别成功<br/>
+[info] 【hasntRoomButton】暂未找到，轮询中...<br/>
+[info] 【hasntRoomButton】暂未找到，轮询中...<br/>
+[info] 【hasntRoomButton】识别成功<br/>
+[info] 【hasntRoomButton】识别成功<br/>
+[info] 【titleInput】识别成功<br/>
+[info] 【intoPublisPostPage】测试用例执行成功<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>gby.testng.testcase.PublishPostCase@167fdd33</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -280,51 +255,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='gby.testng.testcase.PublishPostCase.intoPublisPostPage()'><b>intoPublisPostPage</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
-<a href="#Output-472153624" onClick='toggleBox("Output-472153624", this, "Show output", "Hide output");'>Show output</a>
+<td title='gby.testng.testcase.PublishPostCase.publishRoom()'><b>publishRoom</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
+<a href="#Output-1439354104" onClick='toggleBox("Output-1439354104", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-472153624" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-472153624">
-[info] 【intoPublisPostPage】测试用例开始执行<br/>
-[info] 【findRoommateButton】暂未找到，轮询中...<br/>
-[info] 【findRoommateButton】暂未找到，轮询中...<br/>
-[info] 【findRoommateButton】暂未找到，轮询中...<br/>
-[info] 【findRoommateButton】暂未找到，轮询中...<br/>
-[info] 【findRoommateButton】识别成功<br/>
-[info] 【publishIcon】识别成功<br/>
-[info] 【hasntRoomButton】暂未找到，轮询中...<br/>
-[info] 【hasntRoomButton】识别成功<br/>
-[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]<br/>
-[debug] 命令结果：  mCurrentFocus=Window{3b21bc7 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}<br/>
-[info] 【userName】识别成功<br/>
-[info] 【password】识别成功<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[info] 【loginButton】暂未找到，轮询中...<br/>
-[error] 【loginButton】识别失败：识别超时<br/>
-[info] 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'intoPublisPostPage' 执行失败，重试第 1 次<br/>
-[error] 【intoPublisPostPage】测试用例被跳过<br/>
+<a href="#Output-1439354104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1439354104">
+[info] 【publishRoom】测试用例开始执行<br/>
+[info] 【titleInput】识别成功<br/>
+[info] 【otherContentInput】识别成功<br/>
+[info] 【locationButton】识别成功<br/>
+[info] 【businessCircle】识别成功<br/>
+[info] 【jingan】识别成功<br/>
+[info] 【jingansi】识别成功<br/>
+[info] 【subway】识别成功<br/>
+[info] 【subway】识别成功<br/>
+[info] 【line7】识别成功<br/>
+[info] 【locationEnsuredButton】识别成功<br/>
+[info] 【priceGlider】暂未找到，轮询中...<br/>
+[info] 【priceGlider】暂未找到，轮询中...<br/>
+[info] 【priceGlider】暂未找到，轮询中...<br/>
+[info] 【priceGlider】识别成功<br/>
+[info] 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'publishRoom' 执行失败，重试第 1 次<br/>
+[error] 【publishRoom】测试用例被跳过<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
+[info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
+[info] 正在返回首页...<br/>
 [info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
 [info] 正在返回首页...<br/>
 [info] 【homePageButton】未找到，识别失败,元素list长度为0<br/>
@@ -334,22 +298,55 @@ function toggleAllBoxes() {
 [info] 已返回首页<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
-	at gby.appium.page.BasePage.findElement(BasePage.java:94)
-	at gby.appium.page.LoginPage.login(LoginPage.java:15)
-	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
-	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.77&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, databaseEnabled: false, desired: {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, deviceName: vivoX9, platformName: android, platformVersion: 7.1.2, resetKeyboard: true, systemPort: 4599, udid: 192.168.20.159:5555, unicodeKeyboard: true}, deviceApiLevel: 25, deviceManufacturer: vivo, deviceModel: vivo X9, deviceName: 192.168.20.159:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 192.168.20.159:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 7.1.2, resetKeyboard: true, statBarHeight: 72, systemPort: 4599, takesScreenshot: true, udid: 192.168.20.159:5555, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 9e4a4cff-a7ea-45c4-901c-f9a7b317ff09
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+	at gby.appium.page.BasePage.swipe(BasePage.java:198)
+	at gby.appium.page.FindRoommateBasePage.selectPrice(FindRoommateBasePage.java:92)
+	at gby.testng.testcase.PublishPostCase.publishRoom(PublishPostCase.java:52)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace472153624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace472153624'><pre>java.lang.AssertionError: 【loginButton】元素识别失败，该测试方法自动结束失败
-	at org.testng.Assert.fail(Assert.java:96)
-	at gby.appium.page.BasePage.findElement(BasePage.java:94)
-	at gby.appium.page.LoginPage.login(LoginPage.java:15)
-	at gby.appium.page.FindRoommateBasePage.openPublishPage(FindRoommateBasePage.java:43)
-	at gby.testng.testcase.PublishPostCase.intoPublisPostPage(PublishPostCase.java:39)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1439354104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439354104'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;桂宝元&apos;, ip: &apos;192.168.10.77&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, databaseEnabled: false, desired: {app: D:\git\Appium/src/main/reso..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, deviceName: vivoX9, platformName: android, platformVersion: 7.1.2, resetKeyboard: true, systemPort: 4599, udid: 192.168.20.159:5555, unicodeKeyboard: true}, deviceApiLevel: 25, deviceManufacturer: vivo, deviceModel: vivo X9, deviceName: 192.168.20.159:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 192.168.20.159:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 7.1.2, resetKeyboard: true, statBarHeight: 72, systemPort: 4599, takesScreenshot: true, udid: 192.168.20.159:5555, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 9e4a4cff-a7ea-45c4-901c-f9a7b317ff09
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+	at gby.appium.page.BasePage.swipe(BasePage.java:198)
+	at gby.appium.page.FindRoommateBasePage.selectPrice(FindRoommateBasePage.java:92)
+	at gby.testng.testcase.PublishPostCase.publishRoom(PublishPostCase.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -371,43 +368,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>25</td>
+<td>26</td>
 <td>gby.testng.testcase.PublishPostCase@167fdd33</td></tr>
-<tr>
-<td title='gby.testng.testcase.PublishPostCase.publishRoom()'><b>publishRoom</b><br>Test class: gby.testng.testcase.PublishPostCase<br/>
-<a href="#Output-515650704" onClick='toggleBox("Output-515650704", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-515650704" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-515650704">
-[error] 【publishRoom】测试用例被跳过<br/>
-[info] 【homePageButton】识别成功<br/>
-[info] 正在返回首页...<br/>
-[info] 已返回首页<br/>
-</div>
-</td>
-<td><div><pre>java.lang.Throwable: Method PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] depends on not successfully finished methods
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515650704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace515650704'><pre>java.lang.Throwable: Method PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
 </table><p>
 </body>
 </html>

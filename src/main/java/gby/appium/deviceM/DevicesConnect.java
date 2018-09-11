@@ -123,12 +123,12 @@ public class DevicesConnect extends DevicesManager {
 				}
 			}
 			prs.waitFor();
-//				Thread.sleep(2000);
-//				LoggerUtil.debug("Stop appium server");
-			inputStream.close();
-			reader.close();
-			prs.destroy();
-			LoggerUtil.debug(prs.toString()+" destroied");
+////				Thread.sleep(2000);
+////				LoggerUtil.debug("Stop appium server");
+//			inputStream.close();
+//			reader.close();
+//			prs.destroy();
+//			LoggerUtil.debug(prs.toString()+" destroied");
 		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			LoggerUtil.error("appiumServer运行出错", e);
