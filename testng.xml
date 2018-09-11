@@ -16,16 +16,6 @@
 <!-- 	<class name="gby.testng.testcase.LoginCase" /> -->
 <!-- 	</classes> -->
 <!-- 	</test> -->
-
-<!-- 	<test name="OPPOR9tm"> -->
-<!-- 	<parameter name="deviceName" value="OPPOR9tm" /> -->
-<!-- 	<classes> -->
-<!-- 	<class name="gby.testng.testcase.InitDriverCase" /> -->
-<!-- 	<class name="gby.testng.testcase.LoginCase" /> -->
-<!-- 	</classes> -->
-<!-- 	</test> -->
-
-
 	
 	<!-- <test name="jingli_Test"> -->
 	<!-- 设备id及对应的server端口 -->
@@ -37,7 +27,7 @@
 	<!-- </classes> -->
 	<!-- </test> -->
 
-	<!-- !!!!!!!!!!!!!!!!!我是一条分割线!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
 
 	<!-- <test name="oppo_r9_Test"> -->
 	<!-- <parameter name="udid" value="192.168.20.60:5555" /> -->
