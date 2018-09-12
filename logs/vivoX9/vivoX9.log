@@ -1,83 +1,48 @@
-2018-09-11 10:50:32,407 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
-2018-09-11 10:50:32,592 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
-2018-09-11 10:50:32,774 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
-2018-09-11 10:51:29,325 [vivoX9] INFO  [gby.appium.deviceM.InitDrvier.<init>() Line: 83] - AndroidDriver初始化完成，打开app成功
-2018-09-11 10:51:29,336 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【f】测试用例执行成功
-2018-09-11 10:51:29,341 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【intoPublisPostPage】测试用例开始执行
-2018-09-11 10:51:30,874 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【findRoommateButton】识别成功
-2018-09-11 10:51:33,818 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【publishIcon】识别成功
-2018-09-11 10:51:36,750 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【hasntRoomButton】识别成功
-2018-09-11 10:51:36,888 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]
-2018-09-11 10:51:37,632 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：  mCurrentFocus=Window{d93a781 u0 com.loulifang.house/com.loulifang.house.activities.LoginActivity}
-2018-09-11 10:51:39,756 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【userName】识别成功
-2018-09-11 10:51:41,154 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【password】识别成功
-2018-09-11 10:51:42,749 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【loginButton】识别成功
-2018-09-11 10:51:43,837 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【hasntRoomButton】暂未找到，轮询中...
-2018-09-11 10:51:44,436 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【hasntRoomButton】暂未找到，轮询中...
-2018-09-11 10:51:46,131 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【hasntRoomButton】识别成功
-2018-09-11 10:51:46,550 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【hasntRoomButton】识别成功
-2018-09-11 10:51:47,878 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【titleInput】识别成功
-2018-09-11 10:51:47,883 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【intoPublisPostPage】测试用例执行成功
-2018-09-11 10:51:47,890 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【publishRoom】测试用例开始执行
-2018-09-11 10:51:48,088 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【titleInput】识别成功
-2018-09-11 10:51:49,709 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【otherContentInput】识别成功
-2018-09-11 10:51:50,868 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【locationButton】识别成功
-2018-09-11 10:51:52,463 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【businessCircle】识别成功
-2018-09-11 10:51:53,547 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【jingan】识别成功
-2018-09-11 10:51:54,964 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【jingansi】识别成功
-2018-09-11 10:51:56,189 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【subway】识别成功
-2018-09-11 10:51:58,123 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【subway】识别成功
-2018-09-11 10:51:59,416 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【line7】识别成功
-2018-09-11 10:52:00,935 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【locationEnsuredButton】识别成功
-2018-09-11 10:52:02,402 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【priceGlider】暂未找到，轮询中...
-2018-09-11 10:52:03,070 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【priceGlider】暂未找到，轮询中...
-2018-09-11 10:52:04,298 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【priceGlider】暂未找到，轮询中...
-2018-09-11 10:52:05,308 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【priceGlider】识别成功
-2018-09-11 10:52:14,722 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'publishRoom' 执行失败，重试第 1 次
-2018-09-11 10:52:14,732 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【publishRoom】测试用例被跳过
-2018-09-11 10:52:15,844 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:15,845 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:16,484 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:16,486 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:17,590 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:17,590 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:18,784 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:18,784 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:19,621 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:19,621 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:20,250 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:20,251 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:21,144 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:21,144 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:22,361 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 170] - 【homePageButton】未找到，识别失败,元素list长度为0
-2018-09-11 10:52:22,362 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:24,846 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 168] - 【homePageButton】识别成功
-2018-09-11 10:52:24,846 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:24,847 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 263] - 已返回首页
-2018-09-11 10:52:24,851 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【publishRoom】测试用例开始执行
-2018-09-11 10:52:26,102 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:26,756 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:27,895 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:28,603 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:29,417 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:30,108 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:31,395 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:32,125 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:32,859 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:33,862 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:35,189 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:36,853 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:37,517 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:38,350 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:39,812 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:40,425 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 137] - 【titleInput】暂未找到，轮询中...
-2018-09-11 10:52:40,428 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【titleInput】识别失败：识别超时
-2018-09-11 10:52:40,439 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【publishRoom】测试用例执行失败
-2018-09-11 10:52:48,899 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 168] - 【homePageButton】识别成功
-2018-09-11 10:52:48,900 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 261] - 正在返回首页...
-2018-09-11 10:52:48,900 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 263] - 已返回首页
-2018-09-11 10:52:49,206 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 135] - 【mineButton】识别成功
-2018-09-11 10:52:49,592 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【titleInput】识别失败：识别超时
-2018-09-11 10:52:49,641 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
-2018-09-11 10:52:49,642 [vivoX9] DEBUG [gby.appium.listern.TestNGListener.onFinish() Line: 76] - publishRoom:[TestResult name=publishRoom status=FAILURE method=PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] output=[info] 【publishRoom】测试用例开始执行]
-2018-09-11 10:52:49,643 [vivoX9] DEBUG [gby.appium.listern.TestNGListener.onFinish() Line: 93] - publishRoom:[TestResult name=publishRoom status=SKIP method=PublishPostCase.publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@167fdd33] output=[info] 【publishRoom】测试用例开始执行]
+2018-09-13 00:29:31,060 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 00:29:31,297 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 00:29:31,457 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 00:29:34,031 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'f' 执行失败，重试第 1 次
+2018-09-13 00:29:34,036 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 00:29:34,164 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【f】测试用例开始执行
+2018-09-13 00:29:34,166 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 00:29:34,177 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 00:29:34,313 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 00:29:36,705 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:29:36,715 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:29:36,717 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
+2018-09-13 00:36:16,957 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 00:36:17,127 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 00:36:17,303 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 00:36:18,947 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'f' 执行失败，重试第 1 次
+2018-09-13 00:36:18,953 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 00:36:19,026 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【f】测试用例开始执行
+2018-09-13 00:36:19,027 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 00:36:19,044 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 00:36:19,258 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 00:36:20,817 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:36:20,834 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:36:20,837 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
+2018-09-13 00:46:21,437 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 00:46:21,615 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 00:46:21,703 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 00:46:24,224 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'f' 执行失败，重试第 1 次
+2018-09-13 00:46:24,228 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 00:46:24,319 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【f】测试用例开始执行
+2018-09-13 00:46:24,324 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 00:46:24,349 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 00:46:24,585 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 00:46:27,005 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:46:27,012 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:46:27,014 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
+2018-09-13 00:58:19,137 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 00:58:19,307 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 00:58:23,020 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 01:00:25,697 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'f' 执行失败，重试第 1 次
+2018-09-13 01:00:25,711 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 01:00:25,778 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【f】测试用例开始执行
+2018-09-13 01:00:25,778 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-13 01:00:25,787 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.0.100:5555]
+2018-09-13 01:00:26,523 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.0.100:5555
+2018-09-13 01:00:28,926 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 01:00:28,944 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 01:00:28,948 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕

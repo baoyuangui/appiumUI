@@ -16,7 +16,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import gby.appium.deviceM.Device;
-import gby.appium.deviceM.InitDrvier;
+import gby.appium.deviceM.InitDriver;
 import gby.appium.page.BasePage;
 import gby.appium.utils.AssertUtils;
 import gby.appium.utils.LoggerUtil;
@@ -26,7 +26,7 @@ import io.appium.java_client.android.AndroidElement;
 
 public class InitDriverCase {
 
-	InitDrvier sClass;
+	InitDriver sClass;
 	public static AndroidDriver<AndroidElement> driver;
 
 	
@@ -36,8 +36,8 @@ public class InitDriverCase {
 		Thread.currentThread().setName(deviceName);
 		ThreadContext.put("ThreadName", Thread.currentThread().getName());
 		LoggerUtil.debug("deviceName: " + deviceName);
-		sClass = new InitDrvier(deviceName);
-		driver = InitDrvier.driver;
+		sClass = new InitDriver(deviceName);
+		driver = InitDriver.driver;
 		BasePage.device = sClass.dc.device;
 		
 		Assert.assertNotEquals(driver, null, "初始化driver失败");

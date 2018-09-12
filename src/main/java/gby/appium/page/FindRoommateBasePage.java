@@ -41,7 +41,7 @@ public class FindRoommateBasePage extends BasePage {
 		if (res.contains("LoginActivity")) {
 			LoginPage loginPage = new LoginPage(driver);
 			loginPage.login("15575993304", "180205");
-			AssertUtils.checkIsNextPage(this, "hasntRoomButton");
+			AssertUtils.checkMethodSucess(this, "hasntRoomButton");
 			findElement("hasntRoomButton").click();
 		}//常规流程先登录再发帖，故这里登录写死了
 	}

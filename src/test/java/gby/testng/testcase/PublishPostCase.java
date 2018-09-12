@@ -39,7 +39,7 @@ public class PublishPostCase {
   public void  intoPublisPostPage() {
 	  findbg.clickIntoRoommatePage();
 	  findbg.openPublishPage();
-	  AssertUtils.checkIsNextPage(findbg, "titleInput");
+	  AssertUtils.checkMethodSucess(findbg, "titleInput");
 	  
 }
   
@@ -63,7 +63,7 @@ public class PublishPostCase {
   public void deletePost() {
 	  minepg =  new MinePage(driver);
 	  minepg.clickIntoMinepg();
-	  AssertUtils.checkIsNextPage(minepg, "loginButton");
+	  AssertUtils.checkMethodSucess(minepg, "loginButton");
 	  
 	  minepg.deletePost();
 	  Assert.assertEquals(minepg.findToast("删除成功"), true, "删除失败，没有找到删除成功的toast");

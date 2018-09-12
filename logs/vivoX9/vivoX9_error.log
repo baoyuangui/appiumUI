@@ -1,4 +1,12 @@
-2018-09-11 10:52:14,732 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【publishRoom】测试用例被跳过
-2018-09-11 10:52:40,428 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【titleInput】识别失败：识别超时
-2018-09-11 10:52:40,439 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【publishRoom】测试用例执行失败
-2018-09-11 10:52:49,592 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【titleInput】识别失败：识别超时
+2018-09-13 00:29:34,036 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 00:29:36,705 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:29:36,715 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:36:18,953 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 00:36:20,817 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:36:20,834 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:46:24,228 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 00:46:27,005 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 00:46:27,012 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 01:00:25,711 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-13 01:00:28,926 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-13 01:00:28,944 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败

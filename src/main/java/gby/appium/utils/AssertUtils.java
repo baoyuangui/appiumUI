@@ -18,7 +18,8 @@ public class AssertUtils extends Assert{
         try {
             Assert.assertEquals(actual, expected);
             LoggerUtil.assertReportFormat(comm, actual + "", expected + "", "PASS");
-        } catch (AssertionError e) {
+        }
+        catch (AssertionError e) {
         	LoggerUtil.assertReportFormat(comm, actual + "", expected + "", "FAIL");
             Assert.fail(comm+":失败");
         }
@@ -141,11 +142,24 @@ public class AssertUtils extends Assert{
     }
     
     
-    public static void checkIsNextPage(BasePage bg, String excepted) {
+    
+    /**
+     * 检查方法是否执行成功，进入到某个页面，值是否符合预期
+     *@param bg 检查元素的页面类
+     *@param excepted 可变参数，传一个，代表只检查元素是否存在
+     *				 		传两个，后一个代表元素需要校验的值
+     * 
+     */
+    public static void checkMethodSucess(BasePage bg, String... excepted) {
+    	
     	 try {
-    		 Assert.assertNotNull(bg.findElement(excepted));
+    		 Assert.assertNotNull(bg.findElement(excepted[0]));
+    		 if(excepted.length > 1){
+    			 Assert.assertEquals(bg.findElement(excepted[0]), excepted[1]);
+    		 }
+    		 
          } catch (AssertionError e) {
-             Assert.fail("未进入："+ bg.getClass().getSimpleName() + "页面");
+             Assert.fail("断言失败");
          }
     		
 

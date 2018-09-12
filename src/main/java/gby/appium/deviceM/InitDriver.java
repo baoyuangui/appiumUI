@@ -16,13 +16,13 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
-public class InitDrvier {
+public class InitDriver {
 
 	public static AndroidDriver<AndroidElement> driver;
 	public DevicesConnect dc;
 	
 
-	public InitDrvier(String deviceName) throws MalformedURLException {
+	public InitDriver(String deviceName) throws MalformedURLException {
 		dc = new DevicesConnect(deviceName);
 		dc.adbConnect();
 		

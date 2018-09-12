@@ -14,7 +14,7 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
-import gby.appium.deviceM.InitDrvier;
+import gby.appium.deviceM.InitDriver;
 import gby.appium.page.BasePage;
 import gby.appium.utils.LoggerUtil;
 
@@ -48,7 +48,7 @@ public class TestNGListener extends TestListenerAdapter {
 		super.onTestFailure(tr);
 		LoggerUtil.error("【" + tr.getName() + "】测试用例执行失败");
 		captureScreenShot(tr);
-		new BasePage(InitDrvier.driver).backToHome();
+		new BasePage(InitDriver.driver).backToHome();
 //		takeScreenShot(tr);
 	}
 
@@ -57,7 +57,7 @@ public class TestNGListener extends TestListenerAdapter {
 	public void onTestSkipped(ITestResult tr) {
 		super.onTestSkipped(tr);
 		LoggerUtil.error("【" + tr.getName() + "】测试用例被跳过");
-		new BasePage(InitDrvier.driver).backToHome();
+		new BasePage(InitDriver.driver).backToHome();
 //        takeScreenShot(tr);
 	}
 
@@ -120,7 +120,7 @@ public class TestNGListener extends TestListenerAdapter {
 	 */
 	public void captureScreenShot(ITestResult result){  
 		
-        File srcFile = InitDrvier.driver.getScreenshotAs(OutputType.FILE);
+        File srcFile = InitDriver.driver.getScreenshotAs(OutputType.FILE);
         
         DateFormat dateFormat = new SimpleDateFormat("yyyyMMddhhmmss");
         String threadName = Thread.currentThread().getName();

@@ -9,6 +9,7 @@ public class LoginPage extends BasePage{
 		super(driver);
 	}
 	
+			
 	public void login(String pnumber, String smscode) {
 		findElement("userName").sendKeys(pnumber);
 		findElement("password").sendKeys(smscode);
