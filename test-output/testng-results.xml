@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[[info] 测试初始化]]>
+    </line>
+    <line>
+      <![CDATA[[info] 【f】测试用例开始执行]]>
+    </line>
+    <line>
+      <![CDATA[[debug] deviceName: vivoX9]]>
+    </line>
+    <line>
+      <![CDATA[[debug] 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]]]>
+    </line>
+    <line>
+      <![CDATA[[debug] 命令结果：already connected to 192.168.20.159:5555]]>
+    </line>
+    <line>
+      <![CDATA[[info] 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'f' 执行失败，重试第 1 次]]>
+    </line>
+    <line>
+      <![CDATA[[error] 【f】测试用例被跳过]]>
     </line>
     <line>
       <![CDATA[[info] 【f】测试用例开始执行]]>
@@ -23,19 +41,28 @@
       <![CDATA[[info] 【f】测试用例执行成功]]>
     </line>
     <line>
+      <![CDATA[[error] 【f】测试用例执行失败]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href="file:C:\Users\Administrator\git\appiumUI\vivoX9_screenshots\InitDriverCase.f_20180914044252.png">]]>
+    </line>
+    <line>
+      <![CDATA[<img width="350" src="file:C:\Users\Administrator\git\appiumUI\vivoX9_screenshots\InitDriverCase.f_20180914044252.png" />    失败截图：C:\Users\Administrator\git\appiumUI\vivoX9_screenshots\InitDriverCase.f_20180914044252.png]]>
+    </line>
+    <line>
+      <![CDATA[</a><br />]]>
+    </line>
+    <line>
+      <![CDATA[[info] 【homePageButton】识别成功]]>
+    </line>
+    <line>
+      <![CDATA[[info] 正在返回首页...]]>
+    </line>
+    <line>
+      <![CDATA[[info] 已返回首页]]>
+    </line>
+    <line>
       <![CDATA[[info] 【login】测试用例开始执行]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【mineButton】识别成功]]>
@@ -53,7 +80,7 @@
       <![CDATA[[info] 【loginButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【phoneNumber】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【phoneNumber】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【phoneNumber】识别成功]]>
@@ -89,67 +116,10 @@
       <![CDATA[[info] 【areaSelector】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【moneySelector】暂未找到，轮询中...]]>
-    </line>
-    <line>
       <![CDATA[[info] 【moneySelector】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【sortSelector】暂未找到，轮询中...]]>
-    </line>
-    <line>
       <![CDATA[[info] 【sortSelector】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【moreSelector】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【moreSelector】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【moreEnsureButotn】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【prices】未找到，识别失败,元素list长度为0]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【roomTypes】未找到，识别失败,元素list长度为0]]>
-    </line>
-    <line>
-      <![CDATA[[info] 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'searchHouse' 执行失败，重试第 1 次]]>
-    </line>
-    <line>
-      <![CDATA[[error] 【searchHouse】测试用例被跳过]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【homePageButton】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 正在返回首页...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 已返回首页]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【searchHouse】测试用例开始执行]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【homePageButton】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【areaSelector】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【moneySelector】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【sortSelector】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【sortSelector】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【moreSelector】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【moreSelector】识别成功]]>
@@ -161,7 +131,10 @@
       <![CDATA[[info] 【prices】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【roomTypes】识别成功]]>
+      <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
+    </line>
+    <line>
+      <![CDATA[[info] 【prices】识别成功]]>
     </line>
     <line>
       <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
@@ -170,25 +143,10 @@
       <![CDATA[[info] 【prices】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【roomTypes】识别成功]]>
-    </line>
-    <line>
       <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
     </line>
     <line>
       <![CDATA[[info] 【prices】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【roomTypes】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【prices】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【roomTypes】识别成功]]>
     </line>
     <line>
       <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
@@ -206,16 +164,16 @@
       <![CDATA[[info] 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true]]>
     </line>
     <line>
-      <![CDATA[<P style="font-size:1.1em;color:#1C9340"><b>┌───────────────────────┤ＣＨＥＣＫ　ＰＯＩＮＴ├───────────────────────┐<br>[目标]：检查价格排序是否正确<br>[实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]<br>└──────────────────────────────────────────────────────────────────┘</b></P>]]>
+      <![CDATA[<P style="font-size:1.1em;color:#1C9340"><b>┌───────────────────────┤ＣＨＥＣＫ　ＰＯＩＮＴ├───────────────────────┐<br>[目标]：检查价格排序是否正确<br>[实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]<br>└──────────────────────────────────────────────────────────────────┘</b></P>]]>
     </line>
     <line>
-      <![CDATA[[info] 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]]]>
+      <![CDATA[[info] 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]]]>
     </line>
     <line>
       <![CDATA[[info] 【searchHouse】测试用例执行成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【intoPublisPostPage】测试用例开始执行]]>
+      <![CDATA[[info] 【publishRoom】测试用例开始执行]]>
     </line>
     <line>
       <![CDATA[[info] 【findRoommateButton】识别成功]]>
@@ -224,7 +182,7 @@
       <![CDATA[[info] 【publishIcon】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【hasntRoomButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【hasntRoomButton】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【hasntRoomButton】识别成功]]>
@@ -233,7 +191,7 @@
       <![CDATA[[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]]]>
     </line>
     <line>
-      <![CDATA[[debug] 命令结果：  mCurrentFocus=Window{f8b6dc5 u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}]]>
+      <![CDATA[[debug] 命令结果：  mCurrentFocus=Window{feff7b6 u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}]]>
     </line>
     <line>
       <![CDATA[[info] 【titleInput】识别成功]]>
@@ -245,12 +203,6 @@
       <![CDATA[[info] 【检查点检查成功】  [实际]：titleInput Not NULL　[预期]：预期 Not NULL]]>
     </line>
     <line>
-      <![CDATA[[info] 【intoPublisPostPage】测试用例执行成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【publishRoom】测试用例开始执行]]>
-    </line>
-    <line>
       <![CDATA[[info] 【titleInput】识别成功]]>
     </line>
     <line>
@@ -260,31 +212,7 @@
       <![CDATA[[info] 【locationButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【businessCircle】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【businessCircle】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【jingan】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【jingansi】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【subway】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【line7】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【yuntaiLoad】识别成功]]>
-    </line>
-    <line>
       <![CDATA[[info] 【locationEnsuredButton】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【priceGlider】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【priceGlider】识别成功]]>
@@ -294,15 +222,6 @@
     </line>
     <line>
       <![CDATA[[info] 【albumButton】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【imagesAlbum】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【imagesAlbum】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【imagesAlbum】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【imagesAlbum】识别成功]]>
@@ -332,87 +251,84 @@
       <![CDATA[[info] 【检查点检查成功】  [实际]：loginButton Not NULL　[预期]：预期 Not NULL]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
     </line>
     <line>
-      <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
-    </line>
-    <line>
-      <![CDATA[[error] 【myPostButton】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@1680fe9c (tried for 15 second(s) with 500 milliseconds interval)
+      <![CDATA[[error] 【myPostButton】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@294da7c5 (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, deviceName: vivoX9, platformName: android, platformVersion: 7.1.2, resetKeyboard: true, udid: 192.168.20.159:5555, unicodeKeyboard: true}, deviceApiLevel: 25, deviceManufacturer: vivo, deviceModel: vivo X9, deviceName: 192.168.20.159:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 192.168.20.159:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 7.1.2, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 192.168.20.159:5555, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
+Session ID: 2a758a74-a7c3-44a2-89b4-bb2dc1e36534]]>
     </line>
     <line>
       <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
@@ -427,13 +343,10 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
       <![CDATA[[info] 【myPostButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【deleteButtons】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【deleteButtons】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【deleteButtons】识别成功]]>
-    </line>
-    <line>
-      <![CDATA[[info] 【deleteEnsureButton】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【deleteEnsureButton】识别成功]]>
@@ -460,13 +373,10 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
       <![CDATA[[info] 【settingButton】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【logoutOption】暂未找到，轮询中...]]>
-    </line>
-    <line>
       <![CDATA[[info] 【logoutOption】识别成功]]>
     </line>
     <line>
-      <![CDATA[[info] 【logoutEnsureButton】暂未找到，轮询中...]]>
+      <![CDATA[[debug] 【logoutEnsureButton】暂未找到，轮询中...]]>
     </line>
     <line>
       <![CDATA[[info] 【logoutEnsureButton】识别成功]]>
@@ -493,31 +403,19 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
       <![CDATA[[info] 【检查点检查成功】  [实际]：nickname的值为：立即登录　[预期]：预期的值为：立即登录]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="156695" started-at="2018-09-14T05:25:27Z" finished-at="2018-09-14T05:28:03Z">
+  <suite name="Suite" duration-ms="185246" started-at="2018-09-14T08:41:29Z" finished-at="2018-09-14T08:44:34Z">
     <groups>
     </groups>
-    <test name="vivoX9" duration-ms="156695" started-at="2018-09-14T05:25:27Z" finished-at="2018-09-14T05:28:03Z">
+    <test name="vivoX9" duration-ms="185246" started-at="2018-09-14T08:41:29Z" finished-at="2018-09-14T08:44:34Z">
       <class name="gby.testng.testcase.LoginCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gby.testng.testcase.LoginCase@53f65459]" name="beforeClass" is-config="true" duration-ms="2" started-at="2018-09-14T05:26:00Z" finished-at="2018-09-14T05:26:00Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gby.testng.testcase.LoginCase@1786dec2]" name="beforeClass" is-config="true" duration-ms="3" started-at="2018-09-14T08:42:53Z" finished-at="2018-09-14T08:42:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:gby.testng.testcase.LoginCase@53f65459]" name="login" duration-ms="11106" started-at="2018-09-14T05:26:00Z" finished-at="2018-09-14T05:26:11Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:gby.testng.testcase.LoginCase@1786dec2]" name="login" duration-ms="7970" started-at="2018-09-14T08:42:53Z" finished-at="2018-09-14T08:43:01Z">
           <reporter-output>
             <line>
               <![CDATA[[info] 【login】测试用例开始执行]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【mineButton】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【mineButton】识别成功]]>
@@ -535,7 +433,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【loginButton】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【phoneNumber】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【phoneNumber】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【phoneNumber】识别成功]]>
@@ -563,7 +461,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:gby.testng.testcase.LoginCase@53f65459]" name="logout" is-config="true" duration-ms="6185" started-at="2018-09-14T05:27:57Z" finished-at="2018-09-14T05:28:03Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:gby.testng.testcase.LoginCase@1786dec2]" name="logout" is-config="true" duration-ms="5963" started-at="2018-09-14T08:44:28Z" finished-at="2018-09-14T08:44:34Z">
           <reporter-output>
             <line>
               <![CDATA[[info] 【homePageButton】未找到，识别失败,元素list长度为0]]>
@@ -587,13 +485,10 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【settingButton】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【logoutOption】暂未找到，轮询中...]]>
-            </line>
-            <line>
               <![CDATA[[info] 【logoutOption】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【logoutEnsureButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【logoutEnsureButton】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【logoutEnsureButton】识别成功]]>
@@ -623,7 +518,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
         </test-method> <!-- logout -->
       </class> <!-- gby.testng.testcase.LoginCase -->
       <class name="gby.testng.testcase.InitDriverCase">
-        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:gby.testng.testcase.InitDriverCase@4d95d2a2]" name="f" duration-ms="32629" started-at="2018-09-14T05:25:27Z" finished-at="2018-09-14T05:26:00Z">
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:gby.testng.testcase.InitDriverCase@3b088d51]" name="f" duration-ms="29526" started-at="2018-09-14T08:42:21Z" finished-at="2018-09-14T08:42:51Z">
           <params>
             <param index="0">
               <value>
@@ -654,11 +549,11 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
         </test-method> <!-- f -->
       </class> <!-- gby.testng.testcase.InitDriverCase -->
       <class name="gby.testng.testcase.HouseSearchCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gby.testng.testcase.HouseSearchCase@3b088d51]" name="beforeClass" is-config="true" duration-ms="2" started-at="2018-09-14T05:26:11Z" finished-at="2018-09-14T05:26:11Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gby.testng.testcase.HouseSearchCase@74650e52]" name="beforeClass" is-config="true" duration-ms="5" started-at="2018-09-14T08:43:01Z" finished-at="2018-09-14T08:43:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="searchHouse()[pri:0, instance:gby.testng.testcase.HouseSearchCase@3b088d51]" name="searchHouse" duration-ms="27568" started-at="2018-09-14T05:26:31Z" finished-at="2018-09-14T05:26:59Z">
+        <test-method status="PASS" signature="searchHouse()[pri:0, instance:gby.testng.testcase.HouseSearchCase@74650e52]" name="searchHouse" duration-ms="32694" started-at="2018-09-14T08:43:01Z" finished-at="2018-09-14T08:43:34Z">
           <reporter-output>
             <line>
               <![CDATA[[info] 【searchHouse】测试用例开始执行]]>
@@ -673,13 +568,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【moneySelector】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【sortSelector】暂未找到，轮询中...]]>
-            </line>
-            <line>
               <![CDATA[[info] 【sortSelector】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【moreSelector】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【moreSelector】识别成功]]>
@@ -691,7 +580,10 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【prices】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【roomTypes】识别成功]]>
+              <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
+            </line>
+            <line>
+              <![CDATA[[info] 【prices】识别成功]]>
             </line>
             <line>
               <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
@@ -700,25 +592,10 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【prices】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【roomTypes】识别成功]]>
-            </line>
-            <line>
               <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
             </line>
             <line>
               <![CDATA[[info] 【prices】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【roomTypes】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【prices】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【roomTypes】识别成功]]>
             </line>
             <line>
               <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
@@ -736,10 +613,10 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true]]>
             </line>
             <line>
-              <![CDATA[<P style="font-size:1.1em;color:#1C9340"><b>┌───────────────────────┤ＣＨＥＣＫ　ＰＯＩＮＴ├───────────────────────┐<br>[目标]：检查价格排序是否正确<br>[实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]<br>└──────────────────────────────────────────────────────────────────┘</b></P>]]>
+              <![CDATA[<P style="font-size:1.1em;color:#1C9340"><b>┌───────────────────────┤ＣＨＥＣＫ　ＰＯＩＮＴ├───────────────────────┐<br>[目标]：检查价格排序是否正确<br>[实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]<br>└──────────────────────────────────────────────────────────────────┘</b></P>]]>
             </line>
             <line>
-              <![CDATA[[info] 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]]]>
+              <![CDATA[[info] 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]]]>
             </line>
             <line>
               <![CDATA[[info] 【searchHouse】测试用例执行成功]]>
@@ -748,14 +625,14 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
         </test-method> <!-- searchHouse -->
       </class> <!-- gby.testng.testcase.HouseSearchCase -->
       <class name="gby.testng.testcase.PublishPostCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:gby.testng.testcase.PublishPostCase@1786dec2]" name="setup" is-config="true" duration-ms="10" started-at="2018-09-14T05:26:59Z" finished-at="2018-09-14T05:26:59Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:gby.testng.testcase.PublishPostCase@15d0c81b]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-14T08:43:34Z" finished-at="2018-09-14T08:43:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="intoPublisPostPage()[pri:0, instance:gby.testng.testcase.PublishPostCase@1786dec2]" name="intoPublisPostPage" duration-ms="4283" started-at="2018-09-14T05:26:59Z" finished-at="2018-09-14T05:27:03Z">
+        <test-method status="PASS" signature="publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@15d0c81b]" name="publishRoom" duration-ms="32687" started-at="2018-09-14T08:43:34Z" finished-at="2018-09-14T08:44:06Z">
           <reporter-output>
             <line>
-              <![CDATA[[info] 【intoPublisPostPage】测试用例开始执行]]>
+              <![CDATA[[info] 【publishRoom】测试用例开始执行]]>
             </line>
             <line>
               <![CDATA[[info] 【findRoommateButton】识别成功]]>
@@ -764,7 +641,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【publishIcon】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【hasntRoomButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【hasntRoomButton】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【hasntRoomButton】识别成功]]>
@@ -773,7 +650,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[debug] 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]]]>
             </line>
             <line>
-              <![CDATA[[debug] 命令结果：  mCurrentFocus=Window{f8b6dc5 u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}]]>
+              <![CDATA[[debug] 命令结果：  mCurrentFocus=Window{feff7b6 u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}]]>
             </line>
             <line>
               <![CDATA[[info] 【titleInput】识别成功]]>
@@ -785,16 +662,6 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【检查点检查成功】  [实际]：titleInput Not NULL　[预期]：预期 Not NULL]]>
             </line>
             <line>
-              <![CDATA[[info] 【intoPublisPostPage】测试用例执行成功]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- intoPublisPostPage -->
-        <test-method status="PASS" signature="publishRoom()[pri:0, instance:gby.testng.testcase.PublishPostCase@1786dec2]" name="publishRoom" duration-ms="33294" started-at="2018-09-14T05:27:03Z" depends-on-methods="gby.testng.testcase.PublishPostCase.intoPublisPostPage" finished-at="2018-09-14T05:27:36Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[info] 【publishRoom】测试用例开始执行]]>
-            </line>
-            <line>
               <![CDATA[[info] 【titleInput】识别成功]]>
             </line>
             <line>
@@ -804,31 +671,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【locationButton】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【businessCircle】暂未找到，轮询中...]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【businessCircle】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【jingan】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【jingansi】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【subway】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【line7】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【yuntaiLoad】识别成功]]>
-            </line>
-            <line>
               <![CDATA[[info] 【locationEnsuredButton】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【priceGlider】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【priceGlider】识别成功]]>
@@ -838,15 +681,6 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
             </line>
             <line>
               <![CDATA[[info] 【albumButton】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【imagesAlbum】暂未找到，轮询中...]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【imagesAlbum】暂未找到，轮询中...]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【imagesAlbum】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【imagesAlbum】识别成功]]>
@@ -865,7 +699,7 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
             </line>
           </reporter-output>
         </test-method> <!-- publishRoom -->
-        <test-method status="PASS" signature="deletePost()[pri:0, instance:gby.testng.testcase.PublishPostCase@1786dec2]" name="deletePost" is-config="true" duration-ms="20915" started-at="2018-09-14T05:27:36Z" finished-at="2018-09-14T05:27:57Z">
+        <test-method status="PASS" signature="deletePost()[pri:0, instance:gby.testng.testcase.PublishPostCase@15d0c81b]" name="deletePost" is-config="true" duration-ms="21693" started-at="2018-09-14T08:44:06Z" finished-at="2018-09-14T08:44:28Z">
           <reporter-output>
             <line>
               <![CDATA[[info] 【mineButton】识别成功]]>
@@ -880,87 +714,84 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【检查点检查成功】  [实际]：loginButton Not NULL　[预期]：预期 Not NULL]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【myPostButton】暂未找到，轮询中...]]>
             </line>
             <line>
-              <![CDATA[[info] 【myPostButton】暂未找到，轮询中...]]>
-            </line>
-            <line>
-              <![CDATA[[error] 【myPostButton】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@1680fe9c (tried for 15 second(s) with 500 milliseconds interval)
+              <![CDATA[[error] 【myPostButton】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@294da7c5 (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, deviceName: vivoX9, platformName: android, platformVersion: 7.1.2, resetKeyboard: true, udid: 192.168.20.159:5555, unicodeKeyboard: true}, deviceApiLevel: 25, deviceManufacturer: vivo, deviceModel: vivo X9, deviceName: 192.168.20.159:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 192.168.20.159:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 7.1.2, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 192.168.20.159:5555, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
+Session ID: 2a758a74-a7c3-44a2-89b4-bb2dc1e36534]]>
             </line>
             <line>
               <![CDATA[[debug] 往上滑动：540_1440 to 540_480]]>
@@ -975,13 +806,10 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565]]>
               <![CDATA[[info] 【myPostButton】识别成功]]>
             </line>
             <line>
-              <![CDATA[[info] 【deleteButtons】暂未找到，轮询中...]]>
+              <![CDATA[[debug] 【deleteButtons】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【deleteButtons】识别成功]]>
-            </line>
-            <line>
-              <![CDATA[[info] 【deleteEnsureButton】暂未找到，轮询中...]]>
             </line>
             <line>
               <![CDATA[[info] 【deleteEnsureButton】识别成功]]>

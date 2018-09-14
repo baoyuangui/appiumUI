@@ -59,24 +59,37 @@ public class FindRoommateBasePage extends BasePage {
 	 * 父目录和子目录用_隔开
 	 * 
 	 * */
-	public void selectLocation(String... location) {
-		  String businessCircle = location[0];
-		  String subway = location[1];
-		  
-		  findElement("locationButton").click();
-		  
-		  if(businessCircle !=null) {
-			  findElement("businessCircle").click();
-			  findElement(businessCircle.split("_")[0]).click();
-			  findElement(businessCircle.split("_")[1]).click();
-		  }
-		  if(subway !=null) {
-			  findElement("subway").click();
-			  findElement(subway.split("_")[0]).click();
-			  findElement(subway.split("_")[1]).click();
-		  }
-
-		  findElement("locationEnsuredButton").click();
+//	public void selectLocation(String... location) {
+//		  String businessCircle = location[0];
+//		  String subway = location[1];
+//		  
+//		  findElement("locationButton").click();
+//		  
+//		  if(businessCircle !=null) {
+//			  findElement("businessCircle").click();
+//			  findElement(businessCircle.split("_")[0]).click();
+//			  findElement(businessCircle.split("_")[1]).click();
+//		  }
+//		  if(subway !=null) {
+//			  findElement("subway").click();
+//			  findElement(subway.split("_")[0]).click();
+//			  findElement(subway.split("_")[1]).click();
+//		  }
+//
+//		  findElement("locationEnsuredButton").click();
+//	}
+	
+	public void selectLocation() {
+			findElement("locationButton").click();
+			findElement("商圈").click();
+			findElement("静安").click();	
+			findElement("静安寺").click();
+		
+			findElement("地铁").click();
+			findElement("7号线").click();	
+			findElement("云台路").click();
+		
+			findElement("locationEnsuredButton").click();
 	}
 	
 	

@@ -38,7 +38,7 @@ public class PublishPostCase {
 	  AssertUtils.checkElementNotNull("检查是否进入发帖页",findbg, "titleInput");
 	  
 	  findbg.inputText("标题", "其他内容");
-	  findbg.selectLocation("jingan_jingansi","line7_yuntaiLoad");
+	  findbg.selectLocation();
 	  findbg.selectPrice();
 	  findbg.selectImages();
 	  findbg.clickPublish();

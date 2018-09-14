@@ -3382,3 +3382,472 @@ Session ID: 3bb88c0f-80dd-4edc-8679-7640a18ad565
 2018-09-14 13:28:03,719 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：nickname的值为：立即登录　[预期]：预期的值为：立即登录
 2018-09-14 13:28:03,760 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
 2018-09-14 13:28:03,761 [vivoX9] DEBUG [gby.appium.listern.TestNGListener.onFinish() Line: 93] - searchHouse:[TestResult name=searchHouse status=SKIP method=HouseSearchCase.searchHouse()[pri:0, instance:gby.testng.testcase.HouseSearchCase@3b088d51] output=[info] 【searchHouse】测试用例开始执行]
+2018-09-14 14:57:22,660 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-14 14:57:22,830 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-09-14 14:57:22,945 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-09-14 14:57:52,257 [vivoX9] INFO  [gby.appium.deviceM.InitDriver.<init>() Line: 82] - AndroidDriver初始化完成，打开app成功
+2018-09-14 14:57:52,273 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【f】测试用例执行成功
+2018-09-14 14:57:52,283 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【login】测试用例开始执行
+2018-09-14 14:57:52,709 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 14:57:53,278 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 14:57:53,847 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 14:57:55,479 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 14:57:56,243 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 14:57:57,740 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【userName】识别成功
+2018-09-14 14:57:59,926 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【password】识别成功
+2018-09-14 14:58:01,292 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 14:58:02,120 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【phoneNumber】暂未找到，轮询中...
+2018-09-14 14:58:03,746 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 14:58:03,747 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：phoneNumber Not NULL　[预期]：预期 Not NULL
+2018-09-14 14:58:03,807 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 14:58:03,917 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 14:58:03,977 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：phoneNumber的值为：15575993304　[预期]：预期的值为：15575993304
+2018-09-14 14:58:03,982 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【login】测试用例执行成功
+2018-09-14 14:58:03,988 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【searchHouse】测试用例开始执行
+2018-09-14 14:58:04,060 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【homePageButton】识别成功
+2018-09-14 14:58:04,839 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【areaSelector】识别成功
+2018-09-14 14:58:07,668 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【moneySelector】暂未找到，轮询中...
+2018-09-14 14:58:08,646 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moneySelector】识别成功
+2018-09-14 14:58:10,759 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【sortSelector】暂未找到，轮询中...
+2018-09-14 14:58:11,805 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【sortSelector】识别成功
+2018-09-14 14:58:14,792 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreSelector】识别成功
+2018-09-14 14:58:19,713 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreEnsureButotn】识别成功
+2018-09-14 14:58:20,596 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【prices】未找到，识别失败,元素list长度为0
+2018-09-14 14:58:21,844 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 14:58:23,737 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 14:58:23,929 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 14:58:24,801 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 14:58:26,676 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 14:58:26,870 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 14:58:27,806 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 14:58:29,708 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 14:58:29,954 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 14:58:30,801 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 14:58:32,648 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 14:58:32,649 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 14:58:32,649 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 14:58:32,649 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]
+2018-09-14 14:58:32,651 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【searchHouse】测试用例执行成功
+2018-09-14 14:58:32,655 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【publishRoom】测试用例开始执行
+2018-09-14 14:58:32,886 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【findRoommateButton】识别成功
+2018-09-14 14:58:33,779 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【publishIcon】识别成功
+2018-09-14 14:58:34,983 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【hasntRoomButton】识别成功
+2018-09-14 14:58:35,178 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]
+2018-09-14 14:58:35,487 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：  mCurrentFocus=Window{778ea60 u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}
+2018-09-14 14:58:36,785 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 14:58:36,785 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：titleInput Not NULL　[预期]：预期 Not NULL
+2018-09-14 14:58:36,860 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 14:58:37,992 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【otherContentInput】识别成功
+2018-09-14 14:58:39,109 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【locationButton】识别成功
+2018-09-14 14:58:41,078 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【businessCircle】识别成功
+2018-09-14 14:58:42,007 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【jingan】识别成功
+2018-09-14 14:58:42,950 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【jingansi】识别成功
+2018-09-14 14:58:43,901 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【subway】识别成功
+2018-09-14 14:58:44,881 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【line7】识别成功
+2018-09-14 14:58:45,904 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【yuntaiLoad】识别成功
+2018-09-14 14:58:46,838 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【locationEnsuredButton】识别成功
+2018-09-14 14:58:47,941 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【priceGlider】识别成功
+2018-09-14 14:58:51,818 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【addImagesButton】识别成功
+2018-09-14 14:58:52,798 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【albumButton】识别成功
+2018-09-14 14:58:54,856 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【imagesAlbum】识别成功
+2018-09-14 14:58:59,662 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【images】识别成功
+2018-09-14 14:59:02,579 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【imagesEnsuredButton】识别成功
+2018-09-14 14:59:04,329 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【publishButton】识别成功
+2018-09-14 14:59:07,103 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【publishRoom】测试用例执行成功
+2018-09-14 14:59:07,268 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 14:59:07,964 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 14:59:07,964 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：loginButton Not NULL　[预期]：预期 Not NULL
+2018-09-14 14:59:08,093 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:08,703 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:09,853 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:10,456 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:11,051 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:11,635 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:12,214 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:12,852 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:13,534 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:14,143 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:14,763 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:15,856 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:16,453 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:17,054 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:17,640 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:18,750 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:19,349 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:19,957 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:20,553 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:21,235 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:21,856 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:22,447 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:23,034 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 14:59:23,037 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【myPostButton】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@783b4251 (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, deviceName: vivoX9, platformName: android, platformVersion: 7.1.2, resetKeyboard: true, udid: 192.168.20.159:5555, unicodeKeyboard: true}, deviceApiLevel: 25, deviceManufacturer: vivo, deviceModel: vivo X9, deviceName: 192.168.20.159:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 192.168.20.159:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 7.1.2, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 192.168.20.159:5555, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3e6ede2-8505-4f71-8ee8-c0f5d0641155
+2018-09-14 14:59:24,618 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 14:59:24,755 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 14:59:24,827 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 14:59:24,922 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 14:59:25,170 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【deleteButtons】暂未找到，轮询中...
+2018-09-14 14:59:26,061 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【deleteButtons】识别成功
+2018-09-14 14:59:27,008 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【deleteEnsureButton】识别成功
+2018-09-14 14:59:29,280 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【homePageButton】识别成功
+2018-09-14 14:59:29,281 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 14:59:29,282 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 269] - 已返回首页
+2018-09-14 14:59:29,367 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 14:59:30,015 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【settingButton】识别成功
+2018-09-14 14:59:31,164 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【logoutOption】识别成功
+2018-09-14 14:59:32,307 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【logoutEnsureButton】识别成功
+2018-09-14 14:59:33,440 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 14:59:33,441 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：nickname Not NULL　[预期]：预期 Not NULL
+2018-09-14 14:59:33,537 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 14:59:33,680 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 14:59:33,734 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：nickname的值为：立即登录　[预期]：预期的值为：立即登录
+2018-09-14 14:59:33,774 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
+2018-09-14 16:01:10,106 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-14 16:01:10,286 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-09-14 16:01:10,398 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-09-14 16:01:41,426 [vivoX9] INFO  [gby.appium.deviceM.InitDriver.<init>() Line: 82] - AndroidDriver初始化完成，打开app成功
+2018-09-14 16:01:41,431 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【f】测试用例执行成功
+2018-09-14 16:01:41,437 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【login】测试用例开始执行
+2018-09-14 16:01:41,852 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 16:01:42,421 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 16:01:42,990 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 16:01:43,558 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 16:01:44,945 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 16:01:45,708 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:01:45,969 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【userName】暂未找到，轮询中...
+2018-09-14 16:01:46,883 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【userName】识别成功
+2018-09-14 16:01:48,983 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【password】识别成功
+2018-09-14 16:01:50,499 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:01:51,291 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【phoneNumber】暂未找到，轮询中...
+2018-09-14 16:01:52,581 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:01:52,583 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：phoneNumber Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:01:52,643 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:01:52,725 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:01:52,759 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：phoneNumber的值为：15575993304　[预期]：预期的值为：15575993304
+2018-09-14 16:01:52,761 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【login】测试用例执行成功
+2018-09-14 16:01:52,765 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【searchHouse】测试用例开始执行
+2018-09-14 16:01:52,855 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【homePageButton】识别成功
+2018-09-14 16:01:54,247 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【areaSelector】识别成功
+2018-09-14 16:01:58,451 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moneySelector】识别成功
+2018-09-14 16:02:00,522 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【sortSelector】暂未找到，轮询中...
+2018-09-14 16:02:01,676 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【sortSelector】识别成功
+2018-09-14 16:02:03,360 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【moreSelector】暂未找到，轮询中...
+2018-09-14 16:02:04,478 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreSelector】识别成功
+2018-09-14 16:02:09,567 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreEnsureButotn】识别成功
+2018-09-14 16:02:10,591 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【prices】未找到，识别失败,元素list长度为0
+2018-09-14 16:02:10,677 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【roomTypes】未找到，识别失败,元素list长度为0
+2018-09-14 16:02:11,583 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'searchHouse' 执行失败，重试第 1 次
+2018-09-14 16:02:11,591 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【searchHouse】测试用例被跳过
+2018-09-14 16:02:13,613 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【homePageButton】识别成功
+2018-09-14 16:02:13,615 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:02:13,616 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 269] - 已返回首页
+2018-09-14 16:02:13,621 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【searchHouse】测试用例开始执行
+2018-09-14 16:02:13,732 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【homePageButton】识别成功
+2018-09-14 16:02:14,580 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【areaSelector】识别成功
+2018-09-14 16:02:18,272 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moneySelector】识别成功
+2018-09-14 16:02:20,972 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【sortSelector】识别成功
+2018-09-14 16:02:22,818 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【moreSelector】暂未找到，轮询中...
+2018-09-14 16:02:24,303 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreSelector】识别成功
+2018-09-14 16:02:29,631 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreEnsureButotn】识别成功
+2018-09-14 16:02:31,039 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【prices】未找到，识别失败,元素list长度为0
+2018-09-14 16:02:32,676 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 16:02:35,003 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:02:35,680 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:02:36,672 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 16:02:38,734 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:02:38,910 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:02:39,167 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 16:02:41,057 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:02:41,632 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:02:42,491 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【roomTypes】识别成功
+2018-09-14 16:02:44,247 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:02:44,248 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 16:02:44,249 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 16:02:44,249 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]
+2018-09-14 16:02:44,251 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【searchHouse】测试用例执行成功
+2018-09-14 16:02:44,254 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【publishRoom】测试用例开始执行
+2018-09-14 16:02:44,663 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【findRoommateButton】识别成功
+2018-09-14 16:02:45,499 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【publishIcon】识别成功
+2018-09-14 16:02:45,709 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【hasntRoomButton】暂未找到，轮询中...
+2018-09-14 16:02:46,646 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【hasntRoomButton】识别成功
+2018-09-14 16:02:46,761 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]
+2018-09-14 16:02:47,095 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：  mCurrentFocus=Window{2830050 u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}
+2018-09-14 16:02:47,888 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 16:02:47,888 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：titleInput Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:02:47,948 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 16:02:49,086 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【otherContentInput】识别成功
+2018-09-14 16:02:50,576 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【locationButton】识别成功
+2018-09-14 16:02:51,928 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【businessCircle】识别成功
+2018-09-14 16:02:52,810 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【jingan】识别成功
+2018-09-14 16:02:53,712 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【jingansi】识别成功
+2018-09-14 16:02:54,656 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【subway】识别成功
+2018-09-14 16:02:55,591 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【line7】识别成功
+2018-09-14 16:02:56,789 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【yuntaiLoad】识别成功
+2018-09-14 16:02:57,895 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【locationEnsuredButton】识别成功
+2018-09-14 16:02:59,577 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【priceGlider】识别成功
+2018-09-14 16:03:02,574 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【addImagesButton】识别成功
+2018-09-14 16:03:03,508 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【albumButton】识别成功
+2018-09-14 16:03:06,463 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【imagesAlbum】识别成功
+2018-09-14 16:03:11,706 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【images】识别成功
+2018-09-14 16:03:14,715 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【imagesEnsuredButton】识别成功
+2018-09-14 16:03:16,449 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【publishButton】识别成功
+2018-09-14 16:03:19,193 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【publishRoom】测试用例执行成功
+2018-09-14 16:03:19,278 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 16:03:19,992 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:03:19,993 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：loginButton Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:03:20,703 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:21,299 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:21,896 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:22,500 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:23,621 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:24,273 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:24,889 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:25,475 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:26,640 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:27,235 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:27,846 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:28,441 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:29,643 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:30,212 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:30,805 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:31,397 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:31,990 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:32,646 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:33,243 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:33,855 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:34,461 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:35,637 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:03:35,639 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【myPostButton】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@63e1ac6f (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, deviceName: vivoX9, platformName: android, platformVersion: 7.1.2, resetKeyboard: true, udid: 192.168.20.159:5555, unicodeKeyboard: true}, deviceApiLevel: 25, deviceManufacturer: vivo, deviceModel: vivo X9, deviceName: 192.168.20.159:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 192.168.20.159:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 7.1.2, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 192.168.20.159:5555, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 9bcc95dc-fd97-467c-aa54-86a4b5fee61a
+2018-09-14 16:03:37,206 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:03:37,325 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 16:03:37,432 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 16:03:37,529 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 16:03:38,693 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【deleteButtons】识别成功
+2018-09-14 16:03:38,880 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【deleteEnsureButton】暂未找到，轮询中...
+2018-09-14 16:03:39,527 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【deleteEnsureButton】识别成功
+2018-09-14 16:03:40,731 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:03:40,731 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:03:41,925 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【homePageButton】识别成功
+2018-09-14 16:03:41,926 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:03:41,926 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 269] - 已返回首页
+2018-09-14 16:03:42,345 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 16:03:42,976 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【settingButton】识别成功
+2018-09-14 16:03:44,616 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【logoutOption】识别成功
+2018-09-14 16:03:45,371 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【logoutEnsureButton】识别成功
+2018-09-14 16:03:46,511 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 16:03:46,511 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：nickname Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:03:46,605 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 16:03:46,752 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 16:03:46,823 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：nickname的值为：立即登录　[预期]：预期的值为：立即登录
+2018-09-14 16:03:46,876 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
+2018-09-14 16:03:46,877 [vivoX9] DEBUG [gby.appium.listern.TestNGListener.onFinish() Line: 93] - searchHouse:[TestResult name=searchHouse status=SKIP method=HouseSearchCase.searchHouse()[pri:0, instance:gby.testng.testcase.HouseSearchCase@74650e52] output=[info] 【searchHouse】测试用例开始执行]
+2018-09-14 16:39:13,107 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-14 16:39:13,355 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-09-14 16:39:13,565 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-09-14 16:39:43,964 [vivoX9] INFO  [gby.appium.deviceM.InitDriver.<init>() Line: 82] - AndroidDriver初始化完成，打开app成功
+2018-09-14 16:39:43,970 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【f】测试用例执行成功
+2018-09-14 16:39:43,976 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【login】测试用例开始执行
+2018-09-14 16:39:44,499 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 16:39:45,063 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 16:39:45,640 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【mineButton】暂未找到，轮询中...
+2018-09-14 16:39:47,312 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 16:39:48,110 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:39:49,277 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【userName】识别成功
+2018-09-14 16:39:50,643 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【password】识别成功
+2018-09-14 16:39:51,775 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:39:54,593 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:39:54,594 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：phoneNumber Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:39:54,692 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:39:54,900 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:39:54,968 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：phoneNumber的值为：15575993304　[预期]：预期的值为：15575993304
+2018-09-14 16:39:54,969 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【login】测试用例执行成功
+2018-09-14 16:39:54,975 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【searchHouse】测试用例开始执行
+2018-09-14 16:39:55,189 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【homePageButton】识别成功
+2018-09-14 16:39:56,081 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【areaSelector】识别成功
+2018-09-14 16:39:59,276 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【moneySelector】暂未找到，轮询中...
+2018-09-14 16:40:00,375 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moneySelector】识别成功
+2018-09-14 16:40:02,252 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【sortSelector】暂未找到，轮询中...
+2018-09-14 16:40:03,250 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【sortSelector】识别成功
+2018-09-14 16:40:05,024 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【moreSelector】暂未找到，轮询中...
+2018-09-14 16:40:06,234 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreSelector】识别成功
+2018-09-14 16:40:11,163 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreEnsureButotn】识别成功
+2018-09-14 16:40:14,159 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:40:15,968 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:40:18,121 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:40:20,001 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:40:22,184 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:40:24,091 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:40:26,230 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:40:28,096 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:40:28,098 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 16:40:28,099 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 16:40:28,099 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]
+2018-09-14 16:40:28,108 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【searchHouse】测试用例执行成功
+2018-09-14 16:40:28,114 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【publishRoom】测试用例开始执行
+2018-09-14 16:40:28,285 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【findRoommateButton】识别成功
+2018-09-14 16:40:29,115 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【publishIcon】识别成功
+2018-09-14 16:40:29,323 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【hasntRoomButton】暂未找到，轮询中...
+2018-09-14 16:40:30,252 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【hasntRoomButton】识别成功
+2018-09-14 16:40:30,360 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]
+2018-09-14 16:40:30,745 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：  mCurrentFocus=Window{8ae9ccd u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}
+2018-09-14 16:40:32,091 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 16:40:32,092 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：titleInput Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:40:32,207 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 16:40:33,346 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【otherContentInput】识别成功
+2018-09-14 16:40:49,121 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【商圈】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@395f781a (tried for 15 second(s) with 500 milliseconds interval)
+2018-09-14 16:40:49,124 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'publishRoom' 执行失败，重试第 1 次
+2018-09-14 16:40:49,129 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【publishRoom】测试用例被跳过
+2018-09-14 16:40:50,092 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:50,093 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:50,712 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:50,712 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:51,494 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:51,494 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:52,118 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:52,119 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:53,118 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:53,119 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:53,750 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:53,751 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:54,532 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:54,533 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:55,152 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:55,153 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:56,099 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:56,099 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:40:56,768 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:40:56,769 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:41:29,790 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-14 16:41:29,986 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-09-14 16:41:30,109 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-09-14 16:42:21,537 [vivoX9] INFO  [gby.appium.listern.TestngRetry.retry() Line: 21] - 测试类：'gby.appium.listern.TestngRetry' 中的测试方法：'f' 执行失败，重试第 1 次
+2018-09-14 16:42:21,545 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【f】测试用例被跳过
+2018-09-14 16:42:21,566 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【f】测试用例开始执行
+2018-09-14 16:42:21,567 [vivoX9] DEBUG [gby.testng.testcase.InitDriverCase.f() Line: 38] - deviceName: vivoX9
+2018-09-14 16:42:21,612 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb connect 192.168.20.159:5555]
+2018-09-14 16:42:21,702 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：already connected to 192.168.20.159:5555
+2018-09-14 16:42:51,089 [vivoX9] INFO  [gby.appium.deviceM.InitDriver.<init>() Line: 82] - AndroidDriver初始化完成，打开app成功
+2018-09-14 16:42:51,093 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【f】测试用例执行成功
+2018-09-14 16:42:51,098 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【f】测试用例执行失败
+2018-09-14 16:42:53,401 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【homePageButton】识别成功
+2018-09-14 16:42:53,402 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:42:53,403 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 269] - 已返回首页
+2018-09-14 16:42:53,407 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【login】测试用例开始执行
+2018-09-14 16:42:54,269 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 16:42:55,034 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:42:56,254 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【userName】识别成功
+2018-09-14 16:42:57,489 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【password】识别成功
+2018-09-14 16:42:58,605 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:43:00,008 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【phoneNumber】暂未找到，轮询中...
+2018-09-14 16:43:01,168 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:43:01,170 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：phoneNumber Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:43:01,244 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:43:01,329 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【phoneNumber】识别成功
+2018-09-14 16:43:01,376 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：phoneNumber的值为：15575993304　[预期]：预期的值为：15575993304
+2018-09-14 16:43:01,378 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【login】测试用例执行成功
+2018-09-14 16:43:01,384 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【searchHouse】测试用例开始执行
+2018-09-14 16:43:01,465 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【homePageButton】识别成功
+2018-09-14 16:43:02,252 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【areaSelector】识别成功
+2018-09-14 16:43:05,891 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moneySelector】识别成功
+2018-09-14 16:43:09,002 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【sortSelector】识别成功
+2018-09-14 16:43:12,058 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreSelector】识别成功
+2018-09-14 16:43:17,316 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【moreEnsureButotn】识别成功
+2018-09-14 16:43:19,571 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:43:21,967 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:43:24,141 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:43:25,965 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:43:28,182 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:43:30,019 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:43:32,318 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【prices】识别成功
+2018-09-14 16:43:34,073 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:43:34,075 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 16:43:34,076 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：true　[预期]：实际：true
+2018-09-14 16:43:34,077 [vivoX9] INFO  [gby.appium.utils.AssertUtils.notInterruptAssert() Line: 191] - 【检查点检查成功】  [实际]：传入的对象 ：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]　[预期]：实际：[1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1600]
+2018-09-14 16:43:34,079 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【searchHouse】测试用例执行成功
+2018-09-14 16:43:34,081 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestStart() Line: 34] - 【publishRoom】测试用例开始执行
+2018-09-14 16:43:34,637 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【findRoommateButton】识别成功
+2018-09-14 16:43:35,450 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【publishIcon】识别成功
+2018-09-14 16:43:35,681 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【hasntRoomButton】暂未找到，轮询中...
+2018-09-14 16:43:36,598 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【hasntRoomButton】识别成功
+2018-09-14 16:43:36,726 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.getBufferedReader() Line: 84] - 执行命令：[cmd, /c, adb -s 192.168.20.159:5555 shell dumpsys window | findstr mCurrentFocus]
+2018-09-14 16:43:37,031 [vivoX9] DEBUG [gby.appium.utils.CommandPromptUtil.runCommandThruProcess() Line: 41] - 命令结果：  mCurrentFocus=Window{feff7b6 u0 com.loulifang.house/com.loulifang.house.activities.CreateNoRomTopicActivity}
+2018-09-14 16:43:38,247 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 16:43:38,248 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：titleInput Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:43:38,309 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【titleInput】识别成功
+2018-09-14 16:43:39,441 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【otherContentInput】识别成功
+2018-09-14 16:43:40,588 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【locationButton】识别成功
+2018-09-14 16:43:48,288 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【locationEnsuredButton】识别成功
+2018-09-14 16:43:49,344 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【priceGlider】识别成功
+2018-09-14 16:43:52,314 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【addImagesButton】识别成功
+2018-09-14 16:43:53,301 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【albumButton】识别成功
+2018-09-14 16:43:54,808 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【imagesAlbum】识别成功
+2018-09-14 16:43:59,777 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【images】识别成功
+2018-09-14 16:44:02,349 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【imagesEnsuredButton】识别成功
+2018-09-14 16:44:04,121 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【publishButton】识别成功
+2018-09-14 16:44:06,770 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onTestSuccess() Line: 41] - 【publishRoom】测试用例执行成功
+2018-09-14 16:44:06,853 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 16:44:07,582 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【loginButton】识别成功
+2018-09-14 16:44:07,583 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：loginButton Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:44:07,739 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:08,325 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:08,914 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:09,489 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:10,083 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:10,688 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:11,294 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:11,860 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:12,447 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:13,525 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:14,344 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:14,928 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:15,538 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:16,140 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:17,314 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:17,906 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:18,496 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:19,093 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:19,709 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:20,511 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:21,088 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:21,706 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:22,292 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:23,318 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【myPostButton】暂未找到，轮询中...
+2018-09-14 16:44:23,321 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【myPostButton】识别失败：识别超时Expected condition failed: waiting for gby.appium.page.BasePage$1@294da7c5 (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '桂宝元', ip: '192.168.10.77', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\Administrator\git\..., appActivity: com.loulifang.house.activit..., appPackage: com.loulifang.house, automationName: uiautomator2, deviceName: vivoX9, platformName: android, platformVersion: 7.1.2, resetKeyboard: true, udid: 192.168.20.159:5555, unicodeKeyboard: true}, deviceApiLevel: 25, deviceManufacturer: vivo, deviceModel: vivo X9, deviceName: 192.168.20.159:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 192.168.20.159:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 7.1.2, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 192.168.20.159:5555, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2a758a74-a7c3-44a2-89b4-bb2dc1e36534
+2018-09-14 16:44:24,856 [vivoX9] DEBUG [gby.appium.page.BasePage.swipeToUp() Line: 216] - 往上滑动：540_1440 to 540_480
+2018-09-14 16:44:24,962 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 16:44:25,045 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 16:44:25,128 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【myPostButton】识别成功
+2018-09-14 16:44:25,403 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【deleteButtons】暂未找到，轮询中...
+2018-09-14 16:44:26,309 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【deleteButtons】识别成功
+2018-09-14 16:44:27,432 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【deleteEnsureButton】识别成功
+2018-09-14 16:44:28,622 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 176] - 【homePageButton】未找到，识别失败,元素list长度为0
+2018-09-14 16:44:28,623 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:44:29,808 [vivoX9] INFO  [gby.appium.page.BasePage.findElesBy() Line: 174] - 【homePageButton】识别成功
+2018-09-14 16:44:29,809 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 267] - 正在返回首页...
+2018-09-14 16:44:29,809 [vivoX9] INFO  [gby.appium.page.BasePage.backToHome() Line: 269] - 已返回首页
+2018-09-14 16:44:30,223 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【mineButton】识别成功
+2018-09-14 16:44:30,847 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【settingButton】识别成功
+2018-09-14 16:44:32,199 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【logoutOption】识别成功
+2018-09-14 16:44:32,407 [vivoX9] DEBUG [gby.appium.page.BasePage.findEleBy() Line: 143] - 【logoutEnsureButton】暂未找到，轮询中...
+2018-09-14 16:44:32,997 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【logoutEnsureButton】识别成功
+2018-09-14 16:44:34,178 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 16:44:34,179 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkElementNotNull() Line: 157] - 【检查点检查成功】  [实际]：nickname Not NULL　[预期]：预期 Not NULL
+2018-09-14 16:44:34,269 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 16:44:34,396 [vivoX9] INFO  [gby.appium.page.BasePage.findEleBy() Line: 141] - 【nickname】识别成功
+2018-09-14 16:44:34,427 [vivoX9] INFO  [gby.appium.utils.AssertUtils.checkMethodSucess() Line: 169] - 【检查点检查成功】  [实际]：nickname的值为：立即登录　[预期]：预期的值为：立即登录
+2018-09-14 16:44:34,510 [vivoX9] INFO  [gby.appium.listern.TestNGListener.onFinish() Line: 66] - 测试执行完毕
+2018-09-14 16:44:34,511 [vivoX9] DEBUG [gby.appium.listern.TestNGListener.onFinish() Line: 76] - f:[TestResult name=f status=FAILURE method=InitDriverCase.f(java.lang.String)[pri:0, instance:gby.testng.testcase.InitDriverCase@3b088d51] output={null}]
