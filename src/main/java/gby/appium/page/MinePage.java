@@ -22,6 +22,15 @@ public class MinePage extends BasePage{
 		findElement("loginButton").click();
 	}
 	
+	public void clickIntoSettingpg() {
+		findElement("settingButton").click();
+	}
+	
+	public void logout() {
+		findElement("logoutOption").click();
+		findElement("logoutEnsureButton").click();
+	}
+	
 	
 	/*
 	 * 删除帖子Action
@@ -32,7 +41,8 @@ public class MinePage extends BasePage{
 		while(findElement("myPostButton") == null && i < 3) {
 			swipeToUp();
 			i++;
-			Assert.fail();
+			if(findElement("myPostButton") == null && i == 3)
+				Assert.fail("删帖失败，找不到收藏帖子入口");
 		}
 		findElement("myPostButton").click();
 		findElement("deleteButtons").click();

@@ -17,8 +17,7 @@ import io.appium.java_client.android.AndroidElement;
 
 public class FindRoommateBasePage extends BasePage {
 
-//	public boolean roomMaker ;
-//	private ArrayList<AndroidElement> roomMakers ;
+
 	public FindRoommateBasePage(AndroidDriver<AndroidElement> driver) {
 		super(driver);
 	}
@@ -41,7 +40,7 @@ public class FindRoommateBasePage extends BasePage {
 		if (res.contains("LoginActivity")) {
 			LoginPage loginPage = new LoginPage(driver);
 			loginPage.login("15575993304", "180205");
-			AssertUtils.checkMethodSucess(this, "hasntRoomButton");
+			AssertUtils.checkElementNotNull("检查是否登录成功进入", this, "hasntRoomButton");
 			findElement("hasntRoomButton").click();
 		}//常规流程先登录再发帖，故这里登录写死了
 	}

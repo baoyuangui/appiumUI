@@ -7,6 +7,10 @@
 	"loginButton":"id@com.loulifang.house:id/profileLyt",
 	"nickname":"id@com.loulifang.house:id/nameText",
 	"phoneNumber":"id@com.loulifang.house:id/phoneNumberText",
+	"settingButton":"id@com.loulifang.house:id/mySettingLyt",
+	"logoutOption":"id@com.loulifang.house:id/quitBtn",
+	"logoutEnsureButton":"id@android:id/button1",
+	
 	
 	"collectionCount":"id@com.loulifang.house:id/myCollectCnt",//收藏数
 	"appointmentCount":"id@com.loulifang.house:id/myAppointCnt",//预约数	
@@ -14,8 +18,8 @@
 	"myPostButton":"id@com.loulifang.house:id/myTopicLyt",
 	
 	"deleteButtons":"id@com.loulifang.house:id/tvw_item_delete",
-	"deleteEnsureButton":"id@android:id/button1",
-	"deletedSucessToast":"xpath@//*[contains(@text,'删除成功')]"
+	"deleteEnsureButton":"id@android:id/button1"
+	
 	
 		
 }

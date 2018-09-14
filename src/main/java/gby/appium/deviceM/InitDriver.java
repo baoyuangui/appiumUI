@@ -35,11 +35,11 @@ public class InitDriver {
 // 		}, dc.device.getName() + "_appiumServer").start();
 		
 		
-		AppiumServiceBuilder builder = new AppiumServiceBuilder()
-				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-				.withIPAddress("127.0.0.1").usingPort(Integer.parseInt(dc.device.getApmsrv_port()));
-		AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
-		service.start();
+//		AppiumServiceBuilder builder = new AppiumServiceBuilder()
+//				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+//				.withIPAddress("127.0.0.1").usingPort(Integer.parseInt(dc.device.getApmsrv_port()));
+//		AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+//		service.start();
 		
 		
 		
@@ -72,7 +72,7 @@ public class InitDriver {
 		cap.setCapability("appActivity", "com.loulifang.house.activities.TMainActivity");
 		cap.setCapability("unicodeKeyboard", true);
 		cap.setCapability("resetKeyboard", true);
-		cap.setCapability("systemPort", Integer.parseInt(dc.device.getApmsrv_bp())+1);
+//		cap.setCapability("systemPort", Integer.parseInt(dc.device.getApmsrv_bp())+1);
 //		cap.setCapability("newCommandTimeout", 180);
 		/*据说多设备平行运行时，如果不配置不同的systemPort，会出错。不过目前我没遇到*/
 		

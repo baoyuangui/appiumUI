@@ -41,17 +41,11 @@ public class InitDriverCase {
 		BasePage.device = sClass.dc.device;
 		
 		Assert.assertNotEquals(driver, null, "初始化driver失败");
-
-/*		if(driver==null) {
-			Thread.currentThread().destroy();
-			LoggerUtil.error("driver初始化失败");
-		}*/
 	}
 	
 
 //	@AfterSuite(alwaysRun=true)
 //	public void setDown() {
-//		
 //		sClass.dc.setDownAllCommand();
 //	}
 

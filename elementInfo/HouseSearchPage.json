@@ -1,0 +1,13 @@
+{
+	"areaSelector":"id@com.loulifang.house:id/qyLyt",
+	"moneySelector":"id@com.loulifang.house:id/moneyLyt",
+	"sortSelector":"id@com.loulifang.house:id/mjLyt",
+	"moreSelector":"id@com.loulifang.house:id/moreLyt",
+	"moreEnsureButotn":"id@com.loulifang.house:id/tv_more_sure",
+	
+	"prices":"id@com.loulifang.house:id/price",
+	"roomTypes":"id@com.loulifang.house:id/romTypeText",
+	"roomDescriptions":"id@com.loulifang.house:id/roomDes",	//描述里包括 两个内容：小区名+户型（几室几厅）
+	"distances":"id@com.loulifang.house:id/roomAddressText"	//距离，数据包含距离多少千米
+}
+	

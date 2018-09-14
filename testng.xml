@@ -7,8 +7,8 @@
 		<classes>
 			<class name="gby.testng.testcase.InitDriverCase" />
 			<class name="gby.testng.testcase.LoginCase" />
+			<class name="gby.testng.testcase.HouseSearchCase" />
 			<class name="gby.testng.testcase.PublishPostCase" />
-<!-- 			<class name="gby.testng.testcase.PublishPostCase" /> -->
 		</classes>
 	</test>
 

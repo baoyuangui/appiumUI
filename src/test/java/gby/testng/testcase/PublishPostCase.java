@@ -1,16 +1,12 @@
 package gby.testng.testcase;
 
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import gby.appium.page.BasePage;
+
 import gby.appium.page.FindRoommateBasePage;
 import gby.appium.page.LoginPage;
 import gby.appium.page.MinePage;
@@ -24,7 +20,6 @@ public class PublishPostCase {
 	FindRoommateBasePage findbg;
 	MinePage minepg;
 	LoginPage loginpg;
-	BasePage bg ;
 	
   @BeforeClass
   public void setup() {
@@ -39,7 +34,7 @@ public class PublishPostCase {
   public void  intoPublisPostPage() {
 	  findbg.clickIntoRoommatePage();
 	  findbg.openPublishPage();
-	  AssertUtils.checkMethodSucess(findbg, "titleInput");
+	  AssertUtils.checkElementNotNull("检查是否进入发帖页",findbg, "titleInput");
 	  
 }
   
@@ -48,7 +43,7 @@ public class PublishPostCase {
 //	  findbg.clickIntoRoommatePage();
 //	  findbg.openPublishPage();
 	  findbg.inputText("标题", "其他内容");
-	  findbg.selectLocation("jingan_jingansi","subway_line7");
+	  findbg.selectLocation("jingan_jingansi","line7_yuntaiLoad");
 	  findbg.selectPrice();
 	  findbg.selectImages();
 	  findbg.clickPublish();
@@ -61,9 +56,9 @@ public class PublishPostCase {
   @AfterClass
   //发帖数据清除
   public void deletePost() {
-	  minepg =  new MinePage(driver);
+	  minepg = new MinePage(driver);
 	  minepg.clickIntoMinepg();
-	  AssertUtils.checkMethodSucess(minepg, "loginButton");
+	  AssertUtils.checkElementNotNull("检查是否进入我的页面",minepg, "loginButton");
 	  
 	  minepg.deletePost();
 	  Assert.assertEquals(minepg.findToast("删除成功"), true, "删除失败，没有找到删除成功的toast");

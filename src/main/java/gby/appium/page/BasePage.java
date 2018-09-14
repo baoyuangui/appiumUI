@@ -90,7 +90,7 @@ public class BasePage {
 //			LoggerUtil.debug("元素已找到：" + name+": " +id);
 		} catch (Exception e) {
 			// TODO: handle exception
-			LoggerUtil.error("【" + name + "】识别失败：识别超时");
+			LoggerUtil.error("【" + name + "】识别失败：识别超时"+ e.getMessage());
 //			Assert.fail("【"+ name +"】元素识别失败，该测试方法自动结束失败");
 		}
 		return el;
@@ -105,6 +105,12 @@ public class BasePage {
 	 */
 	private AndroidElement findEleBy(String name) {
 		String id = this.elesMap.get(name);
+		
+		//如果id为null,表示name不在map的key里，直接使用text识别，一般用于仅text定位，方便使用，不用再在json文件中添加对应text的元素信息
+		if(id == null) {
+			return driver.findElementByAndroidUIAutomator("new UiSelector().text(\"" + name + "\")");
+		}
+		
 		AndroidElement element = null;
 		String byTpye = id.split("@")[0];
 		String eleLoctorInfo = id.split("@")[1];
@@ -120,7 +126,7 @@ public class BasePage {
 				element = driver.findElementByAccessibilityId(eleLoctorInfo);
 				break;
 			case "text":
-				element = driver.findElementByAndroidUIAutomator("new UiSelector().text(\"" + eleLoctorInfo + "\")");
+				element = driver.findElementByAndroidUIAutomator("new UiSelector().textStartsWith(\"" + eleLoctorInfo + "\")");
 				break;
 			case "class":
 				element = driver.findElementByClassName(eleLoctorInfo);
@@ -176,7 +182,7 @@ public class BasePage {
 
 	/**
 	 * 
-	 * 逐一点击元素列表中的元素，一般用于多选 num 代表多选几个
+	 * 	逐一点击元素列表中的元素，一般用于多选 num 代表多选几个，无差别选择
 	 * 
 	 */
 	public void clickAllEles(ArrayList<AndroidElement> als, int num) {
@@ -192,7 +198,7 @@ public class BasePage {
 		Duration duration = Duration.ofMillis(millis);
 		TouchAction action = new TouchAction(driver);
 
-		action.longPress(PointOption.point(x, y)).waitAction(WaitOptions.waitOptions(duration))
+		action.press(PointOption.point(x, y)).waitAction(WaitOptions.waitOptions(duration))
 				.moveTo(PointOption.point(toX, toY)).release();
 
 		action.perform();
@@ -211,7 +217,7 @@ public class BasePage {
 	}
 
 	public void swipeToUp() {
-		swipeToUp(1000);
+		swipeToUp(1500);
 	}
 
 	public void quickSwipeToUp() {

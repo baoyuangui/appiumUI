@@ -150,23 +150,48 @@ public class AssertUtils extends Assert{
      *				 		传两个，后一个代表元素需要校验的值
      * 
      */
-    public static void checkMethodSucess(BasePage bg, String... excepted) {
+    public static void checkElementNotNull(String comment, BasePage bg, String element) {
     	
     	 try {
-    		 Assert.assertNotNull(bg.findElement(excepted[0]));
-    		 if(excepted.length > 1){
-    			 Assert.assertEquals(bg.findElement(excepted[0]), excepted[1]);
-    		 }
-    		 
+    		 Assert.assertNotNull(bg.findElement(element));
+    		 LoggerUtil.assertReportFormat(comment, element+" Not NULL" , "预期 Not NULL" , "PASS");
          } catch (AssertionError e) {
-             Assert.fail("断言失败");
+         	LoggerUtil.assertReportFormat(comment, element+" IS NULL" , "预期 Not NULL" , "FAIL");
+            Assert.fail("检查点检查出错误");           
+         }	   	   	
+    }
+    
+    public static void checkMethodSucess(String comment, BasePage bg, String element, String value) {
+    	
+    	checkElementNotNull(comment, bg, element);
+    	try {
+    		Assert.assertEquals(bg.findElement(element).getText().replace(" ", ""), value);
+    		LoggerUtil.assertReportFormat(comment, element+"的值为："+ bg.findElement(element).getText().replace(" ", "") , "预期的值为："+ value , "PASS");
+    	}catch(AssertionError e){
+    		LoggerUtil.assertReportFormat(comment, element+"的值为："+ bg.findElement(element).getText().replace(" ", "") , "预期的值为："+ value , "FAIL");
+    		Assert.fail("检查点检查出错误"); 
+    	} 
+   }
+    
+    /**
+     * 
+     * 非中断性断言
+     * 适用于一个方法执行后，需要校验多个点的情况
+     *  
+     * */
+    public static void notInterruptAssert(Object actual, Object expected, String... comment) {
+    	 String comm;
+         if (comment.length == 0) {
+             comm = "两个对象是否相同";
+         } else {
+             comm = comment[0];
          }
-    		
-
-    	
-    	
-    	
-    	
+         try {
+             Assert.assertEquals(actual, expected);
+             LoggerUtil.assertReportFormat(comm, "传入的对象 ："+actual.toString() , "实际："+ expected.toString() , "PASS");
+         } catch (AssertionError e) {
+         	LoggerUtil.assertReportFormat(comm, "传入的对象 ："+actual.toString() , "实际："+ expected.toString(), "FAIL");
+         }
     }
     	
 }

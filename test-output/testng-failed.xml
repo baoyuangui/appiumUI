@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="gby.appium.listern.RetryListener"/>
-    <listener class-name="gby.appium.listern.TestNGListener"/>
-  </listeners>
-  <test thread-count="5" name="vivoX9(failed)" parallel="tests">
-    <parameter name="deviceName" value="vivoX9"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gby.testng.testcase.PublishPostCase">
+      <class name="gby.testng.testcase.HouseSearchCase">
         <methods>
-          <include name="intoPublisPostPage"/>
-          <include name="setup"/>
-          <include name="deletePost"/>
-          <include name="publishRoom"/>
+          <include name="searchHouse"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- gby.testng.testcase.PublishPostCase -->
+      </class> <!-- gby.testng.testcase.HouseSearchCase -->
     </classes>
-  </test> <!-- vivoX9(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

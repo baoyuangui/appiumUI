@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gby.testng.testcase.PublishPostCase">
+      <class name="gby.testng.testcase.HouseSearchCase">
         <methods>
-          <include name="intoPublisPostPage"/>
-          <include name="setup"/>
-          <include name="deletePost"/>
-          <include name="publishRoom"/>
+          <include name="searchHouse"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- gby.testng.testcase.PublishPostCase -->
+      </class> <!-- gby.testng.testcase.HouseSearchCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
