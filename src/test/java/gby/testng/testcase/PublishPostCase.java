@@ -31,7 +31,7 @@ public class PublishPostCase {
   
   
   
-  @Test(dependsOnMethods = {"intoPublisPostPage"})
+  @Test
   public void publishRoom() {
 	  findbg.clickIntoRoommatePage();
 	  findbg.openPublishPage();
