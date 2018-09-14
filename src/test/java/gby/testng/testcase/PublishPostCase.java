@@ -30,24 +30,18 @@ public class PublishPostCase {
   }
   
   
-  @Test
-  public void  intoPublisPostPage() {
+  
+  @Test(dependsOnMethods = {"intoPublisPostPage"})
+  public void publishRoom() {
 	  findbg.clickIntoRoommatePage();
 	  findbg.openPublishPage();
 	  AssertUtils.checkElementNotNull("检查是否进入发帖页",findbg, "titleInput");
 	  
-}
-  
-  @Test(dependsOnMethods = {"intoPublisPostPage"})
-  public void publishRoom() {
-//	  findbg.clickIntoRoommatePage();
-//	  findbg.openPublishPage();
 	  findbg.inputText("标题", "其他内容");
 	  findbg.selectLocation("jingan_jingansi","line7_yuntaiLoad");
 	  findbg.selectPrice();
 	  findbg.selectImages();
 	  findbg.clickPublish();
-
 	  boolean isFind = findbg.findToast("发帖成功");
 	  Assert.assertEquals(isFind, true, "发布失败");
   }
