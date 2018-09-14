@@ -108,7 +108,7 @@ public class BasePage {
 		
 		//如果id为null,表示name不在map的key里，直接使用text识别，一般用于仅text定位，方便使用，不用再在json文件中添加对应text的元素信息
 		if(id == null) {
-			return driver.findElementByAndroidUIAutomator("new UiSelector().text(\"" + name + "\")");
+			return driver.findElementByAndroidUIAutomator("new UiSelector().textStartsWith(\"" + name + "\")");
 		}
 		
 		AndroidElement element = null;
