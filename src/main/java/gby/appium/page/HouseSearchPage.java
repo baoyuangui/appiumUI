@@ -64,8 +64,14 @@ public class HouseSearchPage extends MinePage{
 //		findElesBy("roomTypes").forEach((AndroidElement ae) -> prices.add(ae.getText()));
 //		findElesBy("roomDescriptions").forEach((AndroidElement ae) -> prices.add(ae.getText()));
 //		findElesBy("distances").forEach((AndroidElement ae) -> prices.add(ae.getText()));
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		prices.addAll(getTexts(findElesBy("prices")));
-		roomTypes.addAll(getTexts(findElesBy("roomTypes")));	
+//		roomTypes.addAll(getTexts(findElesBy("roomTypes")));	
 	}
 	
 	public List<String> getTexts(List<AndroidElement> eleLists){

@@ -11,7 +11,7 @@ import org.openqa.selenium.Point;
 import gby.appium.utils.AssertUtils;
 import gby.appium.utils.CommandPromptUtil;
 import gby.appium.utils.ElementShot;
-import gby.appium.utils.WebShot;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
