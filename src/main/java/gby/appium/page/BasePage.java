@@ -140,7 +140,7 @@ public class BasePage {
 			}
 			LoggerUtil.info("【" + name + "】识别成功");
 		} catch (Exception e) {
-			LoggerUtil.info("【" + name + "】暂未找到，轮询中...");
+			LoggerUtil.debug("【" + name + "】暂未找到，轮询中...");
 		}
 		return element;
 	}
