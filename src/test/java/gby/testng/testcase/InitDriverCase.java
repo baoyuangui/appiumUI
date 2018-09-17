@@ -19,6 +19,7 @@ import gby.appium.deviceM.Device;
 import gby.appium.deviceM.InitDriver;
 import gby.appium.page.BasePage;
 import gby.appium.utils.AssertUtils;
+import gby.appium.utils.EditHtmlReport;
 import gby.appium.utils.LoggerUtil;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -44,9 +45,9 @@ public class InitDriverCase {
 	}
 	
 
-//	@AfterSuite(alwaysRun=true)
-//	public void setDown() {
-//		sClass.dc.setDownAllCommand();
-//	}
+	@AfterSuite(alwaysRun=true)
+	public void setDown() {
+		EditHtmlReport.editCode();
+	}
 
 }
