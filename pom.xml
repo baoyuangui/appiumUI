@@ -25,6 +25,22 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+					<properpties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+						<property>
+						<name>listener</name>
+<!-- 						<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value> -->
+						<value>org.uncommons.reportng.HTMLReporter</value>
+						<value>com.uiframe.testng.TestNGListener</value>
+						</property>
+					</properpties>
+					
+					
+					
 					<!-- <includes> -->
 					<!-- <include>%regex[.*[Cat|Dog].*Test.*]</include> -->
 					<!-- </includes> -->
