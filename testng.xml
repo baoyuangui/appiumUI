@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="tests">
 
 	<test name="vivoX9">
-		<parameter name="deviceName" value="LeEco" />
+		<parameter name="deviceName" value="vivoX9" />
 		<classes>
 			<class name="gby.testng.testcase.InitDriverCase" />
 			<class name="gby.testng.testcase.LoginCase" />
