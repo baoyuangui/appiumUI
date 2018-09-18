@@ -17,6 +17,14 @@
 
 	<build>
 		<plugins>
+						<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -32,15 +40,15 @@
 							<value>false</value>
 						</property>
 						<property>
-						<name>listener</name>
-						<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value>
-<!-- 						<value>org.uncommons.reportng.HTMLReporter</value> -->
-						<value>com.uiframe.testng.TestNGListener</value>
+							<name>listener</name>
+							<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value>
+							<!-- <value>org.uncommons.reportng.HTMLReporter</value> -->
+							<value>com.uiframe.testng.TestNGListener</value>
 						</property>
 					</properpties>
-					
-					
-					
+
+
+
 					<!-- <includes> -->
 					<!-- <include>%regex[.*[Cat|Dog].*Test.*]</include> -->
 					<!-- </includes> -->
@@ -50,14 +58,28 @@
 					<!-- </excludes> -->
 				</configuration>
 			</plugin>
-			<plugin>  
-           			 <groupId>org.apache.maven.plugins</groupId>  
-           			 <artifactId>maven-compiler-plugin</artifactId>  
-           			 <configuration>  
-                			<source>1.8</source>  
-                			<target>1.8</target>  
-            			</configuration>  
-     			</plugin>  
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<executions>
+					<execution>
+<!-- 						<phase>test</phase> -->
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+<!-- 							<includePluginDependencies>true</includePluginDependencies> -->
+							<mainClass>gby.appium.utils.EditHtmlReport</mainClass>
+<!-- 							<arguments> -->
+<!-- 								<argument>11</argument> -->
+<!-- 								<argument>22</argument> -->
+<!-- 							</arguments> -->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
 		</plugins>
 	</build>
@@ -173,6 +195,13 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.49</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+		<dependency>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>1.6.0</version>
 		</dependency>
 
 	</dependencies>

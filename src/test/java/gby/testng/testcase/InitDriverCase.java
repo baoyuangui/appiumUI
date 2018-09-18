@@ -45,9 +45,9 @@ public class InitDriverCase {
 	}
 	
 
-	@AfterSuite(alwaysRun=true)
+/*	@AfterSuite(alwaysRun=true)
 	public void setDown() {
 		EditHtmlReport.editCode();
-	}
+	}*/
 
 }

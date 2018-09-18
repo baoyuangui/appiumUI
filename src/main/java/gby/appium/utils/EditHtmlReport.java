@@ -30,7 +30,7 @@ public class EditHtmlReport {
 				s = s.replace("&quot;", "\"");
 				s = s.replace("&gt;", ">");
 				s = s.replace("&lt;", "<");
-				s = s.replace("&apos; ", "'");
+				s = s.replace("&apos;", "'");
 				content += s;
 			}
 			in.close();
