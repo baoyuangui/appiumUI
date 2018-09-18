@@ -30,7 +30,7 @@ public class LoginCase {
 	  loginpg = new LoginPage(driver);
   }
 
-  @AfterTest
+  @AfterTest(dependsOnMethods = "login")
   public void logout() {
 	  minepg.backToHome();
 	  minepg.clickIntoMinepg();
