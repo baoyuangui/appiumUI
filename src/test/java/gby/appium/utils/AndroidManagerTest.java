@@ -8,7 +8,7 @@ public class AndroidManagerTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
-		DevicesConnect dc = new DevicesConnect("vivox9");
+		DevicesConnect dc = new DevicesConnect("LeEco");
 		dc.adbConnect();
 //
 //		dc.setUpAppiumServer();
