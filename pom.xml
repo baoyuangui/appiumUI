@@ -69,16 +69,16 @@
 						<goals>
 							<goal>java</goal>
 						</goals>
-						<configuration>
-<!-- 							<includePluginDependencies>true</includePluginDependencies> -->
+					</execution>
+				</executions>
+				<configuration>
+							<includePluginDependencies>true</includePluginDependencies>
 							<mainClass>gby.appium.utils.EditHtmlReport</mainClass>
 <!-- 							<arguments> -->
 <!-- 								<argument>11</argument> -->
 <!-- 								<argument>22</argument> -->
 <!-- 							</arguments> -->
 						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 
 		</plugins>
