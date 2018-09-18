@@ -1,6 +1,0 @@
-2018-09-07 13:52:52,870 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【loginButton】识别失败：识别超时
-2018-09-07 13:52:52,887 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【intoPublisPostPage】测试用例被跳过
-2018-09-07 13:53:17,422 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【loginButton】识别失败：识别超时
-2018-09-07 13:53:17,457 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestFailure() Line: 49] - 【intoPublisPostPage】测试用例执行失败
-2018-09-07 13:53:21,533 [vivoX9] ERROR [gby.appium.listern.TestNGListener.onTestSkipped() Line: 59] - 【publishRoom】测试用例被跳过
-2018-09-07 13:53:37,910 [vivoX9] ERROR [gby.appium.page.BasePage.findElement() Line: 93] - 【myPostButton】识别失败：识别超时
