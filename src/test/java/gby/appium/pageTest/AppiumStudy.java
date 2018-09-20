@@ -1,4 +1,4 @@
-package gby.appium.ui;
+package gby.appium.pageTest;
 
 import java.net.MalformedURLException;
 import java.net.URL;

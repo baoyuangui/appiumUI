@@ -1,4 +1,4 @@
-package gby.appium.ui;
+package gby.appium.pageTest;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

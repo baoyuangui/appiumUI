@@ -1,4 +1,4 @@
-package gby.appium.ui;
+package gby.appium.pageTest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

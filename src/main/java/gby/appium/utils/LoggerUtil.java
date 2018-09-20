@@ -137,13 +137,15 @@ public class LoggerUtil {
 	public static void screenShotLog(String comm, File file) {
 		int width = 350;
 		String absolute = "file:" + file.getAbsolutePath();
-		Reporter.log("<a target='_blank' href=\"" + absolute + "\">");
+		Reporter.setEscapeHtml(true);
+		Reporter.log("<a target='_blank' href=\"" + absolute + "\">");	
 		Reporter.log("<img width=\"" + width + "\" src=\"" + absolute + "\" />    " + comm);
 		Reporter.log("</a><br />");
 	}
 
 	public static void assertReportFormat(String comm, String actual, String expected, String result) {
 		String ptmsg;
+		Reporter.setEscapeHtml(true);
 		ptmsg = "┌───────────────────────┤ＣＨＥＣＫ　ＰＯＩＮＴ├───────────────────────┐<br>";
 		ptmsg = ptmsg + "[目标]：" + comm + "<br>";
 		ptmsg = ptmsg + "[实际]：" + actual + "　[预期]：" + expected + "<br>";

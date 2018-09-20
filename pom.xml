@@ -41,8 +41,8 @@
 						</property>
 						<property>
 							<name>listener</name>
-							<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value>
-							<!-- <value>org.uncommons.reportng.HTMLReporter</value> -->
+<!-- 							<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value> -->
+							<value>org.uncommons.reportng.HTMLReporter</value>
 							<value>com.uiframe.testng.TestNGListener</value>
 						</property>
 					</properpties>
@@ -142,7 +142,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
+			<version>6.9.10</version>
 		</dependency>
 
 		<dependency>
@@ -156,12 +156,17 @@
 			<artifactId>guice</artifactId>
 			<version>4.2.0</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>velocity</groupId>
 			<artifactId>velocity-dep</artifactId>
 			<version>1.4</version>
-		</dependency><!-- 以上两个是reportng的依赖包 -->
+	</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>velocity</groupId> -->
+<!-- 			<artifactId>velocity-dep</artifactId> -->
+<!-- 			<version>1.4</version> -->
+<!-- 		</dependency>以上两个是reportng的依赖包 -->
 
 		<dependency>
 			<groupId>com.google.guava</groupId>
